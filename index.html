@@ -31,7 +31,12 @@
       sizes="16x16"
       href="img/favicon-16x16.png"
     />
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-16x16.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon-16x16.png"
+    />
     <!-- i18next and language detector -->
     <script src="https://unpkg.com/i18next@21.8.1/i18next.min.js"></script>
     <script src="https://unpkg.com/i18next-browser-languagedetector@7.2.1/i18nextBrowserLanguageDetector.min.js"></script>
@@ -156,10 +161,16 @@
             >
               <h1 class="display-1 fw-bold mt-5" data-i18n="landingTitle"></h1>
               <p class="lead" data-i18n="landingDesc"></p>
-              <a
-                href="#services"
+              <a 
+                href="https://student.bizcaselab.com" target="_blank"
                 class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5"
                 ><h1 data-i18n="landingBtn"></h1
+              ></a>
+
+              <a
+                href="https://instructor.bizcaselab.com" target="_blank"
+                class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5"
+                ><h1 data-i18n="landingBtnInstructor"></h1
               ></a>
             </div>
           </div>
@@ -1087,7 +1098,8 @@
                   landingTitle: "Smart Case Studies",
                   landingDesc:
                     "Transform your teaching experience with BCL tools that generate custom business case studies in just seconds.",
-                  landingBtn: "Services",
+                  landingBtn: "Students",
+                  landingBtnInstructor: "Instructors",
                   paragraph: "This is an English paragraph.",
                 },
               },
@@ -1096,7 +1108,8 @@
                   landingTitle: "Études de cas intelligentes",
                   landingDesc:
                     "Transformez votre expérience d'enseignement avec les outils BCL qui génèrent des études de cas sur mesure en quelques secondes.",
-                  landingBtn: "Services",
+                  landingBtn: "Étudiants",
+                  landingBtnInstructor: "Instructeurs",
                   paragraph: "Ceci est un paragraphe en français.",
                 },
               },
