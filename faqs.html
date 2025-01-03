@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TPT3RTH5");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="BizCaseLab is an AI-powered platform that helps business school instructors create customized, real-world case studies in seconds. Start now with AI-driven insights."
+    />
+    <meta
+      name="keywords"
+      content="AI case study platform, Business case studies, AI for teaching, AI-powered education, Create case studies, Business case study generator, BizCaseLab"
+    />
+    <link rel="canonical" href="https://bizcaselab.com" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-16x16.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon-16x16.png"
+    />
+    <!-- i18next and language detector -->
+    <script src="https://unpkg.com/i18next@21.8.1/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@7.2.1/i18nextBrowserLanguageDetector.min.js"></script>
+
+    <meta name="author" content="BCL" />
+    <meta name="generator" content="Eleventy v2.0.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>
+      BizCaseLab - AI-Powered Case Study Platform for Business Schools
+    </title>
+    <link rel="stylesheet" href="css/theme.min.css" />
+
+    <style>
+      .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+      }
+
+      .blog-card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .blog-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .blog-card__image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .blog-card__content {
+        padding: 1.5rem;
+      }
+
+      .blog-card__date {
+        font-size: 0.875rem;
+        color: #666;
+        margin-bottom: 0.5rem;
+      }
+
+      .blog-card__title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #333;
+      }
+
+      .blog-card__excerpt {
+        font-size: 0.9rem;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      .blog-card__link {
+        display: inline-block;
+        margin-top: 1rem;
+        color: #007bff;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      /* inter-300 - latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: local(""), url("./fonts/inter-v12-latin-300.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("./fonts/inter-v12-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: local(""), url("./fonts/inter-v12-latin-500.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("./fonts/inter-v12-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local(""), url("./fonts/inter-v12-latin-700.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("./fonts/inter-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+    </style>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TPT3RTH5"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <nav
+      id="navScroll"
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      tabindex="0"
+    >
+      <div class="container">
+        <a class="navbar-brand pe-4 fs-4" href="/">
+          <img
+            src="img/logo.svg"
+            width="90"
+            height="90"
+            fill="currentColor"
+            class="bi bi-layers-half"
+            viewbox="0 0 16 16"
+          />
+          <span class="ms-1 fw-bolder"></span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="w-100 overflow-hidden bg-gray-100" id="top">
+      <div class="container position-relative">
+        <div
+          class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover"
+          data-aos="fade-left"
+        ></div>
+        <div class="row">
+          <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
+            <h3 class="display-1 fw-bold mt-5">Frequently Asked Questions</h3>
+            <p class="lead"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <head>
+      <style>
+        .content {
+          margin: 0 auto;
+          max-width: 800px; /* Adjust the width as needed */
+          padding: 20px; /* Optional: Add padding for better spacing */
+        }
+      </style>
+    </head>
+    <body>
+      <div class="content">
+        <main>
+          <section style="max-width: 800px; margin: 64px auto; padding: 0 24px">
+            <div style="display: flex; flex-direction: column; gap: 16px">
+              <details
+                style="
+                  background: white;
+                  border: 1px solid #e5e7eb;
+                  border-radius: 8px;
+                  padding: 16px;
+                  cursor: pointer;
+                "
+              >
+                <summary
+                  style="
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #1f2937;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  My institution is not on the list.
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    style="transition: transform 0.3s"
+                  >
+                    <path
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <p style="margin-top: 16px; color: #4b5563; line-height: 1.6">
+                  If your institution is not on our list, please contact our
+                  <a href="mailto:support@bizcaselab.com"> support team </a> or
+                  you can add it yourself (please check the
+                  <a href="demo.html">demo</a> page for more information.).
+                </p>
+              </details>
+
+              <details
+                style="
+                  background: white;
+                  border: 1px solid #e5e7eb;
+                  border-radius: 8px;
+                  padding: 16px;
+                  cursor: pointer;
+                "
+              >
+                <summary
+                  style="
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #1f2937;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  As an instructor, how can I create a case study?
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    style="transition: transform 0.3s"
+                  >
+                    <path
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <p style="margin-top: 16px; color: #4b5563; line-height: 1.6">
+                  Please check the <a href="demo.html">demo</a> page for more
+                  information.
+                </p>
+              </details>
+
+              <details
+                style="
+                  background: white;
+                  border: 1px solid #e5e7eb;
+                  border-radius: 8px;
+                  padding: 16px;
+                  cursor: pointer;
+                "
+              >
+                <summary
+                  style="
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #1f2937;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  Subscribe as an institution
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    style="transition: transform 0.3s"
+                  >
+                    <path
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <p style="margin-top: 16px; color: #4b5563; line-height: 1.6">
+                  If you're an institution interested in subscribing, we can set
+                  up access for your entire organization. This allows all your
+                  instructors and students to use our platform free of charge.
+                  Please contact our
+                  <a href="mailto:support@bizcaselab.com"> support team </a>.
+                </p>
+              </details>
+
+              <details
+                style="
+                  background: white;
+                  border: 1px solid #e5e7eb;
+                  border-radius: 8px;
+                  padding: 16px;
+                  cursor: pointer;
+                "
+              >
+                <summary
+                  style="
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #1f2937;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  Case study is not included with citations.
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    style="transition: transform 0.3s"
+                  >
+                    <path
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <p style="margin-top: 16px; color: #4b5563; line-height: 1.6">
+                  Our next update will include citations for all case studies.
+                </p>
+              </details>
+
+              <details
+                style="
+                  background: white;
+                  border: 1px solid #e5e7eb;
+                  border-radius: 8px;
+                  padding: 16px;
+                  cursor: pointer;
+                "
+              >
+                <summary
+                  style="
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #1f2937;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  Case study variety is limited
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    style="transition: transform 0.3s"
+                  >
+                    <path
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <p style="margin-top: 16px; color: #4b5563; line-height: 1.6">
+                  In the following months, we will add more case study creation options to our platform. You will specifically be able to create case studies with the following options:
+                  <ul>
+                    <li>Conversation-Based </li>
+                    <li>Facing a Dilemma and Making a Decision</li>
+                    <li>Evaluating Multiple Options</li>
+                    <li>Role-Playing Scenarios</li>
+                    <li>Investigating a Situation</li>
+                    <li>Encountering a Crisis</li>
+                    <li>Complete the Story</li>
+                    <li>Running a Project</li>
+                    <li>Launching a New Product or Service</li>
+                </p>
+              </details>
+
+              <details
+                style="
+                  background: white;
+                  border: 1px solid #e5e7eb;
+                  border-radius: 8px;
+                  padding: 16px;
+                  cursor: pointer;
+                "
+              >
+                <summary
+                  style="
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #1f2937;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  The promotion code is not working.
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    style="transition: transform 0.3s"
+                  >
+                    <path
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <p style="margin-top: 16px; color: #4b5563; line-height: 1.6">
+                  Please make sure you have entered the correct code. If you are
+                  still having trouble, please contact our
+                  <a href="mailto:support@bizcaselab.com"> support team </a>.
+                </p>
+              </details>
+
+              <details
+                style="
+                  background: white;
+                  border: 1px solid #e5e7eb;
+                  border-radius: 8px;
+                  padding: 16px;
+                  cursor: pointer;
+                "
+              >
+                <summary
+                  style="
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #1f2937;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  How much does one case study cost for students?
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    style="transition: transform 0.3s"
+                  >
+                    <path
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <p style="margin-top: 16px; color: #4b5563; line-height: 1.6">
+                  One average, one case study costs between $1.99 and $4.99 for
+                  students. It depends on the complexity of the case study and
+                  the number of insights provided. It also depend if you are
+                  using our evaluation and feedback system. Please contact our
+                  <a href="mailto:support@bizcaselab.com"> support team </a>, we
+                  can offer an incredible discount of up to
+                  <strong>50%</strong> for the first semester.
+                </p>
+              </details>
+
+              <details
+                style="
+                  background: white;
+                  border: 1px solid #e5e7eb;
+                  border-radius: 8px;
+                  padding: 16px;
+                  cursor: pointer;
+                "
+              >
+                <summary
+                  style="
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #1f2937;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  How I can create case study without adding a course
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    style="transition: transform 0.3s"
+                  >
+                    <path
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <p style="margin-top: 16px; color: #4b5563; line-height: 1.6">
+                  For now, you can create a case study only by adding a course.
+                  In the following months, you will be able to create a case
+                  study without adding a course. You can also create advanced
+                  case studies without a watermark and by securly uploading your
+                  own data (i.e., interviews).
+                </p>
+              </details>
+
+              <details
+                style="
+                  background: white;
+                  border: 1px solid #e5e7eb;
+                  border-radius: 8px;
+                  padding: 16px;
+                  cursor: pointer;
+                "
+              >
+                <summary
+                  style="
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #1f2937;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  How do I cancel my subscription?
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    style="transition: transform 0.3s"
+                  >
+                    <path
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <p style="margin-top: 16px; color: #4b5563; line-height: 1.6">
+                  Please contact our
+                  <a href="mailto:support@bizcaselab.com"> support team </a> to
+                  cancel your subscription.
+                </p>
+              </details>
+            </div>
+          </section>
+
+          <script>
+            document.querySelectorAll("details").forEach((detail) => {
+              detail.addEventListener("toggle", (e) => {
+                const svg = detail.querySelector("svg");
+                if (detail.open) {
+                  svg.style.transform = "rotate(180deg)";
+                } else {
+                  svg.style.transform = "rotate(0)";
+                }
+              });
+            });
+          </script>
+        </main>
+      </div>
+    </body>
+
+    <section
+      style="
+        position: relative;
+        min-height: 200px;
+        width: 100%;
+        overflow: hidden;
+      "
+    >
+      <div
+        style="
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            to bottom right,
+            #e8f1ff,
+            #f3e8ff,
+            #5479e8
+          );
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          inset: 0;
+          opacity: 0.5;
+          background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmZmZmMjAiLz4KPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI2ZmZmZmZjQwIi8+Cjwvc3ZnPg==');
+        "
+      ></div>
+      <div
+        style="
+          position: relative;
+          height: 100%;
+          padding: 64px 16px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <div style="width: 64px; height: 64px; margin-bottom: 32px">
+          <img
+            src="img/logo.svg"
+            alt="Company Logo"
+            style="width: 100%; height: 100%; object-fit: contain"
+          />
+        </div>
+        <h2
+          style="
+            font-size: 36px;
+            font-weight: bold;
+            color: #111827;
+            margin-bottom: 16px;
+            text-align: center;
+          "
+        >
+          Get started now
+        </h2>
+        <p style="font-size: 16px; color: #4b5563; margin-bottom: 32px">
+          Create Case Study for Free
+        </p>
+        <div style="display: flex; gap: 16px">
+          <a
+            href="https://instructor.bizcaselab.com"
+            style="
+              padding: 12px 24px;
+              border-radius: 8px;
+              font-size: 16px;
+              cursor: pointer;
+              transition: background-color 0.3s;
+              background: white;
+              color: #1f2937;
+              border: 1px solid #e5e7eb;
+              text-decoration: none;
+            "
+            >Create account</a
+          >
+          <a
+            href="/book-demo"
+            style="
+              padding: 12px 24px;
+              border-radius: 8px;
+              font-size: 16px;
+              cursor: pointer;
+              transition: background-color 0.3s;
+              background: #2563eb;
+              color: white;
+              border: none;
+              text-decoration: none;
+            "
+            >Book a demo</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container small border-top">
+        <div class="row py-5 d-flex justify-content-between">
+          <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+            <img src="img/logo.svg" width="60" height="60" />
+            <address class="text-secondary mt-3">
+              <strong>BizCaseLab, Inc.</strong><br />
+
+              <abbr title="Email"></abbr>
+              <a href="mailto:support@bizcaselab.com">support@bizcaselab.com</a>
+              <p>All Right Reserved.</p>
+              <p>
+                <a
+                  href="https://www.x.com/BizCaseLabCo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="img/webp/X-social.png"
+                    style="width: 30px; height: auto"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/company/bizcaselab"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="img/webp/Linkedin-social.png"
+                    style="width: 30px; height: auto"
+                /></a>
+                <a
+                  href="https://www.youtube.com/@bizcaselabco"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="img/webp/youtube-social.png"
+                    style="width: 30px; height: auto"
+                /></a>
+              </p>
+            </address>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+            <h3 class="h6 mb-3">Company</h3>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link link-secondary ps-0"
+                  aria-current="page"
+                  href="#"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link-secondary ps-0"
+                  href="privacy-policy.html"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="terms-of-use.html"
+                  >Terms and Conditions</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="#">Career</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+            <h3 class="h6 mb-3">Resources</h3>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link link-secondary ps-0"
+                  aria-current="page"
+                  href="news.html"
+                  >Newsroom</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="blog.html"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="demo.html"
+                  >How to</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xl-3 p-5">
+            <h3 class="h6 mb-3">Support</h3>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link link-secondary ps-0"
+                  aria-current="page"
+                  href="mailto:support@bizcaselab.com"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="faqs.html">FAQs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // values from 0 to 3000, with step 50ms
+      });
+    </script>
+
+    <script>
+      let scrollpos = window.scrollY;
+      const header = document.querySelector(".navbar");
+      const header_height = header.offsetHeight;
+
+      const add_class_on_scroll = () =>
+        header.classList.add("scrolled", "shadow-sm");
+      const remove_class_on_scroll = () =>
+        header.classList.remove("scrolled", "shadow-sm");
+
+      window.addEventListener("scroll", function () {
+        scrollpos = window.scrollY;
+
+        if (scrollpos >= header_height) {
+          add_class_on_scroll();
+        } else {
+          remove_class_on_scroll();
+        }
+
+        console.log(scrollpos);
+      });
+
+      // Function to update the content of the page
+      function updateContent() {
+        document.querySelectorAll("[data-i18n]").forEach(function (element) {
+          const key = element.getAttribute("data-i18n");
+          element.textContent = i18next.t(key);
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        i18next.use(i18nextBrowserLanguageDetector).init(
+          {
+            resources: {
+              en: {
+                translation: {
+                  landingTitle: "Transform Case Teaching",
+                  landingDesc:
+                    "BizCaseLab is an AI-powered platform that helps business school instructors create customized case studies.",
+                  landingBtn: "Students",
+                  landingBtnInstructor: "Instructors",
+                  paragraph: "This is an English paragraph.",
+                },
+              },
+            },
+            fallbackLng: "en",
+            debug: true,
+            lng: "en", // Explicitly set default language
+          },
+          function (err, t) {
+            if (err) return console.error(err);
+            updateContent();
+          }
+        );
+      });
+    </script>
+  </body>
+</html>
