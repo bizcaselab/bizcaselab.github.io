@@ -88,6 +88,140 @@
           /* Chrome 26+, Opera 23+, Firefox 39+ */
             url("./fonts/inter-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
       }
+      .navbar .dropdown-menu {
+        border-radius: 0;
+        border: none;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      }
+      
+      .navbar .dropdown-item:hover {
+        background-color: #f8f9fa;
+      }
+      
+      .navbar .btn {
+      
+        padding: 12px 24px;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+                    background: #2563eb;
+                    color: white;
+                    border: none;
+                    text-decoration: none;
+      }
+      
+      
+      .navbar .btn2 {
+        padding: 12px 24px;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+                    background: #292a2a;
+                    color: white;
+                    border: none;
+                    text-decoration: none;
+      }
+      
+      
+      .navbar .btn-outline-primary:hover {
+        background-color: #0f1011;
+        color: white;
+      }
+      .navbar .dropdown {
+        position: relative;
+      }
+      /* Add this to your existing CSS in the <style> section */
+        
+        .navbar .dropdown-menu[data-bs-popper] {
+          margin-top: 0;
+        }
+        
+        .navbar .dropdown:hover .dropdown-menu,
+        .navbar .dropdown.show .dropdown-menu {
+          display: block;
+        }
+        
+        .navbar .dropdown-menu li {
+          list-style: none; /* Remove bullets */
+        }
+        
+        .navbar .dropdown-item {
+          padding: 0.5rem 1.5rem;
+          transition: background-color 0.2s;
+        }
+        
+        .navbar .dropdown-item:hover {
+          background-color: #f8f9fa;
+        }
+        
+        .navbar .dropdown-toggle::after {
+          margin-left: 0.5em;
+        }
+        /* Add this CSS in the <style> section */
+        .navbar .dropdown-menu {
+          border-radius: 0.4rem; /* Slightly rounded corners */
+          border: none;
+          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+          display: none;
+          background-color: #f8f9fa;
+          margin-top: 0;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          min-width: 220px; /* Slightly wider */
+          padding: 0.5rem 0;
+          z-index: 1000; /* Add z-index to ensure dropdown appears above other content */
+          line-height: 3; /* Increase the gap between lines */
+        }
+      
+      .navbar .nav-link {
+        text-decoration: none;
+        position: relative;
+        transition: all 0.3s ease;
+      }
+      
+      .navbar .dropdown-item {
+        text-decoration: none;
+        padding: 0.5rem 1.5rem;
+        color: #212529;
+        transition: background-color 0.2s;
+      }
+      
+      .navbar .dropdown-item:hover {
+        background-color: #f8f9fa;
+        color: #0d6efd;
+      }
+      
+      .navbar .dropdown:hover .dropdown-menu,
+      .navbar .dropdown.show .dropdown-menu {
+        display: block;
+        animation: fadeIn 0.3s ease;
+      }
+      
+      .navbar .nav-item {
+        position: static;
+      }
+      
+      .navbar .nav-item.dropdown {
+        position: relative; /* Change from static to relative */
+      }
+      .navbar .dropdown-toggle::after {
+        margin-left: 0.5em;
+        vertical-align: middle;
+      }
+      
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     </style>
   </head>
 
@@ -99,38 +233,123 @@
 
 
     
-    <nav
-      id="navScroll"
-      class="navbar navbar-expand-lg navbar-light fixed-top"
-      tabindex="0"
-    >
-      <div class="container">
-        <a class="navbar-brand pe-4 fs-4" href="/">
-          <img
-            src="img/logo.svg"
-            width="90"
-            height="90"
-            fill="currentColor"
-            class="bi bi-layers-half"
-            viewbox="0 0 16 16"
-          />
-          <span class="ms-1 fw-bolder"></span>
-        </a>
+   
+        <nav
+        id="navScroll"
+        class="navbar navbar-expand-lg navbar-light fixed-top"
+        tabindex="0"
+      >
+        <div class="container">
+          <a class="navbar-brand pe-4 fs-4" href="/">
+            <img
+              src="img/logo.svg"
+              width="90"
+              height="90"
+              fill="currentColor"
+              class="bi bi-layers-half"
+              viewbox="0 0 16 16"
+            />
+            <span class="ms-1 fw-bolder"></span>
+          </a>
+  
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- User Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="companyDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Users
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="companyDropdown">
+                  <li><a class="dropdown-item" href="professors.html">Professors</a></li>
+                <li>
+                  <a class="dropdown-item" href="students.html">Students</a
+                  >
+                </li>
+                </ul>
+              </li>
+  
+              <!-- Resources Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="resourcesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Resources
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                  <li><a class="dropdown-item" href="demo.html">How To</a></li>
+                  <li><a class="dropdown-item" href="faqs.html">FAQ</a></li>
+                  <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                  <li><a class="dropdown-item" href="news.html">Newsroom</a></li>
+                </ul>
+              </li>
+              <!-- Company Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="companyDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Company
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="companyDropdown">
+                  <li><a class="dropdown-item" href="#about">About Us</a></li>
+                  <li>
+                    <a class="dropdown-item" href="privacy-policy.html"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="terms-of-use.html"
+                      >Terms and Conditions</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#careers">Careers</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="demo.html">How To</a>
+              </li>
+            </ul>
+  
+            <!-- Add buttons on the right -->
+            <div class="d-flex">
+                           <a href="https://student.bizcaselab.com" class="btn2 btn-outline-primary me-2">Students Portal</a>  
+                           <a href="https://instructor.bizcaselab.com" class="btn2 btn-outline-primary me-2">Professors Portal</a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-      </div>
-    </nav>
+                           <!--    <a href="https://instructor.bizcaselab.com" class="btn btn-primary">Instructor Portal</a>      -->          
+                                   <a href="https://calendly.com/businesscaselab/45min" class="btn btn-primary">Book a Demo</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+  
 
 
     <div class="w-100 overflow-hidden bg-gray-100" id="top">
@@ -414,6 +633,7 @@
       </div>
     </section>
 
+
     <footer>
       <div class="container small border-top">
         <div class="row py-5 d-flex justify-content-between">
@@ -490,6 +710,16 @@
             <h3 class="h6 mb-3">Resources</h3>
             <ul class="nav flex-column">
               <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="demo.html"
+                  >How to</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="faqs.html"
+                  >FAQs</a
+                >
+              </li>
+              <li class="nav-item">
                 <a
                   class="nav-link link-secondary ps-0"
                   aria-current="page"
@@ -497,14 +727,10 @@
                   >Newsroom</a
                 >
               </li>
+
               <li class="nav-item">
                 <a class="nav-link link-secondary ps-0" href="blog.html"
                   >Blog</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-secondary ps-0" href="demo.html"
-                  >How to</a
                 >
               </li>
             </ul>
@@ -520,9 +746,6 @@
                   href="mailto:support@bizcaselab.com"
                   >Contact Us</a
                 >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-secondary ps-0" href="faqs.html">FAQs</a>
               </li>
             </ul>
           </div>
