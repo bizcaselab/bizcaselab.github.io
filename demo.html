@@ -484,7 +484,7 @@
                   Company
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="companyDropdown">
-                  <li><a class="dropdown-item" href="#about">About Us</a></li>
+                  <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
                   <li>
                     <a class="dropdown-item" href="privacy-policy.html"
                       >Privacy Policy</a
@@ -793,7 +793,7 @@
                 <a
                   class="nav-link link-secondary ps-0"
                   aria-current="page"
-                  href="#"
+                  href="aboutus.html"
                   >About Us</a
                 >
               </li>
@@ -892,6 +892,42 @@
 
         console.log(scrollpos);
       });
+
+      // Function to handle tab switching
+      function openTab(tabId, element) {
+        // Remove active class from all tabs and contents
+        document.querySelectorAll(".tab-content").forEach((content) => {
+          content.classList.remove("active", "fade-in");
+        });
+        document.querySelectorAll(".tab").forEach((tab) => {
+          tab.classList.remove("active-tab");
+        });
+
+        // Add active class to selected tab and content
+        document.getElementById(tabId).classList.add("active", "fade-in");
+        element.classList.add("active-tab");
+        
+        // Update URL hash without triggering page reload
+        history.pushState(null, null, `#${tabId}`);
+      }
+
+      // Function to handle URL hash changes
+      function handleHash() {
+        const hash = window.location.hash.substring(1); // Remove the # symbol
+        if (hash === 'studentTab' || hash === 'instructorTab') {
+          // Find the corresponding tab button
+          const tabButton = document.querySelector(`.tab[onclick*="${hash}"]`);
+          if (tabButton) {
+            openTab(hash, tabButton);
+          }
+        }
+      }
+
+      // Add event listeners
+      document.addEventListener('DOMContentLoaded', handleHash);
+      window.addEventListener('hashchange', handleHash);
+
+
 
       // Function to update the content of the page
       function updateContent() {

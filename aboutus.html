@@ -23,17 +23,32 @@
     />
     <meta
       name="description"
-      content="BizCaseLab is an AI-powered platform that helps business school instructors create case studies. Start now with AI-driven Case Study."
+      content="BizCaseLab is an AI-powered platform that helps business school instructors create customized, real-world case studies in seconds. Start now with AI-driven insights."
     />
     <meta
       name="keywords"
-      content="AI case study platform, Business case studies, AI for teaching, AI-powered education, Create case studies, Business case study, BizCaseLab"
+      content="AI case study platform, Business case studies, AI for teaching, AI-powered education, Create case studies, Business case study generator, BizCaseLab"
     />
     <link rel="canonical" href="https://bizcaselab.com" />
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon-16x16.png"
+    />
     <!-- i18next and language detector -->
     <script src="https://unpkg.com/i18next@21.8.1/i18next.min.js"></script>
     <script src="https://unpkg.com/i18next-browser-languagedetector@7.2.1/i18nextBrowserLanguageDetector.min.js"></script>
@@ -76,40 +91,6 @@
           /* Chrome 26+, Opera 23+, Firefox 39+ */
             url("./fonts/inter-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
       }
-
-      .subscription-form .form-control:focus {
-        border-color: #2563eb;
-        box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
-      }
-
-      .subscription-form .btn-primary:hover {
-        background-color: #1d4ed8;
-        transform: translateY(-1px);
-        transition: all 0.3s ease;
-      }
-
-      .subscription-form {
-        transition: all 0.3s ease;
-      }
-
-      .subscription-form:hover {
-        transform: translateY(-5px);
-      }
-
-      @media (max-width: 768px) {
-        .subscription-form .input-group {
-          flex-direction: column;
-        }
-
-        .subscription-form .form-control,
-        .subscription-form .btn {
-          border-radius: 8px;
-          margin: 5px 0;
-          width: 100%;
-        }
-      }
-
-      /* Add to your existing CSS or theme.min.css */
       .navbar .dropdown-menu {
         border-radius: 0;
         border: none;
@@ -132,8 +113,20 @@
         text-decoration: none;
       }
 
+      .navbar .btn2 {
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        background: #292a2a;
+        color: white;
+        border: none;
+        text-decoration: none;
+      }
+
       .navbar .btn-outline-primary:hover {
-        background-color: #0d6efd;
+        background-color: #0f1011;
         color: white;
       }
       .navbar .dropdown {
@@ -353,7 +346,17 @@
 
           <!-- Add buttons on the right -->
           <div class="d-flex">
-            <!--   <a href="https://student.bizcaselab.com" class="btn btn-outline-primary me-2">Student Portal</a>-->
+            <a
+              href="https://student.bizcaselab.com"
+              class="btn2 btn-outline-primary me-2"
+              >Students Portal</a
+            >
+            <a
+              href="https://instructor.bizcaselab.com"
+              class="btn2 btn-outline-primary me-2"
+              >Professors Portal</a
+            >
+
             <!--    <a href="https://instructor.bizcaselab.com" class="btn btn-primary">Instructor Portal</a>      -->
             <a
               href="https://calendly.com/businesscaselab/45min"
@@ -365,38 +368,117 @@
       </div>
     </nav>
 
-    <main>
-      <div class="w-100 overflow-hidden bg-gray-100" id="top">
-        <div class="container position-relative">
-          <div
-            class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover"
-            data-aos="fade-left"
-          ></div>
-          <div class="row">
-            <div
-              class="col-lg-7 py-vh-6 position-relative"
-              data-aos="fade-right"
-            >
-              <h1 class="display-1 fw-bold mt-5" data-i18n="landingTitle"></h1>
-              <p class="lead" data-i18n="landingDesc"></p>
-              <a
-                href="https://student.bizcaselab.com"
-                target="_blank"
-                class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5"
-                ><h1 data-i18n="landingBtn"></h1
-              ></a>
-
-              <a
-                href="https://instructor.bizcaselab.com"
-                target="_blank"
-                class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5"
-                ><h1 data-i18n="landingBtnInstructor"></h1
-              ></a>
-            </div>
+    <div class="w-100 overflow-hidden bg-gray-100" id="top">
+      <div class="container position-relative">
+        <div
+          class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover"
+          data-aos="fade-left"
+        ></div>
+        <div class="row">
+          <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
+            <h1 class="display-1 fw-bold mt-5">About BizCaseLab</h1>
+            <p class="lead"></p>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+
+    <head>
+      <style>
+        .content {
+          margin: 0 auto;
+          max-width: 800px; /* Adjust the width as needed */
+          padding: 20px; /* Optional: Add padding for better spacing */
+        }
+      </style>
+    </head>
+    <body>
+      <div class="content">
+        <main>
+          <h3>BizCaseLab: Democratizing Case-Based Learning</h3>
+          <p>
+            At BizCaseLab, we’re on a mission to democratize case-based
+            learning. Born from the firsthand struggles of business school
+            professors, we’ve built a platform where all educators around the
+            world can create, share, and access
+            <strong>context-rich, classroom-ready case studies</strong>—no
+            exclusivity, no barriers.
+          </p>
+
+          <h3>Our Innovative Solution</h3>
+          <p>
+            We’ve designed an intuitive solution that turns months of case
+            development and publishing bureaucracy into seconds. Unlike legacy
+            cases built for competitions, conferences or just publishing ,
+            BizCaseLab focuses on:
+          </p>
+
+          <ol>
+            <li>
+              <strong>Classroom-first design:</strong> Cases structured for your
+              classes and courses, designed to maximize engagement and
+              relevance.
+            </li>
+            <li>
+              <strong>Custom context:</strong> Highlighting homegrown businesses
+              while supporting global perspectives. You can craft case studies
+              for any company you want.
+            </li>
+            <li>
+              <strong>Educator autonomy:</strong> Tools to tailor cases to
+              specific industries, regions, or learning levels.
+            </li>
+          </ol>
+
+          <h3>Why Trust BizCaseLab?</h3>
+          <p>
+            Our team brings decades of combined teaching experience in business
+            schools from various institutions. We’ve walked the lecture halls,
+            graded the papers, and seen the gaps—now we’re bridging them with:
+          </p>
+
+          <ul>
+            <li>
+              AI-assisted case drafting (think structure suggestions, not
+              generic content)
+            </li>
+            <li>Easily share cases with students</li>
+            <li>Completely free for instructors</li>
+            <li>
+              Provides evaluation tools to help you assess student performance
+            </li>
+          </ul>
+
+          <h3>Join the Movement</h3>
+          <blockquote>
+            “Great teaching starts with great material—and great material should
+            belong to everyone.”
+          </blockquote>
+          <p>
+            This belief drives our community. Whether you’re a professor in
+            Vancouver or teaching supply chains in Nairobi, we’re here to help
+            you:
+          </p>
+
+          <ul>
+            <li><strong>Build cases</strong> that spark “aha!” moments</li>
+            <li>
+              <strong>Connect</strong> with a global network of practice-focused
+              peers
+            </li>
+            <li>
+              <strong>Teach</strong> tomorrow’s leaders using today’s business
+              realities
+            </li>
+          </ul>
+
+          <p>
+            Let’s stop adapting to outdated cases—and start creating what’s
+            missing.
+          </p>
+        </main>
+      </div>
+    </body>
 
     <section
       style="
@@ -475,7 +557,7 @@
             >Create account</a
           >
           <a
-            href="https://calendly.com/businesscaselab/45min"
+            href="mailto:support@bizcaselab.com"
             style="
               padding: 12px 24px;
               border-radius: 8px;
@@ -619,35 +701,6 @@
         duration: 800, // values from 0 to 3000, with step 50ms
       });
     </script>
-    <script>
-      const menuToggle = document.querySelector(".menu-toggle");
-      const navLinks = document.querySelector(".nav-links");
-      const dropdowns = document.querySelectorAll(".dropdown");
-
-      menuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-
-      dropdowns.forEach((dropdown) => {
-        const button = dropdown.querySelector(".dropdown-btn");
-        button.addEventListener("click", (e) => {
-          if (window.innerWidth <= 800) {
-            e.preventDefault();
-            dropdowns.forEach((d) => {
-              if (d !== dropdown) d.classList.remove("active");
-            });
-            dropdown.classList.toggle("active");
-          }
-        });
-      });
-
-      window.addEventListener("resize", () => {
-        if (window.innerWidth > 800) {
-          navLinks.classList.remove("active");
-          dropdowns.forEach((dropdown) => dropdown.classList.remove("active"));
-        }
-      });
-    </script>
 
     <script>
       let scrollpos = window.scrollY;
@@ -678,18 +731,18 @@
           element.textContent = i18next.t(key);
         });
       }
+
       document.addEventListener("DOMContentLoaded", function () {
         i18next.use(i18nextBrowserLanguageDetector).init(
           {
             resources: {
               en: {
                 translation: {
-                  landingTitle:
-                    '<span style="color: #004aad;">Transform Case Teaching</span>',
+                  landingTitle: "Transform Case Teaching",
                   landingDesc:
-                    "Get the most relevant, engaging, and impactful case studies to elevate your class experience",
+                    "BizCaseLab is an AI-powered platform that helps business school instructors create customized case studies.",
                   landingBtn: "Students",
-                  landingBtnInstructor: "Professors",
+                  landingBtnInstructor: "Instructors",
                   paragraph: "This is an English paragraph.",
                 },
               },
@@ -703,11 +756,6 @@
             updateContent();
           }
         );
-
-        // Enable HTML in i18next translations
-        document.querySelectorAll("[data-i18n]").forEach(function (element) {
-          element.innerHTML = i18next.t(element.getAttribute("data-i18n"));
-        });
       });
     </script>
   </body>
