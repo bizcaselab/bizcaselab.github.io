@@ -16,11 +16,11 @@
     />
     <meta
       name="description"
-      content="BizCaseLab is an AI-powered platform that helps business school instructors create customized, real-world case studies in seconds. Start now with AI-driven insights."
+      content="Craft case study for business classes, MBA programs, and executive education. Save Time. Engage Students. Elevate Learning. AI Grading and AI based Feedback"
     />
     <meta
       name="keywords"
-      content="AI case study platform, Business case studies, AI for teaching, AI-powered education, Create case studies, Business case study generator, BizCaseLab"
+      content="AI case study, business school Professor, AI for teaching, AI-powered education, EduTech, Business case study generator, BizCaseLab"
     />
     <link rel="canonical" href="https://bizcaselab.com" />
     <link
@@ -223,6 +223,66 @@
     transform: translateY(0);
   }
 }
+
+.stats-section {
+  padding: 8rem 0;
+  background-color: #f8f9fa;
+}
+
+.stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  margin-top: 4rem;
+}
+
+.stat-item {
+  padding: 3rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  min-width: 250px;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+}
+
+.stat-number {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #2563eb;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 1.25rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .stat-item {
+    width: 100%;
+  }
+  .stats-section {
+    padding: 4rem 0;
+  }
+}
+
     </style>
   </head>
 
@@ -443,7 +503,25 @@
     </div>
 
 
-
+    <section class="stats-section">
+      <div class="stats-container">
+        <h2 class="display-5 fw-bold mb-4" data-aos="fade-up">How We Make a Difference</h2>
+        <div class="stats-grid">
+          <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat-number">20.5%</div>
+            <div class="stat-label">Improved Class Evaluation</div>
+          </div>
+          <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-number">61+</div>
+            <div class="stat-label">hours saved per semester</div>
+          </div>
+          <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Statisfaction</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
     <div class="container py-vh-4 w-100 overflow-hidden">
@@ -554,7 +632,7 @@
         <div class="container py-vh-6">
           <div class="row d-flex justify-content-center">
             <div class="col-12 col-lg-10 col-xl-8 text-center">
-              <h2 class="display-6"><mark><strong>Coming Soon...</strong></mark></h2>
+              <h2 class="display-6"><strong>Coming Soon...</strong></h2>
               <p class="lead">
                 The following features and tools will be available in upcoming updates:
               </p>

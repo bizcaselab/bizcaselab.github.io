@@ -23,7 +23,7 @@
     />
     <meta
       name="description"
-      content="BizCaseLab is an AI-powered platform that helps business school instructors create case studies. Start now with AI-driven Case Study."
+      content="BizCaseLab is an AI-powered platform that helps business school instructors and professors create case studies. Start now with AI-driven Case Study."
     />
     <meta
       name="keywords"
@@ -229,6 +229,64 @@
           transform: translateY(0);
         }
       }
+      .stats-section {
+        padding: 8rem 0;
+        background-color: #f8f9fa;
+      }
+
+      .stats-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 1rem;
+      }
+
+      .stats-grid {
+        display: flex;
+        justify-content: center;
+        gap: 6rem;
+        margin-top: 4rem;
+      }
+
+      .stat-item {
+        padding: 3rem;
+        background: white;
+        border-radius: 1rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        min-width: 250px;
+      }
+
+      .stat-item:hover {
+        transform: translateY(-5px);
+      }
+
+      .stat-number {
+        font-size: 4.5rem;
+        font-weight: 800;
+        color: #2563eb;
+        margin-bottom: 1rem;
+        line-height: 1;
+      }
+
+      .stat-label {
+        font-size: 1.25rem;
+        color: #4b5563;
+        font-weight: 500;
+      }
+
+      @media (max-width: 768px) {
+        .stats-grid {
+          flex-direction: column;
+          gap: 2rem;
+        }
+        .stat-item {
+          width: 100%;
+        }
+        .stats-section {
+          padding: 4rem 0;
+        }
+      }
     </style>
   </head>
 
@@ -397,6 +455,28 @@
         </div>
       </div>
     </main>
+
+    <section class="stats-section">
+      <div class="stats-container">
+        <h2 class="display-5 fw-bold mb-4" data-aos="fade-up">
+          Trusted by Educators across the World
+        </h2>
+        <div class="stats-grid">
+          <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat-number">16+</div>
+            <div class="stat-label">Active Courses</div>
+          </div>
+          <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-number">1000+</div>
+            <div class="stat-label">Students Enrolled</div>
+          </div>
+          <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-number">8+</div>
+            <div class="stat-label">Universities and Colleges</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section
       style="
@@ -687,7 +767,7 @@
                   landingTitle:
                     '<span style="color: #004aad;">Transform Case Teaching</span>',
                   landingDesc:
-                    "Get the most relevant, engaging, and impactful case studies to elevate your class experience",
+                    "Craft the most relevant, engaging, and impactful case studies.",
                   landingBtn: "Students",
                   landingBtnInstructor: "Professors",
                   paragraph: "This is an English paragraph.",
