@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO Meta Tags -->
     <title>
-      News & Updates - BizCaseLab | Latest Business Case Study Innovations
-    </title>
+      For Companies - BizCaseLab | Connect Your Business Challenges with Academic Expertise    </title>
     <meta
       name="description"
-      content="Stay updated with the latest news and developments from BizCaseLab. Learn about new features, case study innovations, educational insights, and how our AI platform is transforming business education."
+      content="BizCaseLab connects companies with university professors to transform your real-world business challenges into educational case studies. Build your talent pipeline while gaining fresh insights from future business leaders."
     />
     <meta
       name="keywords"
-      content="business case news, education technology updates, case study innovation, BizCaseLab updates, business education trends, AI in education news, teaching resources updates, case method developments"
+      content="business-academia partnerships, corporate case studies, talent pipeline development, university collaboration, real-world business challenges, student insights, academic partnerships, industry-specific case studies, business education engagement"
     />
     <meta name="author" content="BizCaseLab" />
-    <link rel="canonical" href="https://bizcaselab.com/news" />
+    <link rel="canonical" href="https://bizcaselab.com/company" />    
 
     <!-- Favicon -->
     <link rel="icon" href="img/favicon.png" />
@@ -1278,192 +1277,347 @@
           </div>
         </div>
       </header>
+      <!-- notification banner -->
+      <div
+        id="notification-banner"
+        class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1"
+      >
+        <style>
+          @keyframes float-left {
+            0% {
+              transform: translate(-50%, -50%) rotate(0deg) scale(1);
+            }
+            50% {
+              transform: translate(-51%, -52%) rotate(1deg) scale(1.05);
+            }
+            100% {
+              transform: translate(-50%, -50%) rotate(0deg) scale(1);
+            }
+          }
+          @keyframes float-right {
+            0% {
+              transform: translate(-50%, -50%) rotate(0deg) scale(1);
+            }
+            50% {
+              transform: translate(-49%, -48%) rotate(-1deg) scale(1.05);
+            }
+            100% {
+              transform: translate(-50%, -50%) rotate(0deg) scale(1);
+            }
+          }
+          @keyframes pulse-glow {
+            0% {
+              opacity: 0.25;
+            }
+            50% {
+              opacity: 0.45;
+            }
+            100% {
+              opacity: 0.25;
+            }
+          }
+          .bg-blur-left {
+            animation: float-left 9s ease-in-out infinite,
+              pulse-glow 7s ease-in-out infinite;
+          }
+          .bg-blur-right {
+            animation: float-right 13s ease-in-out infinite,
+              pulse-glow 8s ease-in-out infinite;
+          }
+        </style>
 
+        <div
+          class="absolute top-1/2 left-[max(-7rem,calc(50%-52rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl bg-blur-left"
+          aria-hidden="true"
+        >
+          <div
+            class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+            style="
+              clip-path: polygon(
+                74.8% 41.9%,
+                97.2% 73.2%,
+                100% 34.9%,
+                92.5% 0.4%,
+                87.5% 0%,
+                75% 28.6%,
+                58.5% 54.6%,
+                50.1% 56.8%,
+                46.9% 44%,
+                48.3% 17.4%,
+                24.7% 53.9%,
+                0% 27.9%,
+                11.9% 74.2%,
+                24.9% 54.1%,
+                68.6% 100%,
+                74.8% 41.9%
+              );
+            "
+          ></div>
+        </div>
+
+        <div
+          class="absolute top-1/2 left-[max(45rem,calc(50%+8rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl bg-blur-right"
+          aria-hidden="true"
+        >
+          <div
+            class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#9089fc] to-[#ff80b5] opacity-30"
+            style="
+              clip-path: polygon(
+                74.8% 41.9%,
+                97.2% 73.2%,
+                100% 34.9%,
+                92.5% 0.4%,
+                87.5% 0%,
+                75% 28.6%,
+                58.5% 54.6%,
+                50.1% 56.8%,
+                46.9% 44%,
+                48.3% 17.4%,
+                24.7% 53.9%,
+                0% 27.9%,
+                11.9% 74.2%,
+                24.9% 54.1%,
+                68.6% 100%,
+                74.8% 41.9%
+              );
+            "
+          ></div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <p class="text-sm/6 text-gray-900">
+            <strong class="font-semibold">🎉 March 24th, 2025</strong
+            ><svg
+              viewBox="0 0 2 2"
+              class="mx-2 inline size-0.5 fill-current"
+              aria-hidden="true"
+            >
+              <circle cx="1" cy="1" r="1" /></svg
+            >Join us in our online workshop on how to craft your case study.
+          </p>
+          <a
+            href="workshop.html"
+            class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-xs hover:bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+            >Register now <span aria-hidden="true">&rarr;</span></a
+          >
+        </div>
+        <div class="flex flex-1 justify-end">
+          <button
+            type="button"
+            id="close-banner"
+            class="-m-3 p-3 focus-visible:outline-offset-[-4px]"
+          >
+            <span class="sr-only">Dismiss</span>
+            <svg
+              class="size-5 text-gray-900"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+              data-slot="icon"
+            >
+              <path
+                d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
 
 <!-- Hero Section -->
-<div class="relative bg-gradient-to-b from-blue-50 to-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
-  <!-- Decorative elements -->
-  <div class="absolute inset-0 -z-10 overflow-hidden">
-    <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-blue-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true">
+<div class="relative isolate overflow-hidden bg-white py-20 sm:py-32">
+  <!-- Gradient background elements -->
+  <div class="absolute inset-0 -z-10">
+    <svg class="absolute inset-0 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
       <defs>
-        <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-          <path d="M100 200V.5M.5 .5H200" fill="none" />
+        <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M0 40V.5H40" fill="none" />
         </pattern>
       </defs>
-      <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+      <rect width="100%" height="100%" stroke-width="0" fill="url(#grid-pattern)" />
     </svg>
-  </div>
-
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl text-center">
-      <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">BizCaseLab Newsroom</h1>
-      <p class="mt-6 text-lg leading-8 text-gray-600">
-        Stay updated with the latest announcements, product updates, and developments from BizCaseLab.
-      </p>
+    <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0">
+      <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-blue-300 to-blue-600 opacity-15" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
     </div>
-
-    <!-- Featured news item -->
-    <div class="mx-auto mt-16 max-w-3xl rounded-2xl overflow-hidden shadow-lg bg-white ring-1 ring-gray-200 transition-all hover:shadow-xl">
-      <div class="relative">
-        <img src="img/homepage-newwebsite-bizcaselab.com.png" alt="Featured news" class="aspect-[16/9] w-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-        <div class="absolute bottom-0 left-0 p-6 text-white">
-          <span class="inline-flex items-center rounded-full bg-blue-600 px-3 py-1 text-sm font-medium text-white">
-            Featured
+  </div>
+  
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="lg:grid lg:grid-cols-12 lg:gap-x-12 items-center">
+      <!-- Left column for text content -->
+      <div class="lg:col-span-7 xl:col-span-6">
+        <div class="mb-8">
+          <span class="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-sm font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">
+            Coming Soon
           </span>
         </div>
-      </div>
-      <div class="p-6 sm:p-10">
-        <div class="flex items-center gap-x-4 text-xs">
-          <time datetime="2023-03-16" class="text-gray-500">Mar 02, 2025</time>
-          <span class="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600">
-            Company News
-          </span>
-        </div>
-        <div class="group">
-          <h3 class="mt-3 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-blue-600">
-            BizCaseLab Launches New Website with Enhanced User Experience
-          </h3>
-          <p class="mt-5 line-clamp-3 text-base leading-6 text-gray-600">
-            We're excited to announce the launch of our completely redesigned website, offering a more intuitive interface and improved navigation for professors, students, and companies. The new site features dedicated sections for all user types, streamlined access to resources, and a modern design that reflects our commitment to educational innovation.
-          </p>
-        </div>
-        <div class="mt-6">
-          <a href="#" class="inline-flex items-center gap-x-2 text-sm font-semibold text-blue-600 hover:text-blue-800">
-            Read full article
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+          Connect Your <span class="text-blue-600">Company</span> to Tomorrow's Talent
+        </h1>
+        <p class="mt-6 text-lg text-gray-600">
+          Bridge the gap between corporate challenges and academic expertise. Our platform allows companies to securely connect with university professors to create custom case studies based on real-world business challenges.
+        </p>
+        
+        <!-- CTA section -->
+        <div class="mt-10 flex flex-col sm:flex-row gap-5">
+          <a href="#" class="rounded-md bg-blue-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all duration-200 text-center">
+            Join the waitlist
+          </a>
+          <a href="#learn-more" class="rounded-md bg-white px-6 py-3 text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 transition-all duration-200 text-center flex items-center justify-center">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
             </svg>
           </a>
+        </div>        
+      </div>
+      
+      <!-- Right column for illustration -->
+      <div class="hidden lg:block lg:col-span-5 xl:col-span-6 mt-10 lg:mt-0">
+        <div class="relative rounded-2xl bg-white shadow-xl ring-1 ring-gray-900/5 overflow-hidden">
+          <div class="p-1 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-2xl">
+            <img src="img/company-bizcaselab.com.jpg" alt="Company and university collaboration" class="w-full rounded-xl aspect-[4/3] object-cover">
+          </div>
+          
+          <!-- Connection badge 
+          <div class="absolute -bottom-2 -right-2 md:bottom-4 md:right-4 bg-white/90 backdrop-blur rounded-2xl p-4 shadow-lg border border-gray-100">
+            <div class="flex items-center">
+              <div class="flex-shrink-0 mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-blue-600">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
+                </svg>
+              </div>
+              <div>
+                <p class="text-xs text-gray-500">Industry-Academia Partnership</p>
+                <p class="font-semibold text-sm">85% of companies report improved talent acquisition</p>
+              </div>
+            </div>
+          </div>-->
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- News Grid Section -->
-<div class="bg-white py-24 sm:py-32">
+<!-- Global Reach Section -->
+<section id="learn-more" class="relative bg-gradient-to-b from-white to-blue-50/30 py-24 sm:py-32 overflow-hidden">
+  <!-- Decorative background elements -->
+  <div class="absolute inset-0 -z-10">
+    <!-- World map as transparent background -->
+    <div class="absolute inset-0 opacity-[0.08]">
+      <img src="img/map-professor.svg" alt="World map" class="w-full h-full object-cover">
+    </div>
+    <div class="absolute -right-40 -bottom-40 h-80 w-80 opacity-10">
+      <svg viewBox="0 0 100 100" class="h-full w-full fill-blue-600">
+        <defs>
+          <pattern id="company-dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <circle cx="10" cy="10" r="2" fill="currentColor"></circle>
+          </pattern>
+        </defs>
+        <rect width="100" height="100" fill="url(#company-dots)"></rect>
+      </svg>
+    </div>
+    <div class="absolute top-1/4 left-10 h-32 w-32 opacity-20 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 blur-2xl"></div>
+    <div class="absolute bottom-1/4 right-1/4 h-24 w-24 opacity-15 rounded-full bg-gradient-to-tr from-blue-500 to-teal-500 blur-xl"></div>
+  </div>
+
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Latest News</h2>
-      <p class="mt-2 text-lg leading-8 text-gray-600">
-        Keep up with our recent announcements, partnerships, and product updates.
+    <div class="mb-16 text-center">
+      <h2 class="text-base font-semibold leading-7 text-blue-600">Strengthen Industry-Academia Connections</h2>
+      <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+        Create Case Studies From Across The World
+      </p>
+      <p class="mt-6 text-lg leading-8 text-gray-600 max-w-3xl mx-auto">
+        Empower future employees with real-world challenges while gaining valuable insights from academic perspectives.
       </p>
     </div>
-    
-    <!-- News filters -->
-    <div class="mt-8 flex flex-wrap gap-3">
-      <button class="inline-flex items-center rounded-full bg-blue-600 px-4 py-1.5 text-sm font-medium text-white">
-        All News
-      </button>
-      <button class="inline-flex items-center rounded-full bg-gray-100 px-4 py-1.5 text-sm font-medium text-gray-600 hover:bg-gray-200">
-        Product Updates
-      </button>
-      <button class="inline-flex items-center rounded-full bg-gray-100 px-4 py-1.5 text-sm font-medium text-gray-600 hover:bg-gray-200">
-        Company News
-      </button>
-      <button class="inline-flex items-center rounded-full bg-gray-100 px-4 py-1.5 text-sm font-medium text-gray-600 hover:bg-gray-200">
-        Partnerships
-      </button>
-      <button class="inline-flex items-center rounded-full bg-gray-100 px-4 py-1.5 text-sm font-medium text-gray-600 hover:bg-gray-200">
-        Events
-      </button>
-    </div>
-    
-    <!-- News grid -->
-    <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-      <!-- News item 1 -->
-      <article class="flex max-w-xl flex-col items-start">
-        <div class="flex items-center gap-x-4 text-xs">
-          <time datetime="2023-02-15" class="text-gray-500">Feb 15, 2025</time>
-          <span class="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600">Events</span>
-        </div>
-        <div class="group relative">
-          <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-blue-600">
-            <a href="#">
-              <span class="absolute inset-0"></span>
-              BizCaseLab Announces First Free Online Workshop Series
-            </a>
-          </h3>
-          <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">We're excited to announce our first series of free online workshops on how to use the BizCaseLab platform. These interactive sessions will cover everything from creating case studies to analyzing student responses, with separate tracks for professors and students.</p>
-        </div>
-        <!--<div class="relative mt-8 flex items-center gap-x-4">
-          <img src="img/news-author-2.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-100">
-          <div class="text-sm leading-6">
-            <p class="font-semibold text-gray-900">
-              <span class="absolute inset-0"></span>
-              Michael Chen
-            </p>
-            <p class="text-gray-600">Partnerships Director</p>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16 items-center">
+      <!-- Left Side: Three Cards -->
+      <div class="space-y-10">
+        <!-- Card 1: Connect with Universities -->
+        <div class="bg-white rounded-2xl shadow-lg shadow-blue-100/40 p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 -mr-8 -mt-8 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full opacity-70 group-hover:opacity-100 transition-all duration-300"></div>
+          <div class="relative">
+            <div class="flex items-center space-x-4 mb-4">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">Connect with Universities</h3>
+            </div>
+            <p class="text-gray-600">Create secure partnerships with leading business schools and faculty to develop case studies based on your company's specific challenges.</p>
           </div>
-        </div> -->
-      </article>
-
-
-
-      <!-- News item 2 -->
-      <article class="flex max-w-xl flex-col items-start">
-        <div class="flex items-center gap-x-4 text-xs">
-          <time datetime="2023-03-01" class="text-gray-500">Feb 1, 2025</time>
-          <span class="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600">Milestone</span>
         </div>
-        <div class="group relative">
-          <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-blue-600">
-            <a href="#">
-              <span class="absolute inset-0"></span>
-              BizCaseLab Celebrates 1,000 Student Registration Milestone
-            </a>
-          </h3>
-          <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">We're excited to announce that we've reached a significant milestone with over 1,000 student registrations on our platform. This achievement reflects the growing adoption of our case-based learning approach across business schools worldwide.</p>
-        </div>
-        <!--<div class="relative mt-8 flex items-center gap-x-4">
-          <img src="img/news-author-1.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-100">
-          <div class="text-sm leading-6">
-            <p class="font-semibold text-gray-900">
-              <span class="absolute inset-0"></span>
-              Sarah Johnson
-            </p>
-            <p class="text-gray-600">Product Manager</p>
+        
+        <!-- Card 2: Submit Business Challenges -->
+        <div class="bg-white rounded-2xl shadow-lg shadow-blue-100/40 p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 -mr-8 -mt-8 bg-gradient-to-br from-cyan-100 to-cyan-200 rounded-full opacity-70 group-hover:opacity-100 transition-all duration-300"></div>
+          <div class="relative">
+            <div class="flex items-center space-x-4 mb-4">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-cyan-500 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">Submit Business Challenges</h3>
+            </div>
+            <p class="text-gray-600">Share your company's real-world challenges securely with professors who will develop them into engaging educational case studies for students.</p>
           </div>
-        </div>-->
-      </article>
-
-      
-
-      <!-- News item 3 -->
-      <article class="flex max-w-xl flex-col items-start">
-        <div class="flex items-center gap-x-4 text-xs">
-          <time datetime="2023-01-15" class="text-gray-500">Jan 15, 2023</time>
-          <span class="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600">Milestone</span>
         </div>
-        <div class="group relative">
-          <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-blue-600">
-            <a href="#">
-              <span class="absolute inset-0"></span>
-              BizCaseLab Completes First Semester with 100+ Students
+        
+        <!-- Card 3: Receive Insights -->
+        <div class="bg-white rounded-2xl shadow-lg shadow-blue-100/40 p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 -mr-8 -mt-8 bg-gradient-to-br from-teal-100 to-teal-200 rounded-full opacity-70 group-hover:opacity-100 transition-all duration-300"></div>
+          <div class="relative">
+            <div class="flex items-center space-x-4 mb-4">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-teal-500 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">Receive Student Insights</h3>
+            </div>
+            <p class="text-gray-600">Gain valuable perspectives from the next generation of business leaders through summarized student responses and analyses of your challenges.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Side: Info and Stats -->
+      <div class="relative">
+        <div class="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">Build Your Talent Pipeline</h3>
+          <p class="text-gray-600 mb-8">By connecting your company with universities through our platform, you're not just solving today's challenges—you're helping shape the business leaders of tomorrow while establishing a direct pipeline to top talent.</p>
+          
+          <!-- Stats 
+          <div class="grid grid-cols-2 gap-6 mb-8">
+            <div class="bg-blue-50 rounded-xl p-6 text-center">
+              <p class="text-3xl font-bold text-blue-600">78%</p>
+              <p class="text-sm text-gray-600 mt-2">of companies report improved talent recruitment through university partnerships</p>
+            </div>
+            <div class="bg-blue-50 rounded-xl p-6 text-center">
+              <p class="text-3xl font-bold text-blue-600">92%</p>
+              <p class="text-sm text-gray-600 mt-2">of students prefer companies that engage with their education</p>
+            </div>
+          </div>-->
+          
+          <!-- CTA -->
+          <div class="flex justify-center">
+            <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg">
+              Get notified when we launch
             </a>
-          </h3>
-          <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">We're celebrating a successful first semester since our launch, having worked with more than 100 students in just three months. This early adoption demonstrates the value of our platform in enhancing business education through practical case studies.</p>
+          </div>
+          
+          <!-- Coming Soon Badge -->
+          <div class="absolute top-4 right-4">
+            <span class="inline-flex items-center rounded-full bg-yellow-100 px-3 py-1 text-xs font-medium text-yellow-800">
+              Coming Soon
+            </span>
+          </div>
         </div>
-        <!--<div class="relative mt-8 flex items-center gap-x-4">
-          <img src="img/news-author-3.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-100">
-          <div class="text-sm leading-6">
-            <p class="font-semibold text-gray-900">
-              <span class="absolute inset-0"></span>
-              Priya Sharma
-            </p>
-            <p class="text-gray-600">Events Coordinator</p>
-          </div> 
-        </div>-->
-      </article>
-
-      
-
-
+      </div>
     </div>
   </div>
-</div>
-
+</section>
 
     
 <footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-12">

@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- SEO Meta Tags -->
-  <title>
-    How to - BizCaseLab | Interactive Product Tour & Platform Walkthrough
-  </title>
-  <meta
-    name="description"
-    content="Experience a guided tour of BizCaseLab's AI case creation platform. See how to use our tools to develop customized business cases, navigate key features, and streamline your case teaching process."
-  />
-  <meta
-    name="keywords"
-    content="BizCaseLab product tour, how to use BizCaseLab, case platform tutorial, AI case study walkthrough, business case creation demo, platform features, case teaching software guide, BizCaseLab tutorial"
-  />
-  <meta name="author" content="BizCaseLab" />
-  <link rel="canonical" href="https://bizcaselab.com/demo" />  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
+    <title>
+      For Students - BizCaseLab | Master Business Cases with AI-Powered Learning
+    </title>
+    <meta
+      name="description"
+      content="BizCaseLab helps students excel in case-based learning through AI-powered study tools. Practice with tailored case studies across industries and business scenarios. Ace your case assignments!"
+    />
+    <meta
+      name="keywords"
+      content="business case studies for students, case study analysis, MBA case studies, business school resources, case interview prep, student case learning, business case solutions"
+    />
+    <meta name="author" content="BizCaseLab" />
+    <link rel="canonical" href="https://bizcaselab.com/student" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="img/favicon.png" />
-  <link rel="apple-touch-icon" href="img/favicon.png" />
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/favicon.png" />
 
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-TPT3RTH5");
-  </script>
-  <!-- End Google Tag Manager -->
-  <!-- Google Analytics (GA4) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-WRDEKVHSPV"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-WRDEKVHSPV");
-  </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TPT3RTH5");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Analytics (GA4) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WRDEKVHSPV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-WRDEKVHSPV");
+    </script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script>
         tailwind.config = {
@@ -304,96 +304,6 @@
           });
         </script>
 
-        <script>
-          document.addEventListener('DOMContentLoaded', function() {
-            // Video content data
-            const videoContent = {
-              professor: {
-                'add-institution': {
-                  videoId: 'ujNo_5tIKu0',
-                  title: 'Create Cases: Building custom case studies',
-                  description: 'Learn how to use our intuitive case builder to create engaging, interactive case studies for your business class. Our platform allows you to customize every aspect of your case study, from the company profile to financial data.'
-                },
-                'share-distribute': {
-                  videoId: '0c6BLf7stdw',
-                  title: 'Share & Distribute: Securely deliver cases to students',
-                  description: 'See how to securely distribute your custom case studies to students with just a few clicks. Set access controls, deadlines, and track who has viewed your materials.'
-                }
-              },
-              student: {
-                'access-cases': {
-                  videoId: 'KaczFFKUcAg',
-                  title: 'Access Cases: Finding and opening your assigned cases',
-                  description: 'Learn how to access case studies assigned by your professor. This video walks you through logging in, finding your case study, and navigating through case materials.'
-                }
-              }
-            };
-            
-            // Set active audience tab
-            const audienceTabs = document.querySelectorAll('.audience-tab');
-            audienceTabs.forEach(tab => {
-              tab.addEventListener('click', function() {
-                // Update tab styles
-                audienceTabs.forEach(t => {
-                  t.classList.remove('bg-white', 'shadow-sm', 'text-blue-700');
-                  t.classList.add('text-gray-700', 'hover:text-gray-900');
-                });
-                this.classList.add('bg-white', 'shadow-sm', 'text-blue-700');
-                this.classList.remove('text-gray-700', 'hover:text-gray-900');
-                
-                // Show/hide corresponding tutorial tabs
-                const audience = this.id.split('-')[0]; // 'professor' or 'student'
-                document.querySelectorAll('.tutorial-tabs').forEach(el => {
-                  el.classList.add('hidden');
-                });
-                document.getElementById(`${audience}-tabs`).classList.remove('hidden');
-                
-                // Update video to first tab of selected audience
-                const firstTab = document.querySelector(`[data-audience="${audience}"]`);
-                updateVideo(firstTab);
-              });
-            });
-            
-            // Handle tutorial tab clicks
-            const tutorialTabs = document.querySelectorAll('.tutorial-tab');
-            tutorialTabs.forEach(tab => {
-              tab.addEventListener('click', function() {
-                // Update active tab within the current audience group
-                const currentAudience = this.dataset.audience;
-                document.querySelectorAll(`.tutorial-tab[data-audience="${currentAudience}"]`).forEach(t => {
-                  t.classList.remove('bg-white', 'shadow-sm', 'border', 'border-gray-100');
-                  t.querySelector('.flex-shrink-0').classList.remove('bg-blue-600');
-                  t.querySelector('.flex-shrink-0').classList.add('bg-gray-300');
-                  t.querySelector('.flex-shrink-0 svg').classList.remove('text-white');
-                  t.querySelector('.flex-shrink-0 svg').classList.add('text-gray-600');
-                  t.querySelector('p.font-medium').classList.remove('text-gray-900');
-                  t.querySelector('p.font-medium').classList.add('text-gray-700');
-                });
-                
-                this.classList.add('bg-white', 'shadow-sm', 'border', 'border-gray-100');
-                this.querySelector('.flex-shrink-0').classList.add('bg-blue-600');
-                this.querySelector('.flex-shrink-0').classList.remove('bg-gray-300');
-                this.querySelector('.flex-shrink-0 svg').classList.add('text-white');
-                this.querySelector('.flex-shrink-0 svg').classList.remove('text-gray-600');
-                this.querySelector('p.font-medium').classList.add('text-gray-900');
-                this.querySelector('p.font-medium').classList.remove('text-gray-700');
-                
-                updateVideo(this);
-              });
-            });
-            
-            // Function to update the YouTube video
-            function updateVideo(tab) {
-              const audience = tab.dataset.audience;
-              const tabId = tab.dataset.tab;
-              const videoData = videoContent[audience][tabId];
-              
-              document.getElementById('tutorial-video').src = `https://www.youtube.com/embed/${videoData.videoId}`;
-              document.getElementById('video-title').textContent = videoData.title;
-              document.getElementById('video-description').textContent = videoData.description;
-            }
-          });
-        </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1375,194 +1285,196 @@
   
 
 
-<!-- Demo Header Section with improved UI -->
-<section class="relative py-24 sm:py-32 overflow-hidden bg-gradient-to-b from-indigo-50 to-white">
-  <!-- Decorative elements -->
-  <div aria-hidden="true" class="absolute top-1/4 left-0 -translate-x-1/3">
-    <div class="h-64 w-64 rounded-full bg-indigo-400/10 blur-3xl"></div>
-  </div>
-  <div aria-hidden="true" class="absolute bottom-1/3 right-0 translate-x-1/3">
-    <div class="h-48 w-48 rounded-full bg-blue-400/10 blur-2xl"></div>
-  </div>
-
-  <!-- Subtle background pattern -->
-  <div class="absolute inset-0 -z-10 opacity-5">
-    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+ <!-- Hero Section -->
+<div class="relative isolate overflow-hidden bg-white py-20 sm:py-32">
+  <!-- Gradient background elements -->
+  <div class="absolute inset-0 -z-10">
+    <svg class="absolute inset-0 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
       <defs>
-        <pattern id="dots-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-          <circle cx="3" cy="3" r="1.5" fill="currentColor" />
+        <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M0 40V.5H40" fill="none" />
         </pattern>
       </defs>
-      <rect width="100%" height="100%" fill="url(#dots-pattern)" />
+      <rect width="100%" height="100%" stroke-width="0" fill="url(#grid-pattern)" />
     </svg>
+    <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0">
+      <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-indigo-300 to-indigo-600 opacity-15" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
   </div>
   
-  <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-3xl text-center mb-12">
-      <!-- Decorative icon -->
-      <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-indigo-600/10 mb-8">
-        <svg class="h-8 w-8 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
-        </svg>
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="lg:grid lg:grid-cols-12 lg:gap-x-12 items-center">
+      <!-- Left column for text content -->
+      <div class="lg:col-span-7 xl:col-span-6">
+        <div class="mb-8">
+          <span class="inline-flex items-center rounded-full bg-indigo-50 px-3 py-1 text-sm font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
+            For Students
+          </span>
+        </div>
+        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+          From College to <span class="text-indigo-600">Graduate</span> to Executive-MBA
+        </h1>
+        <p class="mt-6 text-lg text-gray-600">
+          Experience learning through interactive case studies that bring real-world business challenges to life. Develop critical thinking skills that employers value in today's competitive market.
+        </p>
+        
+        <!-- CTA section -->
+        <div class="mt-10 flex flex-col sm:flex-row gap-5">
+          <a href="https://student.bizcaselab.com" class="rounded-md bg-indigo-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all duration-200 text-center">
+            Sign up as student
+          </a>
+          <a href="demo.html" class="rounded-md bg-white px-6 py-3 text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 transition-all duration-200 text-center flex items-center justify-center">
+            View demo
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 ml-2">
+              <path fill-rule="evenodd" d="M2 10a8 8 0 1116 0 8 8 0 01-16 0zm6.39-2.908a.75.75 0 01.766.027l3.5 2.25a.75.75 0 010 1.262l-3.5 2.25A.75.75 0 018 12.25v-4.5a.75.75 0 01.39-.658z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>        
       </div>
       
-      <!-- Main heading with gradient text -->
-      <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-        <span class="block">Platform</span>
-        <span class="mt-1 block bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">
-          Demonstrations
-        </span>
-      </h1>
-      
-    
-    </div>
-    
-  </div>
-  
-  <!-- Wave divider -->
-  <div class="absolute bottom-0 left-0 right-0 h-16 bg-gray-50">
-    <svg class="absolute -top-16 w-full h-16" preserveAspectRatio="none" viewBox="0 0 1440 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 22L60 16.7C120 11.3 240 0.7 360 0.2C480 -0.3 600 9.3 720 16.7C840 24 960 29 1080 27.3C1200 25.7 1320 17.3 1380 13.2L1440 9V54H1380C1320 54 1200 54 1080 54C960 54 840 54 720 54C600 54 480 54 360 54C240 54 120 54 60 54H0V22Z" fill="#f9fafb"/>
-    </svg>
-  </div>
-</section>
-
-
-
-<section
-  id="video-tutorials"
-  aria-label="Product tutorials"
-  class="relative overflow-hidden bg-gray-50 py-24 sm:py-32"
->
-  <!-- Subtle background pattern -->
-  <div class="absolute inset-0 -z-10 opacity-5">
-    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <pattern id="dots-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-          <circle cx="3" cy="3" r="1.5" fill="currentColor" />
-        </pattern>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#dots-pattern)" />
-    </svg>
-  </div>
-  
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="max-w-2xl md:mx-auto md:text-center xl:max-w-none mb-12">
-      <h2 class="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
-      </h2>
-      <p class="mt-4 text-lg text-gray-600">
-        Watch tutorial videos to learn how to use BizCaseLab platform.
-      </p>
-    </div>
-    
-    <!-- Audience Selector Tabs -->
-    <div class="flex justify-center mb-16">
-      <div class="inline-flex rounded-full p-1 bg-gray-100 shadow-sm">
-        <button id="professor-tab" class="audience-tab px-6 py-3 rounded-full text-sm font-medium bg-white shadow-sm text-blue-700 transition-all">
-          For Professors
-        </button>
-        <button id="student-tab" class="audience-tab px-6 py-3 rounded-full text-sm font-medium text-gray-700 hover:text-gray-900 transition-all">
-          For Students
-        </button>
-      </div>
-    </div>
-    
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-8">
-      <!-- Left sidebar with tabs -->
-      <div class="lg:col-span-4 lg:border-r lg:border-gray-200">
-        <div class="space-y-1 pr-4">
-          <!-- Professor Tabs (visible by default) -->
-          <div id="professor-tabs" class="tutorial-tabs">
-            <button 
-              class="tutorial-tab group w-full flex items-center px-4 py-3 rounded-lg bg-white shadow-sm border border-gray-100 mb-2 transition-all"
-              data-audience="professor" 
-              data-video="ujNo_5tIKu0"
-              data-tab="add-institution"
-            >
-              <div class="flex-shrink-0 h-10 w-10 rounded-lg bg-blue-600 flex items-center justify-center mr-4">
-                <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                </svg>
-              </div>
-              <div class="text-left">
-                <p class="font-medium text-gray-900">Add institution</p>
-                <p class="text-sm text-gray-500">Add university or college name</p>
-              </div>
-            </button>
-            
-            <button 
-              class="tutorial-tab w-full flex items-center px-4 py-3 rounded-lg hover:bg-white hover:shadow-sm transition-all"
-              data-audience="professor" 
-              data-video="0c6BLf7stdw"
-              data-tab="share-distribute"
-            >
-              <div class="flex-shrink-0 h-10 w-10 rounded-lg bg-gray-300 flex items-center justify-center mr-4">
-                <svg class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-              <div class="text-left">
-                <p class="font-medium text-gray-700">Add Course</p>
-                <p class="text-sm text-gray-500">How to define course on BCL</p>
-              </div>
-            </button>
-            
-            
-
+      <!-- Right column for illustration -->
+      <div class="hidden lg:block lg:col-span-5 xl:col-span-6 mt-10 lg:mt-0">
+        <div class="relative rounded-2xl bg-white shadow-xl ring-1 ring-gray-900/5 overflow-hidden">
+          <div class="p-1 bg-gradient-to-br from-indigo-600 to-purple-500 rounded-2xl">
+            <img src="img/student-hero-bizcaselab.com.jpg" alt="Student using BizCaseLab" class="w-full rounded-xl aspect-[4/3] object-cover">
           </div>
           
-          <!-- Student Tabs (hidden initially) -->
-          <div id="student-tabs" class="tutorial-tabs hidden">
-            <button 
-              class="tutorial-tab group w-full flex items-center px-4 py-3 rounded-lg bg-white shadow-sm border border-gray-100 mb-2 transition-all"
-              data-audience="student" 
-              data-video="KaczFFKUcAg"
-              data-tab="access-cases"
-            >
-              <div class="flex-shrink-0 h-10 w-10 rounded-lg bg-blue-600 flex items-center justify-center mr-4">
-                <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          <!-- Student achievement badge -->
+          <div class="absolute -bottom-2 -right-2 md:bottom-4 md:right-4 bg-white/90 backdrop-blur rounded-2xl p-4 shadow-lg border border-gray-100">
+            <div class="flex items-center">
+              <div class="flex-shrink-0 mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-indigo-600">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
                 </svg>
               </div>
-              <div class="text-left">
-                <p class="font-medium text-gray-900">Access Cases</p>
-                <p class="text-sm text-gray-500">How to access assigned case studies</p>
+              <div>
+                <p class="text-xs text-gray-500">Real-world skills</p>
+                <p class="font-semibold text-sm">90% of students report improved analytical skills</p>
               </div>
-            </button>
-            
-            
+            </div>
           </div>
-        </div>
-      </div>
-      
-      <!-- Right video area -->
-      <div class="lg:col-span-8">
-        <div class="relative h-0 pb-[56.25%] rounded-xl overflow-hidden shadow-xl bg-gray-100">
-          <!-- YouTube embed - will be replaced by JavaScript -->
-          <iframe 
-            id="tutorial-video"
-            class="absolute inset-0 w-full h-full" 
-            src="https://www.youtube.com/embed/ujNo_5tIKu0" 
-            title="BCL Tutorial Video" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-          </iframe>
-        </div>
-        
-        <div class="mt-6 text-lg font-medium text-gray-900" id="video-title">Create Cases: Building custom case studies</div>
-        <div class="mt-2 text-base text-gray-600" id="video-description">
-          Learn how to use our intuitive case builder to create engaging, interactive case studies for your business class.
-          Our platform allows you to customize every aspect of your case study, from the company profile to financial data.
         </div>
       </div>
     </div>
   </div>
+</div>
+
+
+
+
+
+  <!-- Student Workflow Section -->
+<section class="relative bg-gradient-to-b from-white to-indigo-50/30 py-24 sm:py-32 overflow-hidden">
+  <!-- Decorative background elements -->
+  <div class="absolute inset-0 -z-10">
+    <div class="absolute -right-40 -bottom-40 h-80 w-80 opacity-10">
+      <svg viewBox="0 0 100 100" class="h-full w-full fill-indigo-600">
+        <defs>
+          <pattern id="workflow-dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <circle cx="10" cy="10" r="2" fill="currentColor"></circle>
+          </pattern>
+        </defs>
+        <rect width="100" height="100" fill="url(#workflow-dots)"></rect>
+      </svg>
+    </div>
+    <div class="absolute top-1/4 left-10 h-32 w-32 opacity-20 rounded-full bg-gradient-to-br from-blue-400 to-indigo-500 blur-2xl"></div>
+    <div class="absolute bottom-1/4 right-1/4 h-24 w-24 opacity-15 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 blur-xl"></div>
+  </div>
+
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mb-16 text-center">
+      <h2 class="text-base font-semibold leading-7 text-indigo-600">Student Experience</h2>
+      <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+        Simple & Intuitive Learning Journey
+      </p>
+      <p class="mt-6 text-lg leading-8 text-gray-600 max-w-3xl mx-auto">
+        Our platform streamlines the case study learning process, allowing you to focus on what matters most - developing your business analysis skills.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16 items-center">
+      <!-- Left Side: Three Cards -->
+      <div class="space-y-10">
+        <!-- Card 1: Access & Download -->
+        <div class="bg-white rounded-2xl shadow-lg shadow-indigo-100/40 p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 -mr-8 -mt-8 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-full opacity-70 group-hover:opacity-100 transition-all duration-300"></div>
+          <div class="relative">
+            <div class="flex items-center space-x-4 mb-4">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-indigo-500 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">Access & Download Case Studies</h3>
+            </div>
+            <p class="text-gray-600">Easily access assigned case studies, download materials, and get all the resources you need to start your analysis.</p>
+            <div class="mt-6 flex items-center text-sm text-indigo-600 font-medium">
+              
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 2: Submit Answers -->
+        <div class="bg-white rounded-2xl shadow-lg shadow-indigo-100/40 p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 -mr-8 -mt-8 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full opacity-70 group-hover:opacity-100 transition-all duration-300"></div>
+          <div class="relative">
+            <div class="flex items-center space-x-4 mb-4">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">Submit Answers & Analysis</h3>
+            </div>
+            <p class="text-gray-600">Submit your comprehensive analysis and answers through our intuitive interface designed for clear communication of your ideas.</p>
+            <div class="mt-6 flex items-center text-sm text-blue-600 font-medium">
+              
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 3: View Feedback -->
+        <div class="bg-white rounded-2xl shadow-lg shadow-indigo-100/40 p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 -mr-8 -mt-8 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full opacity-70 group-hover:opacity-100 transition-all duration-300"></div>
+          <div class="relative">
+            <div class="flex items-center space-x-4 mb-4">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">View Feedback & Grades</h3>
+            </div>
+            <p class="text-gray-600">Receive detailed feedback and grades from your professor to understand your strengths and areas for improvement.</p>
+            <div class="mt-6 flex items-center text-sm text-purple-600 font-medium">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Side: GIF/Video Demo -->
+      <div class="relative">
+        <div class="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-indigo-500 to-blue-600 opacity-20 blur-xl"></div>
+        <div class="relative rounded-2xl bg-white p-2 shadow-2xl ring-1 ring-gray-900/5">
+          <div class="aspect-[4/3] rounded-lg overflow-hidden">
+            <img 
+              src="img/student-access-case-study-bizcaselab.com.gif" 
+              alt="Student accessing case studies demo" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="absolute -bottom-3 -right-3 h-24 w-24 rounded-full bg-gradient-to-br from-indigo-500 to-blue-600 opacity-60 blur-xl"></div>
+        </div>
+        
+        <!-- Floating elements for visual interest -->
+        <div class="absolute -top-4 -left-4 h-8 w-8 rounded-full bg-indigo-500"></div>
+        <div class="absolute -bottom-6 left-1/3 h-12 w-12 rounded-full border-4 border-blue-500 opacity-50"></div>
+        <div class="absolute top-1/4 -right-8 h-16 w-16 rounded-full border-2 border-dashed border-purple-400 opacity-40"></div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Add JavaScript for tab functionality -->
-
-
 
 
 
@@ -1794,136 +1706,6 @@
   </div>
 </footer>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Function to update video player
-    function updateVideoPlayer(videoId) {
-      const videoContainer = document.getElementById('tutorial-video');
-      if (videoContainer) {
-        videoContainer.src = `https://www.youtube.com/embed/${videoId}`;
-      }
-    }
-
-    // Function to switch between audiences (student vs professor)
-    function switchAudience(audience) {
-      // Show corresponding tabs
-      if (audience === 'student') {
-        document.getElementById('student-tabs').classList.remove('hidden');
-        document.getElementById('professor-tabs').classList.add('hidden');
-        
-        // Update audience tab styling
-        document.getElementById('student-tab').classList.add('bg-white', 'shadow-sm', 'text-blue-700');
-        document.getElementById('student-tab').classList.remove('text-gray-700');
-        document.getElementById('professor-tab').classList.remove('bg-white', 'shadow-sm', 'text-blue-700');
-        document.getElementById('professor-tab').classList.add('text-gray-700');
-      } else {
-        document.getElementById('student-tabs').classList.add('hidden');
-        document.getElementById('professor-tabs').classList.remove('hidden');
-        
-        // Update audience tab styling
-        document.getElementById('professor-tab').classList.add('bg-white', 'shadow-sm', 'text-blue-700');
-        document.getElementById('professor-tab').classList.remove('text-gray-700');
-        document.getElementById('student-tab').classList.remove('bg-white', 'shadow-sm', 'text-blue-700');
-        document.getElementById('student-tab').classList.add('text-gray-700');
-      }
-
-      // Auto-select first tab of the chosen audience
-      const firstTab = document.querySelector(`#${audience}-tabs .tutorial-tab`);
-      if (firstTab) {
-        const videoId = firstTab.getAttribute('data-video');
-        if (videoId) {
-          updateVideoPlayer(videoId);
-          
-          // Update active tab styling
-          document.querySelectorAll('.tutorial-tab').forEach(tab => {
-            tab.classList.remove('bg-white', 'shadow-sm', 'border', 'border-gray-100');
-            tab.classList.add('hover:bg-white', 'hover:shadow-sm');
-          });
-          firstTab.classList.add('bg-white', 'shadow-sm', 'border', 'border-gray-100');
-          firstTab.classList.remove('hover:bg-white', 'hover:shadow-sm');
-          
-          // Update video title and description (if elements exist)
-          const tabTitle = firstTab.querySelector('.text-left p:first-child')?.textContent;
-          const tabDescription = firstTab.querySelector('.text-left p:last-child')?.textContent;
-          
-          if (tabTitle && document.getElementById('video-title')) {
-            document.getElementById('video-title').textContent = tabTitle;
-          }
-          
-          if (tabDescription && document.getElementById('video-description')) {
-            document.getElementById('video-description').textContent = tabDescription;
-          }
-        }
-      }
-    }
-
-    // Check URL hash on page load and switch if needed
-    if (window.location.hash === '#studentTab') {
-      switchAudience('student');
-    } else {
-      // Default to professor
-      switchAudience('professor');
-    }
-
-    // Add click handlers for audience tabs
-    document.getElementById('professor-tab').addEventListener('click', function() {
-      // Update URL hash without scrolling
-      const currentScrollPosition = window.pageYOffset;
-      if (window.location.hash === '#studentTab') {
-        history.pushState("", document.title, window.location.pathname);
-      }
-      window.scrollTo(0, currentScrollPosition);
-      
-      switchAudience('professor');
-    });
-    
-    document.getElementById('student-tab').addEventListener('click', function() {
-      // Update URL hash without scrolling
-      const currentScrollPosition = window.pageYOffset;
-      window.location.hash = 'studentTab';
-      window.scrollTo(0, currentScrollPosition);
-      
-      switchAudience('student');
-    });
-    
-    // Add click handlers for tutorial tabs
-    document.querySelectorAll('.tutorial-tab').forEach(tab => {
-      tab.addEventListener('click', function() {
-        const videoId = this.getAttribute('data-video');
-        updateVideoPlayer(videoId);
-        
-        // Update active tab styling
-        document.querySelectorAll('.tutorial-tab').forEach(t => {
-          t.classList.remove('bg-white', 'shadow-sm', 'border', 'border-gray-100');
-          t.classList.add('hover:bg-white', 'hover:shadow-sm');
-        });
-        this.classList.add('bg-white', 'shadow-sm', 'border', 'border-gray-100');
-        this.classList.remove('hover:bg-white', 'hover:shadow-sm');
-        
-        // Update video title and description (if elements exist)
-        const tabTitle = this.querySelector('.text-left p:first-child')?.textContent;
-        const tabDescription = this.querySelector('.text-left p:last-child')?.textContent;
-        
-        if (tabTitle && document.getElementById('video-title')) {
-          document.getElementById('video-title').textContent = tabTitle;
-        }
-        
-        if (tabDescription && document.getElementById('video-description')) {
-          document.getElementById('video-description').textContent = tabDescription;
-        }
-      });
-    });
-    
-    // Listen for hash changes
-    window.addEventListener('hashchange', function() {
-      if (window.location.hash === '#studentTab') {
-        switchAudience('student');
-      } else {
-        switchAudience('professor');
-      }
-    });
-  });
-</script>
 </body>
 
 </html>

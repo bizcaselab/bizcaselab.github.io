@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- SEO Meta Tags -->
   <title>
-    How to - BizCaseLab | Interactive Product Tour & Platform Walkthrough
+    Workshops & Training - BizCaseLab | Custom Business Case Workshops for Organizations
   </title>
   <meta
     name="description"
-    content="Experience a guided tour of BizCaseLab's AI case creation platform. See how to use our tools to develop customized business cases, navigate key features, and streamline your case teaching process."
+    content="BizCaseLab offers customized business case workshops and training sessions for organizations, companies and educational institutions. Enhance critical thinking and business analysis skills with our AI-powered case study platform."
   />
   <meta
     name="keywords"
-    content="BizCaseLab product tour, how to use BizCaseLab, case platform tutorial, AI case study walkthrough, business case creation demo, platform features, case teaching software guide, BizCaseLab tutorial"
+    content="business case workshops, corporate training, business analysis workshops, case study training, organizational learning, executive education, customized business workshops, management training"
   />
   <meta name="author" content="BizCaseLab" />
-  <link rel="canonical" href="https://bizcaselab.com/demo" />  
+  <link rel="canonical" href="https://bizcaselab.com/workshop"/>
 
   <!-- Favicon -->
   <link rel="icon" href="img/favicon.png" />
@@ -49,6 +49,7 @@
     gtag("js", new Date());
     gtag("config", "G-WRDEKVHSPV");
   </script>
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script>
         tailwind.config = {
@@ -70,8 +71,7 @@
                     500: '#6B7280', // Using template's gray-500
                     700: '#374151', // Previous gray-700
                     100: '#F3F4F6', // Previous gray-100
-                    50: '#F9FAFB',   // Previous gray-50
-                    0: '#FFFFFF'    // Previous white
+                    50: '#F9FAFB'   // Previous gray-50
                 }, 
                 blue: {
                   950: '#0d6efd', // From template gray-950 for text-gray-950
@@ -257,140 +257,17 @@
             });
           });
         });
-        
         </script>
-
         <script>
-          document.addEventListener('DOMContentLoaded', () => {
-            // Create intersection observer to trigger counter when section is visible
-            const observer = new IntersectionObserver((entries) => {
-              entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                  // Start all counters
-                  startCounters();
-                  // Once triggered, disconnect observer
-                  observer.disconnect();
-                }
-              });
-            }, { threshold: 0.1 });
-        
-            // Observe the stats section
-            observer.observe(document.getElementById('statsCounter'));
-        
-            // Function to animate counters
-            function startCounters() {
-              const counters = document.querySelectorAll('.counter');
-              const speed = 1000; // Animation duration in milliseconds
-        
-              counters.forEach(counter => {
-                const target = parseInt(counter.getAttribute('data-target'));
-                const increment = Math.ceil(target / (speed / 16)); // 60fps approx
-                
-                const updateCount = () => {
-                  const count = parseInt(counter.innerText);
-                  if (count < target) {
-                    // Add increment but don't exceed target
-                    counter.innerText = Math.min(count + increment, target);
-                    // Call again if not reached target yet
-                    if (count + increment < target) {
-                      setTimeout(updateCount, 16);
-                    }
-                  }
-                };
-        
-                updateCount();
-              });
-            }
-          });
-        </script>
-
-        <script>
+          // Add this script to handle the banner close functionality
           document.addEventListener('DOMContentLoaded', function() {
-            // Video content data
-            const videoContent = {
-              professor: {
-                'add-institution': {
-                  videoId: 'ujNo_5tIKu0',
-                  title: 'Create Cases: Building custom case studies',
-                  description: 'Learn how to use our intuitive case builder to create engaging, interactive case studies for your business class. Our platform allows you to customize every aspect of your case study, from the company profile to financial data.'
-                },
-                'share-distribute': {
-                  videoId: '0c6BLf7stdw',
-                  title: 'Share & Distribute: Securely deliver cases to students',
-                  description: 'See how to securely distribute your custom case studies to students with just a few clicks. Set access controls, deadlines, and track who has viewed your materials.'
-                }
-              },
-              student: {
-                'access-cases': {
-                  videoId: 'KaczFFKUcAg',
-                  title: 'Access Cases: Finding and opening your assigned cases',
-                  description: 'Learn how to access case studies assigned by your professor. This video walks you through logging in, finding your case study, and navigating through case materials.'
-                }
-              }
-            };
+            const closeBannerButton = document.getElementById('close-banner');
+            const notificationBanner = document.getElementById('notification-banner');
             
-            // Set active audience tab
-            const audienceTabs = document.querySelectorAll('.audience-tab');
-            audienceTabs.forEach(tab => {
-              tab.addEventListener('click', function() {
-                // Update tab styles
-                audienceTabs.forEach(t => {
-                  t.classList.remove('bg-white', 'shadow-sm', 'text-blue-700');
-                  t.classList.add('text-gray-700', 'hover:text-gray-900');
-                });
-                this.classList.add('bg-white', 'shadow-sm', 'text-blue-700');
-                this.classList.remove('text-gray-700', 'hover:text-gray-900');
-                
-                // Show/hide corresponding tutorial tabs
-                const audience = this.id.split('-')[0]; // 'professor' or 'student'
-                document.querySelectorAll('.tutorial-tabs').forEach(el => {
-                  el.classList.add('hidden');
-                });
-                document.getElementById(`${audience}-tabs`).classList.remove('hidden');
-                
-                // Update video to first tab of selected audience
-                const firstTab = document.querySelector(`[data-audience="${audience}"]`);
-                updateVideo(firstTab);
+            if (closeBannerButton && notificationBanner) {
+              closeBannerButton.addEventListener('click', function() {
+                notificationBanner.style.display = 'none';
               });
-            });
-            
-            // Handle tutorial tab clicks
-            const tutorialTabs = document.querySelectorAll('.tutorial-tab');
-            tutorialTabs.forEach(tab => {
-              tab.addEventListener('click', function() {
-                // Update active tab within the current audience group
-                const currentAudience = this.dataset.audience;
-                document.querySelectorAll(`.tutorial-tab[data-audience="${currentAudience}"]`).forEach(t => {
-                  t.classList.remove('bg-white', 'shadow-sm', 'border', 'border-gray-100');
-                  t.querySelector('.flex-shrink-0').classList.remove('bg-blue-600');
-                  t.querySelector('.flex-shrink-0').classList.add('bg-gray-300');
-                  t.querySelector('.flex-shrink-0 svg').classList.remove('text-white');
-                  t.querySelector('.flex-shrink-0 svg').classList.add('text-gray-600');
-                  t.querySelector('p.font-medium').classList.remove('text-gray-900');
-                  t.querySelector('p.font-medium').classList.add('text-gray-700');
-                });
-                
-                this.classList.add('bg-white', 'shadow-sm', 'border', 'border-gray-100');
-                this.querySelector('.flex-shrink-0').classList.add('bg-blue-600');
-                this.querySelector('.flex-shrink-0').classList.remove('bg-gray-300');
-                this.querySelector('.flex-shrink-0 svg').classList.add('text-white');
-                this.querySelector('.flex-shrink-0 svg').classList.remove('text-gray-600');
-                this.querySelector('p.font-medium').classList.add('text-gray-900');
-                this.querySelector('p.font-medium').classList.remove('text-gray-700');
-                
-                updateVideo(this);
-              });
-            });
-            
-            // Function to update the YouTube video
-            function updateVideo(tab) {
-              const audience = tab.dataset.audience;
-              const tabId = tab.dataset.tab;
-              const videoData = videoContent[audience][tabId];
-              
-              document.getElementById('tutorial-video').src = `https://www.youtube.com/embed/${videoData.videoId}`;
-              document.getElementById('video-title').textContent = videoData.title;
-              document.getElementById('video-description').textContent = videoData.description;
             }
           });
         </script>
@@ -1374,556 +1251,250 @@
   </header>
   
 
-
-<!-- Demo Header Section with improved UI -->
-<section class="relative py-24 sm:py-32 overflow-hidden bg-gradient-to-b from-indigo-50 to-white">
-  <!-- Decorative elements -->
-  <div aria-hidden="true" class="absolute top-1/4 left-0 -translate-x-1/3">
-    <div class="h-64 w-64 rounded-full bg-indigo-400/10 blur-3xl"></div>
-  </div>
-  <div aria-hidden="true" class="absolute bottom-1/3 right-0 translate-x-1/3">
-    <div class="h-48 w-48 rounded-full bg-blue-400/10 blur-2xl"></div>
-  </div>
-
-  <!-- Subtle background pattern -->
-  <div class="absolute inset-0 -z-10 opacity-5">
-    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <pattern id="dots-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-          <circle cx="3" cy="3" r="1.5" fill="currentColor" />
-        </pattern>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#dots-pattern)" />
-    </svg>
-  </div>
   
-  <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-3xl text-center mb-12">
-      <!-- Decorative icon -->
-      <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-indigo-600/10 mb-8">
-        <svg class="h-8 w-8 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
-        </svg>
-      </div>
-      
-      <!-- Main heading with gradient text -->
-      <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-        <span class="block">Platform</span>
-        <span class="mt-1 block bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">
-          Demonstrations
-        </span>
-      </h1>
-      
-    
+
+  <!-- Workshop Hero Section -->
+<div class="bg-gray-50 py-16 sm:py-24">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <h2 class="text-base/7 font-semibold text-indigo-600">Upcoming Workshops</h2>
+      <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">Join Our Interactive Workshops</p>
+      <p class="mt-6 text-lg/8 text-gray-600">Enhance your case study skills by joining our hands-on workshops. Learn directly from experts and network with peers from around the world.</p>
     </div>
-    
   </div>
-  
-  <!-- Wave divider -->
-  <div class="absolute bottom-0 left-0 right-0 h-16 bg-gray-50">
-    <svg class="absolute -top-16 w-full h-16" preserveAspectRatio="none" viewBox="0 0 1440 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 22L60 16.7C120 11.3 240 0.7 360 0.2C480 -0.3 600 9.3 720 16.7C840 24 960 29 1080 27.3C1200 25.7 1320 17.3 1380 13.2L1440 9V54H1380C1320 54 1200 54 1080 54C960 54 840 54 720 54C600 54 480 54 360 54C240 54 120 54 60 54H0V22Z" fill="#f9fafb"/>
-    </svg>
-  </div>
-</section>
+</div>
 
-
-
-<section
-  id="video-tutorials"
-  aria-label="Product tutorials"
-  class="relative overflow-hidden bg-gray-50 py-24 sm:py-32"
->
-  <!-- Subtle background pattern -->
-  <div class="absolute inset-0 -z-10 opacity-5">
-    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <pattern id="dots-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-          <circle cx="3" cy="3" r="1.5" fill="currentColor" />
-        </pattern>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#dots-pattern)" />
-    </svg>
-  </div>
-  
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="max-w-2xl md:mx-auto md:text-center xl:max-w-none mb-12">
-      <h2 class="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
-      </h2>
-      <p class="mt-4 text-lg text-gray-600">
-        Watch tutorial videos to learn how to use BizCaseLab platform.
-      </p>
-    </div>
-    
-    <!-- Audience Selector Tabs -->
-    <div class="flex justify-center mb-16">
-      <div class="inline-flex rounded-full p-1 bg-gray-100 shadow-sm">
-        <button id="professor-tab" class="audience-tab px-6 py-3 rounded-full text-sm font-medium bg-white shadow-sm text-blue-700 transition-all">
-          For Professors
-        </button>
-        <button id="student-tab" class="audience-tab px-6 py-3 rounded-full text-sm font-medium text-gray-700 hover:text-gray-900 transition-all">
-          For Students
-        </button>
-      </div>
-    </div>
-    
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-8">
-      <!-- Left sidebar with tabs -->
-      <div class="lg:col-span-4 lg:border-r lg:border-gray-200">
-        <div class="space-y-1 pr-4">
-          <!-- Professor Tabs (visible by default) -->
-          <div id="professor-tabs" class="tutorial-tabs">
-            <button 
-              class="tutorial-tab group w-full flex items-center px-4 py-3 rounded-lg bg-white shadow-sm border border-gray-100 mb-2 transition-all"
-              data-audience="professor" 
-              data-video="ujNo_5tIKu0"
-              data-tab="add-institution"
-            >
-              <div class="flex-shrink-0 h-10 w-10 rounded-lg bg-blue-600 flex items-center justify-center mr-4">
-                <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                </svg>
-              </div>
-              <div class="text-left">
-                <p class="font-medium text-gray-900">Add institution</p>
-                <p class="text-sm text-gray-500">Add university or college name</p>
-              </div>
-            </button>
-            
-            <button 
-              class="tutorial-tab w-full flex items-center px-4 py-3 rounded-lg hover:bg-white hover:shadow-sm transition-all"
-              data-audience="professor" 
-              data-video="0c6BLf7stdw"
-              data-tab="share-distribute"
-            >
-              <div class="flex-shrink-0 h-10 w-10 rounded-lg bg-gray-300 flex items-center justify-center mr-4">
-                <svg class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-              <div class="text-left">
-                <p class="font-medium text-gray-700">Add Course</p>
-                <p class="text-sm text-gray-500">How to define course on BCL</p>
-              </div>
-            </button>
-            
-            
-
+<!-- Featured Workshop Section -->
+<div class="bg-white py-12">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl overflow-hidden rounded-xl bg-white shadow-md">
+      <div class="md:flex">
+        <div class="md:shrink-0">
+          <img class="h-48 w-full object-cover md:h-full md:w-48 lg:w-64" src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Business case study workshop">
+        </div>
+        <div class="p-8">
+          <div class="flex items-center">
+            <div class="rounded-full bg-indigo-100 px-3 py-1 text-sm font-semibold text-indigo-600">Online Workshop</div>
+            <span class="ml-2 inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Free Event</span>
+          </div>
+          <h3 class="mt-4 text-2xl font-bold tracking-tight text-gray-900">Case Study Creation Masterclass</h3>
+          <p class="mt-2 text-gray-600">Learn how to create engaging and effective business case studies that drive student participation and critical thinking.</p>
+          
+          <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div class="flex items-center">
+              <svg class="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span class="ml-2 text-gray-700">March 24, 2025</span>
+            </div>
+            <div class="flex items-center">
+              <svg class="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span class="ml-2 text-gray-700">11:15 AM - 12:00 PM EST</span>
+            </div>
           </div>
           
-          <!-- Student Tabs (hidden initially) -->
-          <div id="student-tabs" class="tutorial-tabs hidden">
-            <button 
-              class="tutorial-tab group w-full flex items-center px-4 py-3 rounded-lg bg-white shadow-sm border border-gray-100 mb-2 transition-all"
-              data-audience="student" 
-              data-video="KaczFFKUcAg"
-              data-tab="access-cases"
-            >
-              <div class="flex-shrink-0 h-10 w-10 rounded-lg bg-blue-600 flex items-center justify-center mr-4">
-                <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-              <div class="text-left">
-                <p class="font-medium text-gray-900">Access Cases</p>
-                <p class="text-sm text-gray-500">How to access assigned case studies</p>
-              </div>
-            </button>
-            
-            
+          <div class="mt-4 flex items-center">
+            <svg class="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            <span class="ml-2 text-gray-700">Limited to 50 participants</span>
           </div>
-        </div>
-      </div>
-      
-      <!-- Right video area -->
-      <div class="lg:col-span-8">
-        <div class="relative h-0 pb-[56.25%] rounded-xl overflow-hidden shadow-xl bg-gray-100">
-          <!-- YouTube embed - will be replaced by JavaScript -->
-          <iframe 
-            id="tutorial-video"
-            class="absolute inset-0 w-full h-full" 
-            src="https://www.youtube.com/embed/ujNo_5tIKu0" 
-            title="BCL Tutorial Video" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-          </iframe>
-        </div>
-        
-        <div class="mt-6 text-lg font-medium text-gray-900" id="video-title">Create Cases: Building custom case studies</div>
-        <div class="mt-2 text-base text-gray-600" id="video-description">
-          Learn how to use our intuitive case builder to create engaging, interactive case studies for your business class.
-          Our platform allows you to customize every aspect of your case study, from the company profile to financial data.
+          
+          <div class="mt-8 flex justify-between">
+            <a href="https://meet.google.com/ggs-sdpb-svh" target="_blank" class="rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              Join Event
+            </a>
+            <a href="https://forms.gle/BSFswK331dn8DUtq9" " class="text-sm/6 font-semibold text-gray-900 hover:text-indigo-600">Register now<span aria-hidden="true">→</span></a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</section>
-<!-- Add JavaScript for tab functionality -->
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-12">
+<!-- Upcoming Workshops Section -->
+<div class="bg-white py-16">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <!-- Links section - 3 columns layout -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-      <!-- Contact Links - Now first column -->
-      <div class="flex flex-col items-center text-center">
-        <img
-          src="img/logo.svg"
-          width="80"
-          height="80"
-          class="mb-4"
-          alt="BizCaseLab Logo"
-        />
-        <ul role="list" class="space-y-3">
-          <li>
-            <a
-              href="mailto:support@bizcaselab.com"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              support@bizcaselab.com
-            </a>
-          </li>
-          <li class="pt-4">
-            <!-- Social Media Icons with improved styling -->
-            <div class="flex space-x-5 justify-center">
-              <a
-                href="https://www.x.com/BizCaseLabCo"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-gray-400 hover:text-indigo-600 transition-colors"
-              >
-                <span class="sr-only">X</span>
-                <svg
-                  class="h-6 w-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://www.linkedin.com/company/bizcaselab"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-gray-400 hover:text-indigo-600 transition-colors"
-              >
-                <span class="sr-only">LinkedIn</span>
-                <svg
-                  class="h-6 w-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://www.youtube.com/@bizcaselabco"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-gray-400 hover:text-indigo-600 transition-colors"
-              >
-                <span class="sr-only">YouTube</span>
-                <svg
-                  class="h-6 w-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M23.5 6.2c-.3-1-1-1.8-2-2.1C19.9 3.6 12 3.6 12 3.6s-7.9 0-9.5.5c-1 .3-1.7 1.1-2 2.1C0 7.9 0 12 0 12s0 4.1.5 5.8c.3 1 1 1.8 2 2.1 1.6.5 9.5.5 9.5.5s7.9 0 9.5-.5c1-.3 1.7-1.1 2-2.1.5-1.7.5-5.8.5-5.8s0-4.1-.5-5.8zM9.6 15.6V8.4l6.4 3.6-6.4 3.6z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <!-- case studies Links -->
-      <div class="flex flex-col items-center text-center">
-        <h3
-          class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-4"
-        >
-          Case Studies
-        </h3>
-        <ul role="list" class="space-y-3">
-          <li>
-            <a
-              href="professor.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              Professors
-            </a>
-          </li>
-          <li>
-            <a
-              href="student.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              Students
-            </a>
-          </li>
-          <li>
-            <a
-              href="company.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              Companies
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Resources Links -->
-      <div class="flex flex-col items-center text-center">
-        <h3
-          class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-4"
-        >
-          Resources
-        </h3>
-        <ul role="list" class="space-y-3">
-          <li>
-            <a
-              href="demo.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              How to Use
-            </a>
-          </li>
-          <li>
-            <a
-              href="workshop.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              Workshop & Webinars
-            </a>
-          </li>
-          <li>
-            <a
-              href="faqs.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              FAQs
-            </a>
-          </li>
-          <li>
-            <a
-              href="blog.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              Blog
-            </a>
-          </li>
-          <li>
-            <a
-              href="news.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              Newsroom
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Company Links -->
-      <div class="flex flex-col items-center text-center">
-        <h3
-          class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-4"
-        >
-          Company
-        </h3>
-        <ul role="list" class="space-y-3">
-          <li>
-            <a
-              href="aboutus.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="news.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              Newsroom
-            </a>
-          </li>
-          <li>
-            <a
-              href="privacy-policy.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              Privacy Policy
-            </a>
-          </li>
-          <li>
-            <a
-              href="terms-of-use.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              Terms of Service
-            </a>
-          </li>
-        </ul>
-      </div>
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Upcoming Workshops</h2>
+      <p class="mt-2 text-lg text-gray-600">Join our upcoming workshops to enhance your skills and expand your network.</p>
     </div>
+    
+    <div class="mx-auto mt-10 max-w-3xl">
+      <ul role="list" class="divide-y divide-gray-100">
+        <!-- Workshop 1 -->
+        <li class="flex justify-between gap-x-6 py-5">
+          <div class="flex min-w-0 gap-x-4">
+            
+            <div class="flex size-12 flex-none items-center justify-center rounded-full bg-blue-50">
+              <svg class="size-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+              </svg>
+            </div>
+            <div class="min-w-0 flex-auto">
+              <p class="text-sm/6 font-semibold text-gray-900">Crafting personalized case study</p>
+              <p class="mt-1 truncate text-xs/5 text-gray-500">Learn the essential frameworks for analyzing business cases</p>
+              <div class="mt-2 flex flex-wrap gap-2">
+                <span class="inline-flex items-center rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-semibold text-indigo-600">Online Workshop</span>
+                <span class="inline-flex items-center rounded-full bg-green-50 px-2 py-0.5 text-xs font-semibold text-green-700 ring-1 ring-inset ring-green-600/20">Free Event</span>
+              </div>
+            </div>
+          </div>
+          <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <p class="text-sm/6 text-gray-900">April 10, 2025</p>
+            <p class="mt-1 text-xs/5 text-gray-500">11:15 AM - 12:00 PM EST</p>
+            <a href="https://forms.gle/Ap6uLpx9jsLUZjcF6" class="mt-2 text-xs font-medium text-indigo-600 hover:text-indigo-500">Register now</a>
+          </div>
+        </li>
 
-    <!-- Copyright section -->
-    <div class="pt-8 border-t border-gray-200 text-center">
-      <p class="text-gray-500 text-sm">
-        © 2025 BizCaseLab, Inc. All Rights Reserved.
-      </p>
+        <!-- Workshop 2 -->
+        <li class="flex justify-between gap-x-6 py-5">
+          <div class="flex min-w-0 gap-x-4">
+            <div class="flex size-12 flex-none items-center justify-center rounded-full bg-blue-50">
+              <svg class="size-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+              </svg>
+            </div>
+            <div class="min-w-0 flex-auto">
+              <p class="text-sm/6 font-semibold text-gray-900">Crafting personalized case study</p>
+              <p class="mt-1 truncate text-xs/5 text-gray-500">Learn the essential frameworks for analyzing business cases</p>
+              <div class="mt-2 flex flex-wrap gap-2">
+                <span class="inline-flex items-center rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-semibold text-indigo-600">Online Workshop</span>
+                <span class="inline-flex items-center rounded-full bg-green-50 px-2 py-0.5 text-xs font-semibold text-green-700 ring-1 ring-inset ring-green-600/20">Free Event</span>
+              </div>
+            </div>
+          </div>
+          <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <p class="text-sm/6 text-gray-900">April 28, 2023</p>
+            <p class="mt-1 text-xs/5 text-gray-500">11:15 AM - 12:00 PM EST</p>
+            <a href="https://forms.gle/5jfxjtAEop43L5ep9" class="mt-2 text-xs font-medium text-indigo-600 hover:text-indigo-500">Register now</a>
+          </div>
+        </li>
+        
+        <!-- Workshop 3 -->
+        <li class="flex justify-between gap-x-6 py-5">
+          <div class="flex min-w-0 gap-x-4">
+            <div class="flex size-12 flex-none items-center justify-center rounded-full bg-blue-50">
+              <svg class="size-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+              </svg>
+            </div>
+            <div class="min-w-0 flex-auto">
+              <p class="text-sm/6 font-semibold text-gray-900">Case Teaching Techniques</p>
+              <p class="mt-1 truncate text-xs/5 text-gray-500">Advanced techniques for teaching with case studies</p>
+              <div class="mt-2 flex flex-wrap gap-2">
+                <span class="inline-flex items-center rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-semibold text-indigo-600">Online Workshop</span>
+                <span class="inline-flex items-center rounded-full bg-green-50 px-2 py-0.5 text-xs font-semibold text-green-700 ring-1 ring-inset ring-green-600/20">Free Event</span>
+              </div>
+            </div>
+          </div>
+          <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <p class="text-sm/6 text-gray-900">August 05, 2025</p>
+            <p class="mt-1 text-xs/5 text-gray-500">11:15 AM - 12:00 PM EST</p>
+            <a href="https://forms.gle/ZdgGVrSPH3PpyuiC7" class="mt-2 text-xs font-medium text-indigo-600 hover:text-indigo-500">Register now</a>
+          </div>
+        </li>
+        
+       
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Register Interest Section -->
+<div class="bg-gray-50 py-16">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Stay Updated</h2>
+      <p class="mt-2 text-lg text-gray-600">Register to receive notifications about upcoming workshops and events.</p>
+      <form class="mt-10">
+        <div class="flex max-w-md mx-auto gap-x-4">
+          <label for="email-address" class="sr-only">Email address</label>
+          <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter your email">
+          <button type="submit" class="flex-none rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<footer class="bg-white border-t border-gray-200">
+  <div class="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-4">
+      <!-- Company Info -->
+      <div class="space-y-4">
+        <img src="img/logo.svg" width="60" height="60" />
+        <div class="text-gray-600">
+          <p class="font-semibold text-gray-900">BizCaseLab, Inc.</p>
+          <a href="mailto:support@bizcaselab.com" class="hover:text-indigo-600">support@bizcaselab.com</a>
+          <p class="mt-2">All Rights Reserved.</p>
+        </div>
+        <div class="flex space-x-4">
+          <a href="https://www.x.com/BizCaseLabCo" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">X</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/bizcaselab" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">LinkedIn</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/@bizcaselabco" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">YouTube</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.5 6.2c-.3-1-1-1.8-2-2.1C19.9 3.6 12 3.6 12 3.6s-7.9 0-9.5.5c-1 .3-1.7 1.1-2 2.1C0 7.9 0 12 0 12s0 4.1.5 5.8c.3 1 1 1.8 2 2.1 1.6.5 9.5.5 9.5.5s7.9 0 9.5-.5c1-.3 1.7-1.1 2-2.1.5-1.7.5-5.8.5-5.8s0-4.1-.5-5.8zM9.6 15.6V8.4l6.4 3.6-6.4 3.6z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Company Links -->
+      <div class="lg:border-l lg:border-gray-200 lg:pl-8">
+        <h3 class="text-sm font-semibold text-gray-900">Company</h3>
+        <ul role="list" class="mt-6 space-y-4">
+          <li><a href="aboutus.html" class="text-sm text-gray-600 hover:text-indigo-600">About Us</a></li>
+          <li><a href="privacy-policy.html" class="text-sm text-gray-600 hover:text-indigo-600">Privacy Policy</a></li>
+          <li><a href="terms-of-use.html" class="text-sm text-gray-600 hover:text-indigo-600">Terms and Conditions</a></li>
+          <li><a href="#" class="text-sm text-gray-600 hover:text-indigo-600">Career</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources Links -->
+      <div class="lg:border-l lg:border-gray-200 lg:pl-8">
+        <h3 class="text-sm font-semibold text-gray-900">Resources</h3>
+        <ul role="list" class="mt-6 space-y-4">
+          <li><a href="demo.html" class="text-sm text-gray-600 hover:text-indigo-600">How to</a></li>
+          <li><a href="faqs.html" class="text-sm text-gray-600 hover:text-indigo-600">FAQs</a></li>
+          <li><a href="news.html" class="text-sm text-gray-600 hover:text-indigo-600">Newsroom</a></li>
+          <li><a href="blog.html" class="text-sm text-gray-600 hover:text-indigo-600">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Support Links -->
+      <div class="lg:border-l lg:border-gray-200 lg:pl-8">
+        <h3 class="text-sm font-semibold text-gray-900">Support</h3>
+        <ul role="list" class="mt-6 space-y-4">
+          <li><a href="mailto:support@bizcaselab.com" class="text-sm text-gray-600 hover:text-indigo-600">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </footer>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Function to update video player
-    function updateVideoPlayer(videoId) {
-      const videoContainer = document.getElementById('tutorial-video');
-      if (videoContainer) {
-        videoContainer.src = `https://www.youtube.com/embed/${videoId}`;
-      }
-    }
 
-    // Function to switch between audiences (student vs professor)
-    function switchAudience(audience) {
-      // Show corresponding tabs
-      if (audience === 'student') {
-        document.getElementById('student-tabs').classList.remove('hidden');
-        document.getElementById('professor-tabs').classList.add('hidden');
-        
-        // Update audience tab styling
-        document.getElementById('student-tab').classList.add('bg-white', 'shadow-sm', 'text-blue-700');
-        document.getElementById('student-tab').classList.remove('text-gray-700');
-        document.getElementById('professor-tab').classList.remove('bg-white', 'shadow-sm', 'text-blue-700');
-        document.getElementById('professor-tab').classList.add('text-gray-700');
-      } else {
-        document.getElementById('student-tabs').classList.add('hidden');
-        document.getElementById('professor-tabs').classList.remove('hidden');
-        
-        // Update audience tab styling
-        document.getElementById('professor-tab').classList.add('bg-white', 'shadow-sm', 'text-blue-700');
-        document.getElementById('professor-tab').classList.remove('text-gray-700');
-        document.getElementById('student-tab').classList.remove('bg-white', 'shadow-sm', 'text-blue-700');
-        document.getElementById('student-tab').classList.add('text-gray-700');
-      }
-
-      // Auto-select first tab of the chosen audience
-      const firstTab = document.querySelector(`#${audience}-tabs .tutorial-tab`);
-      if (firstTab) {
-        const videoId = firstTab.getAttribute('data-video');
-        if (videoId) {
-          updateVideoPlayer(videoId);
-          
-          // Update active tab styling
-          document.querySelectorAll('.tutorial-tab').forEach(tab => {
-            tab.classList.remove('bg-white', 'shadow-sm', 'border', 'border-gray-100');
-            tab.classList.add('hover:bg-white', 'hover:shadow-sm');
-          });
-          firstTab.classList.add('bg-white', 'shadow-sm', 'border', 'border-gray-100');
-          firstTab.classList.remove('hover:bg-white', 'hover:shadow-sm');
-          
-          // Update video title and description (if elements exist)
-          const tabTitle = firstTab.querySelector('.text-left p:first-child')?.textContent;
-          const tabDescription = firstTab.querySelector('.text-left p:last-child')?.textContent;
-          
-          if (tabTitle && document.getElementById('video-title')) {
-            document.getElementById('video-title').textContent = tabTitle;
-          }
-          
-          if (tabDescription && document.getElementById('video-description')) {
-            document.getElementById('video-description').textContent = tabDescription;
-          }
-        }
-      }
-    }
-
-    // Check URL hash on page load and switch if needed
-    if (window.location.hash === '#studentTab') {
-      switchAudience('student');
-    } else {
-      // Default to professor
-      switchAudience('professor');
-    }
-
-    // Add click handlers for audience tabs
-    document.getElementById('professor-tab').addEventListener('click', function() {
-      // Update URL hash without scrolling
-      const currentScrollPosition = window.pageYOffset;
-      if (window.location.hash === '#studentTab') {
-        history.pushState("", document.title, window.location.pathname);
-      }
-      window.scrollTo(0, currentScrollPosition);
-      
-      switchAudience('professor');
-    });
-    
-    document.getElementById('student-tab').addEventListener('click', function() {
-      // Update URL hash without scrolling
-      const currentScrollPosition = window.pageYOffset;
-      window.location.hash = 'studentTab';
-      window.scrollTo(0, currentScrollPosition);
-      
-      switchAudience('student');
-    });
-    
-    // Add click handlers for tutorial tabs
-    document.querySelectorAll('.tutorial-tab').forEach(tab => {
-      tab.addEventListener('click', function() {
-        const videoId = this.getAttribute('data-video');
-        updateVideoPlayer(videoId);
-        
-        // Update active tab styling
-        document.querySelectorAll('.tutorial-tab').forEach(t => {
-          t.classList.remove('bg-white', 'shadow-sm', 'border', 'border-gray-100');
-          t.classList.add('hover:bg-white', 'hover:shadow-sm');
-        });
-        this.classList.add('bg-white', 'shadow-sm', 'border', 'border-gray-100');
-        this.classList.remove('hover:bg-white', 'hover:shadow-sm');
-        
-        // Update video title and description (if elements exist)
-        const tabTitle = this.querySelector('.text-left p:first-child')?.textContent;
-        const tabDescription = this.querySelector('.text-left p:last-child')?.textContent;
-        
-        if (tabTitle && document.getElementById('video-title')) {
-          document.getElementById('video-title').textContent = tabTitle;
-        }
-        
-        if (tabDescription && document.getElementById('video-description')) {
-          document.getElementById('video-description').textContent = tabDescription;
-        }
-      });
-    });
-    
-    // Listen for hash changes
-    window.addEventListener('hashchange', function() {
-      if (window.location.hash === '#studentTab') {
-        switchAudience('student');
-      } else {
-        switchAudience('professor');
-      }
-    });
-  });
-</script>
 </body>
 
 </html>
