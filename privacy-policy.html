@@ -1,1846 +1,1431 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- SEO Meta Tags -->
-    <title>
-      Privacy Policy - BizCaseLab | Data Collection and Protection Practices
-    </title>
-    <meta
-      name="description"
-      content="BizCaseLab's Privacy Policy explains how we collect, use, and protect your personal information. Learn about our data practices, your privacy rights, and how we safeguard your information when using our AI-powered case study platform."
-    />
-    <meta
-      name="keywords"
-      content="privacy policy, data protection, personal information, privacy rights, GDPR compliance, data security, cookie policy, information collection, BizCaseLab privacy"
-    />
-    <meta name="author" content="BizCaseLab" />
-    <link rel="canonical" href="https://bizcaselab.com/privacy-policy" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="img/favicon.png" />
-    <link rel="apple-touch-icon" href="img/favicon.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO Meta Tags -->
+  <title>
+    Privacy Policy - BizCaseLab | Data Collection and Protection Practices
+  </title>
+  <meta name="description"
+    content="BizCaseLab's Privacy Policy explains how we collect, use, and protect your personal information. Learn about our data practices, your privacy rights, and how we safeguard your information when using our AI-powered case study platform." />
+  <meta name="keywords"
+    content="privacy policy, data protection, personal information, privacy rights, GDPR compliance, data security, cookie policy, information collection, BizCaseLab privacy" />
+  <meta name="author" content="BizCaseLab" />
+  <link rel="canonical" href="https://bizcaselab.com/privacy-policy" />
 
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-TPT3RTH5");
-    </script>
-    <!-- End Google Tag Manager -->
-    <!-- Google Analytics (GA4) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-WRDEKVHSPV"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-WRDEKVHSPV");
-    </script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <script>
-      tailwind.config = {
-        theme: {
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.png" />
+  <link rel="apple-touch-icon" href="img/favicon.png" />
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-TPT3RTH5");
+  </script>
+  <!-- End Google Tag Manager -->
+
+
+  <!-- Microsoft Clarity -->
+
+  <script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "qrrv8fiii5");
+  </script>
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRDEKVHSPV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-WRDEKVHSPV");
+  </script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: "#0d6efd",
+              light: "#8187F2",
+            }, // Example primary color - adjust to match design, using indigo-600 from template
+            secondary: "#9CA3AF", // Example secondary color - adjust to match design
+            indigo: {
+              600: "#0d6efd", // Using template's indigo-600
+              500: "#8187F2", // Example hover color
+            },
+            gray: {
+              950: "#0B1120", // From template gray-950 for text-gray-950
+              900: "#111827", // Using template's gray-900
+              600: "#4B5563", // Using template's gray-600
+              500: "#6B7280", // Using template's gray-500
+              700: "#374151", // Previous gray-700
+              100: "#F3F4F6", // Previous gray-100
+              50: "#F9FAFB", // Previous gray-50
+            },
+            blue: {
+              950: "#0d6efd", // From template gray-950 for text-gray-950
+              900: "#111827", // Using template's gray-900
+              600: "#0d6efd", // Using template's gray-600
+              500: "#6B7280", // Using template's gray-500
+              700: "#374151", // Previous gray-700
+              100: "#F3F4F6", // Previous gray-100
+              50: "#F9FAFB", // Previous gray-50
+            },
+          },
+          animation: {
+            "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"], // Example font - ensure to use the correct font
+          },
+          fontSize: {
+            "sm/6": ["0.875rem", { lineHeight: "1.75rem" }], // Example 'sm/6'
+          },
+          textBalance: {
+            balance: "balance",
+          },
           extend: {
-            colors: {
-              primary: {
-                DEFAULT: "#0d6efd",
-                light: "#8187F2",
-              }, // Example primary color - adjust to match design, using indigo-600 from template
-              secondary: "#9CA3AF", // Example secondary color - adjust to match design
-              indigo: {
-                600: "#0d6efd", // Using template's indigo-600
-                500: "#8187F2", // Example hover color
-              },
-              gray: {
-                950: "#0B1120", // From template gray-950 for text-gray-950
-                900: "#111827", // Using template's gray-900
-                600: "#4B5563", // Using template's gray-600
-                500: "#6B7280", // Using template's gray-500
-                700: "#374151", // Previous gray-700
-                100: "#F3F4F6", // Previous gray-100
-                50: "#F9FAFB", // Previous gray-50
-              },
-              blue: {
-                950: "#0d6efd", // From template gray-950 for text-gray-950
-                900: "#111827", // Using template's gray-900
-                600: "#0d6efd", // Using template's gray-600
-                500: "#6B7280", // Using template's gray-500
-                700: "#374151", // Previous gray-700
-                100: "#F3F4F6", // Previous gray-100
-                50: "#F9FAFB", // Previous gray-50
-              },
+            spacing: {
+              18: "4.5rem", // Add spacing-18 to match pl-16 + icon size
             },
-            animation: {
-              "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+            boxShadow: {
+              xs: "0 0px 0px 1px rgba(0, 0, 0, 0.05)", // shadow-xs as in template
+              "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)", // shadow-2xl from template
             },
-            fontFamily: {
-              sans: ["Inter", "sans-serif"], // Example font - ensure to use the correct font
+            borderRadius: {
+              lg: "0.5rem", // Equivalent to rounded-lg
+              "2xl": "1.5rem", // Equivalent to rounded-2xl
+              "t-[12cqw]": "min(12cqw, 12rem)", // Example for rounded-t-[12cqw] - adjust as needed
+              "l-[2rem]": "2rem", // Example for rounded-l-[2rem]
+              "r-[2rem]": "2rem", // Example for rounded-r-[2rem]
+              "b-[2rem]": "2rem", // Example for rounded-b-[2rem]
+              "[calc(var(--radius-lg)+1px)]": "calc(0.5rem + 1px)", // Example for rounded-[calc(var(--radius-lg)+1px)]
+              "[calc(2rem+1px)]": "calc(2rem + 1px)", // Example for rounded-[calc(2rem+1px)]
             },
-            fontSize: {
-              "sm/6": ["0.875rem", { lineHeight: "1.75rem" }], // Example 'sm/6'
-            },
-            textBalance: {
-              balance: "balance",
-            },
-            extend: {
-              spacing: {
-                18: "4.5rem", // Add spacing-18 to match pl-16 + icon size
-              },
-              boxShadow: {
-                xs: "0 0px 0px 1px rgba(0, 0, 0, 0.05)", // shadow-xs as in template
-                "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)", // shadow-2xl from template
-              },
-              borderRadius: {
-                lg: "0.5rem", // Equivalent to rounded-lg
-                "2xl": "1.5rem", // Equivalent to rounded-2xl
-                "t-[12cqw]": "min(12cqw, 12rem)", // Example for rounded-t-[12cqw] - adjust as needed
-                "l-[2rem]": "2rem", // Example for rounded-l-[2rem]
-                "r-[2rem]": "2rem", // Example for rounded-r-[2rem]
-                "b-[2rem]": "2rem", // Example for rounded-b-[2rem]
-                "[calc(var(--radius-lg)+1px)]": "calc(0.5rem + 1px)", // Example for rounded-[calc(var(--radius-lg)+1px)]
-                "[calc(2rem+1px)]": "calc(2rem + 1px)", // Example for rounded-[calc(2rem+1px)]
-              },
-              borderWidth: {
-                "[3cqw]": "min(3cqw, 3rem)", // Example for border-[3cqw] - adjust as needed
-              },
+            borderWidth: {
+              "[3cqw]": "min(3cqw, 3rem)", // Example for border-[3cqw] - adjust as needed
             },
           },
         },
-      };
-      // Add this script section right after the Tailwind config script
+      },
+    };
+    // Add this script section right after the Tailwind config script
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const dropdownButtons = document.querySelectorAll(
-          '[aria-haspopup="true"]'
-        );
-        const dropdowns = Array.from(dropdownButtons).map(
-          (button) => button.nextElementSibling
-        );
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdownButtons = document.querySelectorAll(
+        '[aria-haspopup="true"]'
+      );
+      const dropdowns = Array.from(dropdownButtons).map(
+        (button) => button.nextElementSibling
+      );
 
-        const mobileMenuButton = document.querySelector(
-          '[aria-label="Open main menu"]'
-        );
-        const mobileMenu = document.querySelector('[role="dialog"]');
-        const mobileMenuBackdrop = mobileMenu.querySelector(".fixed.inset-0");
+      const mobileMenuButton = document.querySelector(
+        '[aria-label="Open main menu"]'
+      );
+      const mobileMenu = document.querySelector('[role="dialog"]');
+      const mobileMenuBackdrop = mobileMenu.querySelector(".fixed.inset-0");
 
-        function toggleMobileMenu() {
-          const isOpen = mobileMenu.classList.contains("hidden");
-          mobileMenu.classList.toggle("hidden", !isOpen);
-          document.body.style.overflow = isOpen ? "hidden" : "";
-        }
+      function toggleMobileMenu() {
+        const isOpen = mobileMenu.classList.contains("hidden");
+        mobileMenu.classList.toggle("hidden", !isOpen);
+        document.body.style.overflow = isOpen ? "hidden" : "";
+      }
 
-        // Toggle mobile menu
-        mobileMenuButton.addEventListener("click", toggleMobileMenu);
+      // Toggle mobile menu
+      mobileMenuButton.addEventListener("click", toggleMobileMenu);
 
-        // Close menu with X button
-        const closeButton = mobileMenu.querySelector('button[type="button"]');
-        closeButton.addEventListener("click", toggleMobileMenu);
+      // Close menu with X button
+      const closeButton = mobileMenu.querySelector('button[type="button"]');
+      closeButton.addEventListener("click", toggleMobileMenu);
 
-        // Close on backdrop click
-        mobileMenuBackdrop.addEventListener("click", toggleMobileMenu);
+      // Close on backdrop click
+      mobileMenuBackdrop.addEventListener("click", toggleMobileMenu);
 
-        // Mobile dropdown toggles
-        const mobileDropdownButtons =
-          mobileMenu.querySelectorAll("[aria-controls]");
-        mobileDropdownButtons.forEach((button) => {
-          const dropdownId = button.getAttribute("aria-controls");
-          const dropdown = document.getElementById(dropdownId);
+      // Mobile dropdown toggles
+      const mobileDropdownButtons =
+        mobileMenu.querySelectorAll("[aria-controls]");
+      mobileDropdownButtons.forEach((button) => {
+        const dropdownId = button.getAttribute("aria-controls");
+        const dropdown = document.getElementById(dropdownId);
 
-          button.addEventListener("click", () => {
-            const isExpanded = button.getAttribute("aria-expanded") === "true";
-            button.setAttribute("aria-expanded", !isExpanded);
-            dropdown.classList.toggle("hidden");
-          });
-        });
-
-        // Initially hide all dropdowns
-        dropdowns.forEach((dropdown) => {
-          dropdown.style.display = "none";
-        });
-        dropdownButtons.forEach((button) => {
-          button.setAttribute("aria-expanded", "false");
-        });
-
-        // Handle dropdowns
-        dropdownButtons.forEach((button, index) => {
-          const dropdown = dropdowns[index];
-          const container = button.parentElement;
-          let timeoutId;
-
-          // Handle mouse enter on button/container
-          const showDropdown = () => {
-            clearTimeout(timeoutId);
-            // Hide all other dropdowns
-            dropdowns.forEach((otherDropdown, otherIndex) => {
-              if (otherIndex !== index) {
-                otherDropdown.style.display = "none";
-                dropdownButtons[otherIndex].setAttribute(
-                  "aria-expanded",
-                  "false"
-                );
-              }
-            });
-            dropdown.style.display = "block";
-            button.setAttribute("aria-expanded", "true");
-          };
-
-          // Handle mouse leave
-          const hideDropdown = () => {
-            timeoutId = setTimeout(() => {
-              dropdown.style.display = "none";
-              button.setAttribute("aria-expanded", "false");
-            }, 100); // Small delay to handle gap between button and dropdown
-          };
-
-          // Add event listeners
-          container.addEventListener("mouseenter", showDropdown);
-          container.addEventListener("mouseleave", hideDropdown);
-          dropdown.addEventListener("mouseenter", () =>
-            clearTimeout(timeoutId)
-          );
-          dropdown.addEventListener("mouseleave", hideDropdown);
-
-          // Handle click (for mobile)
-          button.addEventListener("click", (e) => {
-            e.stopPropagation();
-            const isExpanded = button.getAttribute("aria-expanded") === "true";
-            button.setAttribute("aria-expanded", !isExpanded);
-            dropdown.style.display = isExpanded ? "none" : "block";
-          });
-        });
-
-        // Close dropdowns when clicking outside
-        document.addEventListener("click", () => {
-          dropdownButtons.forEach((button, index) => {
-            button.setAttribute("aria-expanded", "false");
-            dropdowns[index].style.display = "none";
-          });
+        button.addEventListener("click", () => {
+          const isExpanded = button.getAttribute("aria-expanded") === "true";
+          button.setAttribute("aria-expanded", !isExpanded);
+          dropdown.classList.toggle("hidden");
         });
       });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Get all tab buttons and content panels
-        const tabButtons = document.querySelectorAll('[role="tab"]');
-        const tabContents = document.querySelectorAll(".tab-content");
 
-        // Add click event listeners to each tab
-        tabButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-            const tabId = this.getAttribute("data-tab");
+      // Initially hide all dropdowns
+      dropdowns.forEach((dropdown) => {
+        dropdown.style.display = "none";
+      });
+      dropdownButtons.forEach((button) => {
+        button.setAttribute("aria-expanded", "false");
+      });
 
-            // Deactivate all tabs
-            tabButtons.forEach((btn) => {
-              btn.setAttribute("aria-selected", "false");
-              btn.parentElement.parentElement.classList.remove(
-                "bg-white",
-                "lg:bg-white/10"
+      // Handle dropdowns
+      dropdownButtons.forEach((button, index) => {
+        const dropdown = dropdowns[index];
+        const container = button.parentElement;
+        let timeoutId;
+
+        // Handle mouse enter on button/container
+        const showDropdown = () => {
+          clearTimeout(timeoutId);
+          // Hide all other dropdowns
+          dropdowns.forEach((otherDropdown, otherIndex) => {
+            if (otherIndex !== index) {
+              otherDropdown.style.display = "none";
+              dropdownButtons[otherIndex].setAttribute(
+                "aria-expanded",
+                "false"
               );
-              btn.parentElement.parentElement.classList.add(
-                "hover:bg-white/10",
-                "lg:hover:bg-white/5"
-              );
-              btn.classList.remove("text-blue-600");
-              btn.classList.add("text-blue-100");
-            });
+            }
+          });
+          dropdown.style.display = "block";
+          button.setAttribute("aria-expanded", "true");
+        };
 
-            // Activate clicked tab
-            this.setAttribute("aria-selected", "true");
-            this.parentElement.parentElement.classList.add(
+        // Handle mouse leave
+        const hideDropdown = () => {
+          timeoutId = setTimeout(() => {
+            dropdown.style.display = "none";
+            button.setAttribute("aria-expanded", "false");
+          }, 100); // Small delay to handle gap between button and dropdown
+        };
+
+        // Add event listeners
+        container.addEventListener("mouseenter", showDropdown);
+        container.addEventListener("mouseleave", hideDropdown);
+        dropdown.addEventListener("mouseenter", () =>
+          clearTimeout(timeoutId)
+        );
+        dropdown.addEventListener("mouseleave", hideDropdown);
+
+        // Handle click (for mobile)
+        button.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const isExpanded = button.getAttribute("aria-expanded") === "true";
+          button.setAttribute("aria-expanded", !isExpanded);
+          dropdown.style.display = isExpanded ? "none" : "block";
+        });
+      });
+
+      // Close dropdowns when clicking outside
+      document.addEventListener("click", () => {
+        dropdownButtons.forEach((button, index) => {
+          button.setAttribute("aria-expanded", "false");
+          dropdowns[index].style.display = "none";
+        });
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get all tab buttons and content panels
+      const tabButtons = document.querySelectorAll('[role="tab"]');
+      const tabContents = document.querySelectorAll(".tab-content");
+
+      // Add click event listeners to each tab
+      tabButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const tabId = this.getAttribute("data-tab");
+
+          // Deactivate all tabs
+          tabButtons.forEach((btn) => {
+            btn.setAttribute("aria-selected", "false");
+            btn.parentElement.parentElement.classList.remove(
               "bg-white",
               "lg:bg-white/10"
             );
-            this.parentElement.parentElement.classList.remove(
+            btn.parentElement.parentElement.classList.add(
               "hover:bg-white/10",
               "lg:hover:bg-white/5"
             );
-            this.classList.add("text-blue-600");
-            this.classList.remove("text-blue-100");
-
-            // Hide all content panels
-            tabContents.forEach((content) => {
-              content.classList.add("hidden");
-            });
-
-            // Show selected content panel
-            document
-              .getElementById(tabId + "-content")
-              .classList.remove("hidden");
+            btn.classList.remove("text-blue-600");
+            btn.classList.add("text-blue-100");
           });
+
+          // Activate clicked tab
+          this.setAttribute("aria-selected", "true");
+          this.parentElement.parentElement.classList.add(
+            "bg-white",
+            "lg:bg-white/10"
+          );
+          this.parentElement.parentElement.classList.remove(
+            "hover:bg-white/10",
+            "lg:hover:bg-white/5"
+          );
+          this.classList.add("text-blue-600");
+          this.classList.remove("text-blue-100");
+
+          // Hide all content panels
+          tabContents.forEach((content) => {
+            content.classList.add("hidden");
+          });
+
+          // Show selected content panel
+          document
+            .getElementById(tabId + "-content")
+            .classList.remove("hidden");
         });
       });
-    </script>
-    <script>
-      // Add this script to handle the banner close functionality
-      document.addEventListener("DOMContentLoaded", function () {
-        const closeBannerButton = document.getElementById("close-banner");
-        const notificationBanner = document.getElementById(
-          "notification-banner"
-        );
+    });
+  </script>
+  <script>
+    // Add this script to handle the banner close functionality
+    document.addEventListener("DOMContentLoaded", function () {
+      const closeBannerButton = document.getElementById("close-banner");
+      const notificationBanner = document.getElementById(
+        "notification-banner"
+      );
 
-        if (closeBannerButton && notificationBanner) {
-          closeBannerButton.addEventListener("click", function () {
-            notificationBanner.style.display = "none";
-          });
-        }
-      });
-    </script>
+      if (closeBannerButton && notificationBanner) {
+        closeBannerButton.addEventListener("click", function () {
+          notificationBanner.style.display = "none";
+        });
+      }
+    });
+  </script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="bg-white font-sans">
-    <div class="bg-white">
-      <header class="bg-white">
-        <nav
-          class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8"
-          aria-label="Global"
-        >
-          <div class="flex lg:flex-1">
-            <a href="https://www.bizcaselab.com" class="-m-1.5 p-1.5">
-              <span class="sr-only">bizcaselab</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="100"
-                height="50"
-                zoomAndPan="magnify"
-                viewBox="0 0 375 187"
-                preserveAspectRatio="xMidYMid meet"
-                version="1.0"
-              >
-                <defs><g /></defs>
-                <g fill="#004aad" fill-opacity="1">
-                  <g transform="translate(30.767082, 118.297858)">
-                    <g>
-                      <path
-                        d="M 78.9375 -102.078125 C 84.082031 -102.078125 88.804688 -101.015625 93.109375 -98.890625 C 97.410156 -96.765625 100.820312 -93.769531 103.34375 -89.90625 C 105.863281 -86.050781 107.125 -81.75 107.125 -77 C 107.125 -64.4375 101.4375 -56.523438 90.0625 -53.265625 L 90.0625 -52.671875 C 103.019531 -49.703125 109.5 -41.195312 109.5 -27.15625 C 109.5 -21.8125 108.1875 -17.085938 105.5625 -12.984375 C 102.945312 -8.878906 99.363281 -5.6875 94.8125 -3.40625 C 90.257812 -1.132812 85.265625 0 79.828125 0 L 10.984375 0 L 10.984375 -102.078125 Z M 43.765625 -62.3125 L 66.328125 -62.3125 C 68.503906 -62.3125 70.304688 -63.078125 71.734375 -64.609375 C 73.171875 -66.148438 73.890625 -68.054688 73.890625 -70.328125 L 73.890625 -71.8125 C 73.890625 -73.988281 73.144531 -75.84375 71.65625 -77.375 C 70.175781 -78.90625 68.398438 -79.671875 66.328125 -79.671875 L 43.765625 -79.671875 Z M 43.765625 -23.734375 L 68.703125 -23.734375 C 70.878906 -23.734375 72.679688 -24.5 74.109375 -26.03125 C 75.546875 -27.570312 76.265625 -29.476562 76.265625 -31.75 L 76.265625 -33.234375 C 76.265625 -35.515625 75.546875 -37.421875 74.109375 -38.953125 C 72.679688 -40.484375 70.878906 -41.25 68.703125 -41.25 L 43.765625 -41.25 Z M 43.765625 -23.734375 "
-                      />
-                    </g>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-white font-sans">
+  <div class="bg-white">
+    <header class="bg-white">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
+        <div class="flex lg:flex-1">
+          <a href="https://www.bizcaselab.com" class="-m-1.5 p-1.5">
+            <span class="sr-only">bizcaselab</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="50"
+              zoomAndPan="magnify" viewBox="0 0 375 187" preserveAspectRatio="xMidYMid meet" version="1.0">
+              <defs>
+                <g />
+              </defs>
+              <g fill="#004aad" fill-opacity="1">
+                <g transform="translate(30.767082, 118.297858)">
+                  <g>
+                    <path
+                      d="M 78.9375 -102.078125 C 84.082031 -102.078125 88.804688 -101.015625 93.109375 -98.890625 C 97.410156 -96.765625 100.820312 -93.769531 103.34375 -89.90625 C 105.863281 -86.050781 107.125 -81.75 107.125 -77 C 107.125 -64.4375 101.4375 -56.523438 90.0625 -53.265625 L 90.0625 -52.671875 C 103.019531 -49.703125 109.5 -41.195312 109.5 -27.15625 C 109.5 -21.8125 108.1875 -17.085938 105.5625 -12.984375 C 102.945312 -8.878906 99.363281 -5.6875 94.8125 -3.40625 C 90.257812 -1.132812 85.265625 0 79.828125 0 L 10.984375 0 L 10.984375 -102.078125 Z M 43.765625 -62.3125 L 66.328125 -62.3125 C 68.503906 -62.3125 70.304688 -63.078125 71.734375 -64.609375 C 73.171875 -66.148438 73.890625 -68.054688 73.890625 -70.328125 L 73.890625 -71.8125 C 73.890625 -73.988281 73.144531 -75.84375 71.65625 -77.375 C 70.175781 -78.90625 68.398438 -79.671875 66.328125 -79.671875 L 43.765625 -79.671875 Z M 43.765625 -23.734375 L 68.703125 -23.734375 C 70.878906 -23.734375 72.679688 -24.5 74.109375 -26.03125 C 75.546875 -27.570312 76.265625 -29.476562 76.265625 -31.75 L 76.265625 -33.234375 C 76.265625 -35.515625 75.546875 -37.421875 74.109375 -38.953125 C 72.679688 -40.484375 70.878906 -41.25 68.703125 -41.25 L 43.765625 -41.25 Z M 43.765625 -23.734375 " />
                   </g>
                 </g>
-                <g fill="#004aad" fill-opacity="1">
-                  <g transform="translate(146.192083, 118.297858)">
-                    <g>
-                      <path
-                        d="M 59.640625 -103.859375 C 74.773438 -103.859375 86.742188 -100.070312 95.546875 -92.5 C 104.359375 -84.9375 108.765625 -74.132812 108.765625 -60.09375 L 77.453125 -60.09375 C 77.453125 -66.03125 75.894531 -70.726562 72.78125 -74.1875 C 69.664062 -77.644531 65.238281 -79.375 59.5 -79.375 C 52.875 -79.375 48 -77.296875 44.875 -73.140625 C 41.757812 -68.992188 40.203125 -63.207031 40.203125 -55.78125 L 40.203125 -46.296875 C 40.203125 -38.972656 41.757812 -33.207031 44.875 -29 C 48 -24.800781 52.773438 -22.703125 59.203125 -22.703125 C 65.535156 -22.703125 70.332031 -24.332031 73.59375 -27.59375 C 76.851562 -30.863281 78.484375 -35.460938 78.484375 -41.390625 L 108.765625 -41.390625 C 108.765625 -27.441406 104.484375 -16.757812 95.921875 -9.34375 C 87.367188 -1.925781 75.273438 1.78125 59.640625 1.78125 C 42.234375 1.78125 29.050781 -2.664062 20.09375 -11.5625 C 11.144531 -20.46875 6.671875 -33.628906 6.671875 -51.046875 C 6.671875 -68.453125 11.144531 -81.601562 20.09375 -90.5 C 29.050781 -99.40625 42.234375 -103.859375 59.640625 -103.859375 Z M 59.640625 -103.859375 "
-                      />
-                    </g>
+              </g>
+              <g fill="#004aad" fill-opacity="1">
+                <g transform="translate(146.192083, 118.297858)">
+                  <g>
+                    <path
+                      d="M 59.640625 -103.859375 C 74.773438 -103.859375 86.742188 -100.070312 95.546875 -92.5 C 104.359375 -84.9375 108.765625 -74.132812 108.765625 -60.09375 L 77.453125 -60.09375 C 77.453125 -66.03125 75.894531 -70.726562 72.78125 -74.1875 C 69.664062 -77.644531 65.238281 -79.375 59.5 -79.375 C 52.875 -79.375 48 -77.296875 44.875 -73.140625 C 41.757812 -68.992188 40.203125 -63.207031 40.203125 -55.78125 L 40.203125 -46.296875 C 40.203125 -38.972656 41.757812 -33.207031 44.875 -29 C 48 -24.800781 52.773438 -22.703125 59.203125 -22.703125 C 65.535156 -22.703125 70.332031 -24.332031 73.59375 -27.59375 C 76.851562 -30.863281 78.484375 -35.460938 78.484375 -41.390625 L 108.765625 -41.390625 C 108.765625 -27.441406 104.484375 -16.757812 95.921875 -9.34375 C 87.367188 -1.925781 75.273438 1.78125 59.640625 1.78125 C 42.234375 1.78125 29.050781 -2.664062 20.09375 -11.5625 C 11.144531 -20.46875 6.671875 -33.628906 6.671875 -51.046875 C 6.671875 -68.453125 11.144531 -81.601562 20.09375 -90.5 C 29.050781 -99.40625 42.234375 -103.859375 59.640625 -103.859375 Z M 59.640625 -103.859375 " />
                   </g>
                 </g>
-                <g fill="#004aad" fill-opacity="1">
-                  <g transform="translate(261.617084, 118.297858)">
-                    <g>
-                      <path
-                        d="M 10.984375 -102.078125 L 43.765625 -102.078125 L 43.765625 -26.109375 L 96.140625 -26.109375 L 96.140625 0 L 10.984375 0 Z M 10.984375 -102.078125 "
-                      />
-                    </g>
+              </g>
+              <g fill="#004aad" fill-opacity="1">
+                <g transform="translate(261.617084, 118.297858)">
+                  <g>
+                    <path
+                      d="M 10.984375 -102.078125 L 43.765625 -102.078125 L 43.765625 -26.109375 L 96.140625 -26.109375 L 96.140625 0 L 10.984375 0 Z M 10.984375 -102.078125 " />
                   </g>
                 </g>
-              </svg>
-            </a>
-          </div>
-          <div class="flex lg:hidden">
-            <button
-              type="button"
-              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-              aria-label="Open main menu"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="size-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            aria-label="Open main menu">
+            <span class="sr-only">Open main menu</span>
+            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <div class="relative">
+            <button type="button" class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900"
+              aria-expanded="false" aria-haspopup="true">
+              Case studies
+              <svg class="size-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                data-slot="icon">
+                <path fill-rule="evenodd"
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd" />
               </svg>
             </button>
-          </div>
-          <div class="hidden lg:flex lg:gap-x-12">
-            <div class="relative">
-              <button
-                type="button"
-                class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900"
-                aria-expanded="false"
-                aria-haspopup="true"
-              >
-                Case studies
-                <svg
-                  class="size-5 flex-none text-gray-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  data-slot="icon"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </button>
 
-              <div
-                class="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white ring-1 shadow-lg ring-gray-900/5"
-              >
-                <div class="p-4">
+            <div
+              class="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white ring-1 shadow-lg ring-gray-900/5">
+              <div class="p-4">
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
                   <div
-                    class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-                  >
-                    <div
-                      class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                    >
-                      <svg
-                        class="size-6 text-gray-600 group-hover:text-indigo-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                        data-slot="icon"
-                      >
-                        <!-- Head with hair (removed extra point) -->
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M8 7c0-2 2-4 4-4s4 2 4 4"
-                        />
-                        <circle cx="12" cy="7" r="4" />
-                        <!-- Body/Shoulders -->
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M6 15s2-3 6-3 6 3 6 3"
-                        />
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 12v8"
-                        />
-                        <!-- Tie -->
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 14l-1.5-1h3l-1.5 1"
-                        />
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M10.5 19L12 14l1.5 5"
-                        />
-                      </svg>
-                    </div>
-                    <div class="flex-auto">
-                      <a
-                        href="professors.html"
-                        class="block font-bold text-gray-900"
-                      >
-                        Professors
-                        <span
-                          class="absolute inset-0 pointer-events-none"
-                        ></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">
-                        Create and share case studies
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-                  >
-                    <div
-                      class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                    >
-                      <svg
-                        class="size-6 text-gray-600 group-hover:text-indigo-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                        data-slot="icon"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
-                        />
-                      </svg>
-                    </div>
-                    <div class="flex-auto">
-                      <a
-                        href="students.html"
-                        class="block font-bold text-gray-900"
-                      >
-                        Students
-                        <span
-                          class="absolute inset-0 pointer-events-none"
-                        ></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">
-                        Access case study and submit answers
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-                  >
-                    <div
-                      class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                    >
-                      <svg
-                        class="size-6 text-gray-600 group-hover:text-indigo-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                        data-slot="icon"
-                      >
-                        <!-- Office building/company icon -->
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"
-                        />
-                      </svg>
-                    </div>
-                    <div class="flex-auto">
-                      <a
-                        href="company.html"
-                        class="block font-bold text-gray-900"
-                      >
-                        Company
-                        <span
-                          class="absolute inset-0 pointer-events-none"
-                        ></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">
-                        Connect with universities (Coming soon)
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50"
-                >
-                  <a
-                    href="demo.html"
-                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
-                  >
-                    <svg
-                      class="size-5 flex-none text-gray-400"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      data-slot="icon"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2 10a8 8 0 1 1 16 0 8 8 0 0 1-16 0Zm6.39-2.908a.75.75 0 0 1 .766.027l3.5 2.25a.75.75 0 0 1 0 1.262l-3.5 2.25A.75.75 0 0 1 8 12.25v-4.5a.75.75 0 0 1 .39-.658Z"
-                        clip-rule="evenodd"
-                      />
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <!-- Head with hair (removed extra point) -->
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 7c0-2 2-4 4-4s4 2 4 4" />
+                      <circle cx="12" cy="7" r="4" />
+                      <!-- Body/Shoulders -->
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 15s2-3 6-3 6 3 6 3" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 12v8" />
+                      <!-- Tie -->
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l-1.5-1h3l-1.5 1" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19L12 14l1.5 5" />
                     </svg>
-                    Watch demo
-                  </a>
-                  <a
-                    href="mailto:support@bizcaselab.com"
-                    class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
-                  >
-                    <svg
-                      class="size-5 flex-none text-gray-400"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      data-slot="icon"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2.106 6.447A2 2 0 0 0 2 7v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-.106-.553l-6-3.5a2 2 0 0 0-1.788 0l-6 3.5Zm1.48.97 5.902 3.445a.5.5 0 0 0 .504 0l5.902-3.445a.5.5 0 0 0 0-.862l-5.902-3.445a.5.5 0 0 0-.504 0L3.586 6.555a.5.5 0 0 0 0 .862Z"
-                        clip-rule="evenodd"
-                      />
+                  </div>
+                  <div class="flex-auto">
+                    <a href="professors.html" class="block font-bold text-gray-900">
+                      Professors
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Create and share case studies
+                    </p>
+                  </div>
+                </div>
+
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
                     </svg>
-                    Contact us
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="relative">
-              <button
-                type="button"
-                class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900"
-                aria-expanded="false"
-                aria-haspopup="true"
-              >
-                Resource
-                <svg
-                  class="size-5 flex-none text-gray-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  data-slot="icon"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </button>
-
-              <div
-                class="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white ring-1 shadow-lg ring-gray-900/5"
-              >
-                <div class="p-4">
-                  <div
-                    class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-                  >
-                    <div
-                      class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                    >
-                      <svg
-                        class="size-6 text-gray-600 group-hover:text-indigo-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                        data-slot="icon"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347c-.75.412-1.667-.13-1.667-.986V5.653Z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="flex-auto">
-                      <a
-                        href="demo.html"
-                        class="block font-semibold text-gray-900"
-                      >
-                        Demo
-                        <span
-                          class="absolute inset-0 pointer-events-none"
-                        ></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">Learn how to use BCL</p>
-                    </div>
                   </div>
-
-                  <div
-                    class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-                  >
-                    <div
-                      class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                    >
-                      <svg
-                        class="size-6 text-gray-600 group-hover:text-indigo-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                        data-slot="icon"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="flex-auto">
-                      <a
-                        href="faq.html"
-                        class="block font-semibold text-gray-900"
-                      >
-                        FAQs
-                        <span
-                          class="absolute inset-0 pointer-events-none"
-                        ></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">
-                        Your questions answered here
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-                  >
-                    <div
-                      class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                    >
-                      <svg
-                        class="size-6 text-gray-600 group-hover:text-indigo-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                        data-slot="icon"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="flex-auto">
-                      <a
-                        href="workshop.html"
-                        class="block font-semibold text-gray-900"
-                      >
-                        Workshop calendar
-                        <span
-                          class="absolute inset-0 pointer-events-none"
-                        ></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">
-                        View upcoming training sessions
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-                  >
-                    <div
-                      class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                    >
-                      <svg
-                        class="size-6 text-gray-600 group-hover:text-indigo-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                        data-slot="icon"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
-                        />
-                      </svg>
-                    </div>
-                    <div class="flex-auto">
-                      <a
-                        href="blog.html"
-                        class="block font-semibold text-gray-900"
-                      >
-                        Blog
-                        <span
-                          class="absolute inset-0 pointer-events-none"
-                        ></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">
-                        Check our latest insights
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-                  >
-                    <div
-                      class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                    >
-                      <svg
-                        class="size-6 text-gray-600 group-hover:text-indigo-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                        data-slot="icon"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="flex-auto">
-                      <a
-                        href="news.html"
-                        class="block font-semibold text-gray-900"
-                      >
-                        Newsroom
-                        <span
-                          class="absolute inset-0 pointer-events-none"
-                        ></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">
-                        Check our latest news and updates
-                      </p>
-                    </div>
+                  <div class="flex-auto">
+                    <a href="students.html" class="block font-bold text-gray-900">
+                      Students
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Access case study and submit answers
+                    </p>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="relative">
-              <button
-                type="button"
-                class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900"
-                aria-expanded="false"
-                aria-haspopup="true"
-              >
-                Company
-                <svg
-                  class="size-5 flex-none text-gray-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  data-slot="icon"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </button>
-
-              <div
-                class="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white ring-1 shadow-lg ring-gray-900/5"
-              >
-                <div class="p-4">
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
                   <div
-                    class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-                  >
-                    <div
-                      class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                    >
-                      <svg
-                        class="size-6 text-gray-600 group-hover:text-indigo-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                        data-slot="icon"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="flex-auto">
-                      <a
-                        href="aboutus.html"
-                        class="block font-semibold text-gray-900"
-                      >
-                        About us
-                        <span
-                          class="absolute inset-0 pointer-events-none"
-                        ></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">About Business Case Lab</p>
-                    </div>
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <!-- Office building/company icon -->
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
+                    </svg>
                   </div>
-
-                  <div
-                    class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-                  >
-                    <div
-                      class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                    >
-                      <svg
-                        class="size-6 text-gray-600 group-hover:text-indigo-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                        data-slot="icon"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="flex-auto">
-                      <a
-                        href="privacy-policy.html"
-                        class="block font-semibold text-gray-900"
-                      >
-                        Privacy Policy
-                        <span
-                          class="absolute inset-0 pointer-events-none"
-                        ></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">
-                        Our privacy policy on using users' data
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-                  >
-                    <div
-                      class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                    >
-                      <svg
-                        class="size-6 text-gray-600 group-hover:text-indigo-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                        data-slot="icon"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="flex-auto">
-                      <a
-                        href="terms-of-use.html"
-                        class="block font-semibold text-gray-900"
-                      >
-                        Terms of Service
-                        <span
-                          class="absolute inset-0 pointer-events-none"
-                        ></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">
-                        Our terms and conditions for using BCL platform
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- login -->
-
-          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <div class="relative">
-              <button
-                type="button"
-                class="flex items-center gap-x-2 text-sm/6 font-semibold text-gray-900"
-                aria-expanded="false"
-                aria-haspopup="true"
-              >
-                <svg
-                  class="size-6 text-blue-600 group-hover:text-blue-800"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-                Log in
-                <svg
-                  class="size-5 flex-none text-gray-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  data-slot="icon"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </button>
-
-              <div
-                class="absolute right-0 z-10 mt-3 w-48 origin-top-right rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
-              >
-                <div class="p-4">
-                  <div
-                    class="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm/6 hover:bg-gray-50"
-                  >
-                    <div
-                      class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                    >
-                      <svg
-                        class="size-6 text-gray-600 group-hover:text-indigo-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                        data-slot="icon"
-                      >
-                        <!-- Head with hair (removed extra point) -->
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M8 7c0-2 2-4 4-4s4 2 4 4"
-                        />
-                        <circle cx="12" cy="7" r="4" />
-                        <!-- Body/Shoulders -->
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M6 15s2-3 6-3 6 3 6 3"
-                        />
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 12v8"
-                        />
-                        <!-- Tie -->
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 14l-1.5-1h3l-1.5 1"
-                        />
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M10.5 19L12 14l1.5 5"
-                        />
-                      </svg>
-                    </div>
-                    <div class="flex-auto">
-                      <a
-                        href="https://instructor.bizcaselab.com/"
-                        class="block font-semibold text-gray-900"
-                      >
-                        Login as Professor
-                        <span
-                          class="absolute inset-0 pointer-events-none"
-                        ></span>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div
-                    class="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm/6 hover:bg-gray-50"
-                  >
-                    <div
-                      class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                    >
-                      <svg
-                        class="size-6 text-gray-600 group-hover:text-indigo-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
-                        />
-                      </svg>
-                    </div>
-                    <div class="flex-auto">
-                      <a
-                        href="https://student.bizcaselab.com/"
-                        class="block font-semibold text-gray-900"
-                      >
-                        Login as Student
-                        <span
-                          class="absolute inset-0 pointer-events-none"
-                        ></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <!-- mobile menu -->
-
-        <div class="lg:hidden hidden" role="dialog" aria-modal="true">
-          <!-- Background backdrop -->
-          <div class="fixed inset-0 z-10"></div>
-          <div
-            class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
-          >
-            <div class="flex items-center justify-between">
-              <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">BizCaseLab</span>
-                <img class="h-14 w-auto" src="img/logo.svg" alt="" />
-              </a>
-              <button
-                type="button"
-                class="-m-2.5 rounded-md p-2.5 text-gray-700"
-                aria-label="Close menu"
-              >
-                <span class="sr-only">Close menu</span>
-                <svg
-                  class="size-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div class="mt-6 flow-root">
-              <div class="-my-6 divide-y divide-gray-500/10">
-                <div class="space-y-2 py-6">
-                  <!-- Product Dropdown -->
-                  <div class="-mx-3">
-                    <button
-                      type="button"
-                      class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                      aria-controls="disclosure-1"
-                      aria-expanded="false"
-                    >
-                      Case Studies
-                      <svg
-                        class="size-5 flex-none"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </button>
-                    <div class="mt-2 space-y-2 hidden" id="disclosure-1">
-                      <a
-                        href="professors.html"
-                        class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                        >Professors</a
-                      >
-                      <a
-                        href="students.html"
-                        class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                        >Students</a
-                      >
-                      <a
-                        href="company.html"
-                        class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                        >Companies</a
-                      >
-                    </div>
-                  </div>
-
-                  <!-- Resource Dropdown -->
-                  <div class="-mx-3">
-                    <button
-                      type="button"
-                      class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                      aria-controls="disclosure-2"
-                      aria-expanded="false"
-                    >
-                      Resource
-                      <svg
-                        class="size-5 flex-none"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </button>
-                    <div class="mt-2 space-y-2 hidden" id="disclosure-2">
-                      <a
-                        href="demo.html"
-                        class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                        >Demo</a
-                      >
-                      <a
-                        href="faq.html"
-                        class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                        >FAQs</a
-                      >
-                      <a
-                        href="blog.html"
-                        class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                        >Blog</a
-                      >
-                      <a
-                        href="news.html"
-                        class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                        >Newsroom</a
-                      >
-                    </div>
-                  </div>
-
-                  <!-- Company Dropdown -->
-                  <div class="-mx-3">
-                    <button
-                      type="button"
-                      class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                      aria-controls="disclosure-3"
-                      aria-expanded="false"
-                    >
+                  <div class="flex-auto">
+                    <a href="company.html" class="block font-bold text-gray-900">
                       Company
-                      <svg
-                        class="size-5 flex-none"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </button>
-                    <div class="mt-2 space-y-2 hidden" id="disclosure-3">
-                      <a
-                        href="aboutus.html"
-                        class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                        >About us</a
-                      >
-                      <a
-                        href="privacy-policy.html"
-                        class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                        >Privacy Policy</a
-                      >
-                      <a
-                        href="terms-of-use.html"
-                        class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                        >Terms of Service</a
-                      >
-                    </div>
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Connect with universities (Coming soon)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                <a href="demo.html"
+                  class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100">
+                  <svg class="size-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                    data-slot="icon">
+                    <path fill-rule="evenodd"
+                      d="M2 10a8 8 0 1 1 16 0 8 8 0 0 1-16 0Zm6.39-2.908a.75.75 0 0 1 .766.027l3.5 2.25a.75.75 0 0 1 0 1.262l-3.5 2.25A.75.75 0 0 1 8 12.25v-4.5a.75.75 0 0 1 .39-.658Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  Watch demo
+                </a>
+                <a href="mailto:support@bizcaselab.com"
+                  class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100">
+                  <svg class="size-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                    data-slot="icon">
+                    <path fill-rule="evenodd"
+                      d="M2.106 6.447A2 2 0 0 0 2 7v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-.106-.553l-6-3.5a2 2 0 0 0-1.788 0l-6 3.5Zm1.48.97 5.902 3.445a.5.5 0 0 0 .504 0l5.902-3.445a.5.5 0 0 0 0-.862l-5.902-3.445a.5.5 0 0 0-.504 0L3.586 6.555a.5.5 0 0 0 0 .862Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  Contact us
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <button type="button" class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900"
+              aria-expanded="false" aria-haspopup="true">
+              Resource
+              <svg class="size-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                data-slot="icon">
+                <path fill-rule="evenodd"
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+
+            <div
+              class="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white ring-1 shadow-lg ring-gray-900/5">
+              <div class="p-4">
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347c-.75.412-1.667-.13-1.667-.986V5.653Z" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="demo.html" class="block font-semibold text-gray-900">
+                      Demo
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">Learn how to use BCL</p>
                   </div>
                 </div>
 
-                <!-- Login Section -->
-                <div class="py-6 space-y-2">
-                  <a
-                    href="https://instructor.bizcaselab.com/"
-                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                    >Login as Professor</a
-                  >
-                  <a
-                    href="https://student.bizcaselab.com/"
-                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                    >Login as Student</a
-                  >
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="faq.html" class="block font-semibold text-gray-900">
+                      FAQs
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Your questions answered here
+                    </p>
+                  </div>
+                </div>
+
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="workshop.html" class="block font-semibold text-gray-900">
+                      Workshop calendar
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      View upcoming training sessions
+                    </p>
+                  </div>
+                </div>
+
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="blog.html" class="block font-semibold text-gray-900">
+                      Blog
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Check our latest insights
+                    </p>
+                  </div>
+                </div>
+
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="news.html" class="block font-semibold text-gray-900">
+                      Newsroom
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Check our latest news and updates
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <button type="button" class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900"
+              aria-expanded="false" aria-haspopup="true">
+              Company
+              <svg class="size-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                data-slot="icon">
+                <path fill-rule="evenodd"
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+
+            <div
+              class="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white ring-1 shadow-lg ring-gray-900/5">
+              <div class="p-4">
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="aboutus.html" class="block font-semibold text-gray-900">
+                      About us
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">About Business Case Lab</p>
+                  </div>
+                </div>
+
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="privacy-policy.html" class="block font-semibold text-gray-900">
+                      Privacy Policy
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Our privacy policy on using users' data
+                    </p>
+                  </div>
+                </div>
+
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="terms-of-use.html" class="block font-semibold text-gray-900">
+                      Terms of Service
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Our terms and conditions for using BCL platform
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </header>
 
+        <!-- login -->
 
-<!-- Privacy Policy Hero Section -->
-<section class="relative bg-white">
-  <div class="absolute inset-0 bg-gradient-to-b from-blue-50 to-white h-2/3"></div>
-  <div class="relative mx-auto max-w-7xl px-6 pt-24 pb-16 lg:px-8">
-    <div class="mx-auto max-w-3xl text-center">
-      <h1 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Privacy Policy</h1>
-      <p class="mt-6 text-lg leading-8 text-gray-600">Last updated: December 10, 2024</p>
-    </div>
-  </div>
-</section>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <div class="relative">
+            <button type="button" class="flex items-center gap-x-2 text-sm/6 font-semibold text-gray-900"
+              aria-expanded="false" aria-haspopup="true">
+              <svg class="size-6 text-blue-600 group-hover:text-blue-800" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              Log in
+              <svg class="size-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                data-slot="icon">
+                <path fill-rule="evenodd"
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
 
-<!-- Table of Contents -->
-<div class="bg-gray-50 py-8">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-3xl">
-      <h2 class="text-lg font-semibold mb-4">Table of Contents</h2>
-      <nav class="space-y-1">
-        <a href="#interpretations" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">1. Interpretations and Definitions</a>
-        <a href="#personal-data" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">2. Collecting and Using Personal Data</a>
-        <a href="#use-of-data" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">3. Use of Your Personal Data</a>
-        <a href="#retention" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">4. Retention of Your Personal Data</a>
-        <a href="#transfer" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">5. Transfer of Your Personal Data</a>
-        <a href="#disclosure" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">6. Disclosure of Your Personal Data</a>
-        <a href="#security" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">7. Security of Your Personal Data</a>
-        <a href="#children" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">8. Children's Privacy</a>
-        <a href="#links" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">9. Links to Other Websites</a>
-        <a href="#changes" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">10. Changes to this Privacy Policy</a>
-        <a href="#contact" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">11. Contact Us</a>
-      </nav>
-    </div>
-  </div>
-</div>
-
-      <!-- Main Content -->
-      <style>
-        html {
-          scroll-behavior: smooth;
-        }
-        .scroll-mt-20 {
-          scroll-margin-top: 5rem;
-        }
-      </style>
-      
-      <!-- Main Content -->
-      <div class="bg-white py-16">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto max-w-3xl prose prose-sm prose-indigo">
-            <!-- Introduction -->
-            <div class="mb-12">
-              <p class="text-gray-600 mb-4">This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
-              <p class="text-gray-600 mb-6">We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
-            </div>
-      
-            <!-- Interpretations and Definitions -->
-            <ul class="space-y-4 mb-8">
-              <li class="flex gap-x-3">
-                <strong class="text-gray-900">Account</strong>
-                <span>means a unique account created for You to access our Service or parts of our Service.</span>
-              </li>
-              <li class="flex gap-x-3">
-                <strong class="text-gray-900">Company</strong>
-                <span>(referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Business Case Lab.</span>
-              </li>
-              <li class="flex gap-x-3">
-                <strong class="text-gray-900">Country</strong>
-                <span>refers to Canada.</span>
-              </li>
-              <li class="flex gap-x-3">
-                <strong class="text-gray-900">Cookies</strong>
-                <span>are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your browsing history on that website among its many uses.</span>
-              </li>
-              <li class="flex gap-x-3">
-                <strong class="text-gray-900">Device</strong>
-                <span>means any device that can access the Service such as a computer, a cell phone or a digital tablet.</span>
-              </li>
-              <li class="flex gap-x-3">
-                <strong class="text-gray-900">Personal Data</strong>
-                <span>is any information that relates to an identified or identifiable individual.</span>
-              </li>
-              <li class="flex gap-x-3">
-                <strong class="text-gray-900">Service</strong>
-                <span>refers to the Website.</span>
-              </li>
-              <li class="flex gap-x-3">
-                <strong class="text-gray-900">Service Provider</strong>
-                <span>means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.</span>
-              </li>
-              <li class="flex gap-x-3">
-                <strong class="text-gray-900">Usage Data</strong>
-                <span>refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</span>
-              </li>
-              <li class="flex gap-x-3">
-                <strong class="text-gray-900">Website</strong>
-                <span>refers to Bizcaselab, accessible from <a href="https://www.bizcaselab.com" target="_blank" class="text-blue-600 hover:text-blue-800">https://www.bizcaselab.com</a>.</span>
-              </li>
-              <li class="flex gap-x-3">
-                <strong class="text-gray-900">You</strong>
-                <span>means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</span>
-              </li>
-            </ul>
-      
-            <div id="personal-data" class="scroll-mt-20 mb-12">
-              <h2 class="text-2xl font-bold text-gray-900 mb-6">Collecting and Using Your Personal Data</h2>
-              
-              <!-- Personal Data Section -->
-              <div class="mb-8">
-                <h3 class="text-xl font-semibold text-gray-900 mb-4">Types of Data Collected</h3>
-                <h4 class="text-lg font-medium text-gray-900 mb-3">Personal Data</h4>
-                <p class="mb-4">While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:</p>
-                <ul class="list-disc pl-5 mb-6">
-                  <li>Email address</li>
-                  <li>First name and last name</li>
-                  <li>Usage Data</li>
-                </ul>
-              </div>
-            
-              <!-- Usage Data Section -->
-              <div class="mb-8">
-                <h4 class="text-lg font-medium text-gray-900 mb-3">Usage Data</h4>
-                <p class="mb-4">Usage Data is collected automatically when using the Service.</p>
-                <p class="mb-4">Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
-                <p class="mb-4">When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.</p>
-              </div>
-            
-              <!-- Cookies Section -->
-              <div class="mb-8">
-                <h4 class="text-lg font-medium text-gray-900 mb-3">Tracking Technologies and Cookies</h4>
-                <p class="mb-4">We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze Our Service. The technologies We use may include:</p>
-                <ul class="space-y-4 mb-6">
-                  <li class="bg-gray-50 p-4 rounded-lg">
-                    <strong class="text-gray-900">Cookies or Browser Cookies:</strong>
-                    <p class="mt-2">A cookie is a small file placed on Your Device. You can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if You do not accept Cookies, You may not be able to use some parts of our Service. Unless you have adjusted Your browser setting so that it will refuse Cookies, our Service may use Cookies.</p>
-                  </li>
-                  <li class="bg-gray-50 p-4 rounded-lg">
-                    <strong class="text-gray-900">Web Beacons:</strong>
-                    <p class="mt-2">Certain sections of our Service and our emails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit the Company, for example, to count users who have visited those pages or opened an email and for other related website statistics.</p>
-                  </li>
-                </ul>
-            
-                <p class="mb-4">Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser.</p>
-                <p class="mb-4">We use both Session and Persistent Cookies for the purposes set out below:</p>
-            
-                <div class="space-y-4 mb-6">
-                  <div class="bg-gray-50 p-4 rounded-lg">
-                    <strong class="text-gray-900 block mb-2">Necessary / Essential Cookies</strong>
-                    <p class="mb-2"><strong class="text-gray-700">Type:</strong> Session Cookies</p>
-                    <p class="mb-2"><strong class="text-gray-700">Administered by:</strong> Us</p>
-                    <p><strong class="text-gray-700">Purpose:</strong> These Cookies are essential to provide You with services available through the Website and to enable You to use some of its features.</p>
+            <div
+              class="absolute right-0 z-10 mt-3 w-48 origin-top-right rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <div class="p-4">
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <!-- Head with hair (removed extra point) -->
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 7c0-2 2-4 4-4s4 2 4 4" />
+                      <circle cx="12" cy="7" r="4" />
+                      <!-- Body/Shoulders -->
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 15s2-3 6-3 6 3 6 3" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 12v8" />
+                      <!-- Tie -->
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l-1.5-1h3l-1.5 1" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19L12 14l1.5 5" />
+                    </svg>
                   </div>
-            
-                  <div class="bg-gray-50 p-4 rounded-lg">
-                    <strong class="text-gray-900 block mb-2">Cookies Policy / Notice Acceptance Cookies</strong>
-                    <p class="mb-2"><strong class="text-gray-700">Type:</strong> Persistent Cookies</p>
-                    <p class="mb-2"><strong class="text-gray-700">Administered by:</strong> Us</p>
-                    <p><strong class="text-gray-700">Purpose:</strong> These Cookies identify if users have accepted the use of cookies on the Website.</p>
-                  </div>
-            
-                  <div class="bg-gray-50 p-4 rounded-lg">
-                    <strong class="text-gray-900 block mb-2">Functionality Cookies</strong>
-                    <p class="mb-2"><strong class="text-gray-700">Type:</strong> Persistent Cookies</p>
-                    <p class="mb-2"><strong class="text-gray-700">Administered by:</strong> Us</p>
-                    <p><strong class="text-gray-700">Purpose:</strong> These Cookies allow us to remember choices You make when You use the Website.</p>
-                  </div>
-            
-                  <div class="bg-gray-50 p-4 rounded-lg">
-                    <strong class="text-gray-900 block mb-2">Tracking and Performance Cookies</strong>
-                    <p class="mb-2"><strong class="text-gray-700">Type:</strong> Persistent Cookies</p>
-                    <p class="mb-2"><strong class="text-gray-700">Administered by:</strong> Third-Parties</p>
-                    <p><strong class="text-gray-700">Purpose:</strong> These Cookies are used to track information about traffic to the Website and how users use the Website.</p>
+                  <div class="flex-auto">
+                    <a href="https://instructor.bizcaselab.com/" class="block font-semibold text-gray-900">
+                      Login as Professor
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
                   </div>
                 </div>
-            
-                <p class="text-gray-600">For more information about the cookies we use and your choices regarding cookies, please visit our Cookies Policy or the Cookies section of our Privacy Policy.</p>
+
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="https://student.bizcaselab.com/" class="block font-semibold text-gray-900">
+                      Login as Student
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-      
-            <div id="use-of-data" class="scroll-mt-20 mb-12">
-              <h2 class="text-2xl font-bold text-gray-900 mb-6">Use of Your Personal Data</h2>
-              
-              <!-- Primary Usage Purposes -->
-              <p class="mb-4">The Company may use Personal Data for the following purposes:</p>
-              <ul class="space-y-3 mb-8">
-                <li class="flex gap-x-3">
-                  <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
-                  <span>To provide and maintain our Service, including to monitor the usage of our Service.</span>
-                </li>
-                <li class="flex gap-x-3">
-                  <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
-                  <span>To manage Your Account: to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.</span>
-                </li>
-                <li class="flex gap-x-3">
-                  <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
-                  <span>For the performance of a contract: the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract with Us through the Service.</span>
-                </li>
-                <li class="flex gap-x-3">
-                  <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
-                  <span>To contact You: To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.</span>
-                </li>
-                <li class="flex gap-x-3">
-                  <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
-                  <span>To provide You with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.</span>
-                </li>
-                <li class="flex gap-x-3">
-                  <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
-                  <span>To manage Your requests: To attend and manage Your requests to Us.</span>
-                </li>
-                <li class="flex gap-x-3">
-                  <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
-                  <span>For other purposes: We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience.</span>
-                </li>
-              </ul>
-            
-              <!-- Information Sharing Section -->
-              <p class="mb-4">We may share Your personal information in the following situations:</p>
-              <ul class="space-y-4 mb-8">
-                <li class="bg-gray-50 p-4 rounded-lg">
-                  <strong class="text-gray-900 block mb-2">With Service Providers:</strong>
-                  <p>We may share Your personal information with Service Providers to monitor and analyze the use of our Service, for payment processing, to contact You.</p>
-                </li>
-                <li class="bg-gray-50 p-4 rounded-lg">
-                  <strong class="text-gray-900 block mb-2">For business transfers:</strong>
-                  <p>We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.</p>
-                </li>
-                <li class="bg-gray-50 p-4 rounded-lg">
-                  <strong class="text-gray-900 block mb-2">With Affiliates:</strong>
-                  <p>We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.</p>
-                </li>
-                <li class="bg-gray-50 p-4 rounded-lg">
-                  <strong class="text-gray-900 block mb-2">With Your consent:</strong>
-                  <p>We may disclose Your personal information for any other purpose with Your consent.</p>
-                </li>
-              </ul>
-            </div>
-      
-            <!-- Retention -->
-            <div id="retention" class="scroll-mt-20 mb-12">
-              <h2 class="text-2xl font-bold text-gray-900 mb-6">Retention of Your Personal Data</h2>
-              <p class="mb-4">The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.</p>
-              <p class="mb-4">The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.</p>
+          </div>
+        </div>
+      </nav>
+      <!-- mobile menu -->
 
-              <!-- Continue with retention details... -->
-            </div>
-      
-            <!-- Transfer -->
-            <div id="transfer" class="scroll-mt-20 mb-12">
-              <h2 class="text-2xl font-bold text-gray-900 mb-6">Transfer of Your Personal Data</h2>
-              <p class="mb-4">Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.</p>
-              <p class="mb-4">Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.</p>
-              <p class="mb-4">The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.</p>
-                      </div>
-      
-            <!-- Disclosure -->
-            <div id="disclosure" class="scroll-mt-20 mb-12">
-              <h2 class="text-2xl font-bold text-gray-900 mb-6">Disclosure of Your Personal Data</h2>
-            
-              <!-- Business Transactions -->
-              <div class="mb-8 bg-gray-50 p-6 rounded-lg">
-                <h3 class="text-xl font-semibold text-gray-900 mb-3">Business Transactions</h3>
-                <p class="text-gray-600">If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.</p>
+      <div class="lg:hidden hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop -->
+        <div class="fixed inset-0 z-10"></div>
+        <div
+          class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">BizCaseLab</span>
+              <img class="h-14 w-auto" src="img/logo.svg" alt="" />
+            </a>
+            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" aria-label="Close menu">
+              <span class="sr-only">Close menu</span>
+              <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <!-- Product Dropdown -->
+                <div class="-mx-3">
+                  <button type="button"
+                    class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    aria-controls="disclosure-1" aria-expanded="false">
+                    Case Studies
+                    <svg class="size-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd"
+                        d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <div class="mt-2 space-y-2 hidden" id="disclosure-1">
+                    <a href="professors.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Professors</a>
+                    <a href="students.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Students</a>
+                    <a href="company.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Companies</a>
+                  </div>
+                </div>
+
+                <!-- Resource Dropdown -->
+                <div class="-mx-3">
+                  <button type="button"
+                    class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    aria-controls="disclosure-2" aria-expanded="false">
+                    Resource
+                    <svg class="size-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd"
+                        d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <div class="mt-2 space-y-2 hidden" id="disclosure-2">
+                    <a href="demo.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Demo</a>
+                    <a href="faq.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">FAQs</a>
+                    <a href="blog.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Blog</a>
+                    <a href="news.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Newsroom</a>
+                  </div>
+                </div>
+
+                <!-- Company Dropdown -->
+                <div class="-mx-3">
+                  <button type="button"
+                    class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    aria-controls="disclosure-3" aria-expanded="false">
+                    Company
+                    <svg class="size-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd"
+                        d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <div class="mt-2 space-y-2 hidden" id="disclosure-3">
+                    <a href="aboutus.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">About
+                      us</a>
+                    <a href="privacy-policy.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Privacy
+                      Policy</a>
+                    <a href="terms-of-use.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Terms
+                      of Service</a>
+                  </div>
+                </div>
               </div>
-            
-              <!-- Law Enforcement -->
-              <div class="mb-8 bg-gray-50 p-6 rounded-lg">
-                <h3 class="text-xl font-semibold text-gray-900 mb-3">Law enforcement</h3>
-                <p class="text-gray-600">Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).</p>
+
+              <!-- Login Section -->
+              <div class="py-6 space-y-2">
+                <a href="https://instructor.bizcaselab.com/"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Login
+                  as Professor</a>
+                <a href="https://student.bizcaselab.com/"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Login
+                  as Student</a>
               </div>
-            
-              <!-- Other Legal Requirements -->
-              <div class="bg-gray-50 p-6 rounded-lg">
-                <h3 class="text-xl font-semibold text-gray-900 mb-3">Other legal requirements</h3>
-                <p class="text-gray-600 mb-4">The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:</p>
-                <ul class="space-y-3">
-                  <li class="flex gap-x-3">
-                    <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
-                    <span>Comply with a legal obligation</span>
-                  </li>
-                  <li class="flex gap-x-3">
-                    <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
-                    <span>Protect and defend the rights or property of the Company</span>
-                  </li>
-                  <li class="flex gap-x-3">
-                    <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
-                    <span>Prevent or investigate possible wrongdoing in connection with the Service</span>
-                  </li>
-                  <li class="flex gap-x-3">
-                    <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
-                    <span>Protect the personal safety of Users of the Service or the public</span>
-                  </li>
-                  <li class="flex gap-x-3">
-                    <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
-                    <span>Protect against legal liability</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-      
-            <!-- Security -->
-            <div id="security" class="scroll-mt-20 mb-12">
-              <h2 class="text-2xl font-bold text-gray-900 mb-6">Security of Your Personal Data</h2>
-              <p class="mb-4">The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.</p>
-
-            </div>
-
-            <!-- Detailed Information on the Processing -->
-            <div id="Detailed" class="scroll-mt-20 mb-12">
-              <h2 class="text-2xl font-bold text-gray-900 mb-6">Detailed Information on the Processing of Your Personal Data</h2>
-              <p class="mb-4">The Service Providers We use may have access to Your Personal Data. These third-party vendors collect, store, use, process and transfer information about Your activity on Our Service in accordance with their Privacy Policies.</p>
-
-            </div>
-            <!-- Children's Privacy -->
-            <div id="children" class="scroll-mt-20 mb-12">
-              <h2 class="text-2xl font-bold text-gray-900 mb-6">Children's Privacy</h2>
-              <p class="mb-4">Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.</p>
-              <p class="mb-4">If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.</p>
-          
-            </div>
-      
-            <!-- Links -->
-            <div id="links" class="scroll-mt-20 mb-12">
-              <h2 class="text-2xl font-bold text-gray-900 mb-6">Links to Other Websites</h2>
-              <p class="mb-4">Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
-              <p class="mb-4">We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
-                      </div>
-      
-            <!-- Changes -->
-            <div id="changes" class="scroll-mt-20 mb-12">
-              <h2 class="text-2xl font-bold text-gray-900 mb-6">Changes to this Privacy Policy</h2>
-              <p  class="mb-4">We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
-              <p  class="mb-4">We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the "Last updated" date at the top of this Privacy Policy.</p>
-              <p  class="mb-4">You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
-                      </div>
-      
-            <!-- Contact -->
-            <div id="contact" class="scroll-mt-20 mb-12">
-              <h2 class="text-2xl font-bold text-gray-900 mb-6">Contact Us</h2>
-              <p class="mb-4">If you have any questions about this Privacy Policy, You can contact us:</p>
-              <ul class="list-disc pl-5">
-                <li><a href="mailto:support@bizcaselab.com" class="text-blue-600 hover:text-blue-800">Email us at support@bizcaselab.com</a></li>
-              </ul>
             </div>
           </div>
         </div>
       </div>
+    </header>
 
 
-<footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-12">
-                  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                    <!-- Links section - 3 columns layout -->
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-                      <!-- Contact Links - Now first column -->
-                      <div class="flex flex-col items-center text-center">
-                        <img
-                          src="img/logo.svg"
-                          width="80"
-                          height="80"
-                          class="mb-4"
-                          alt="BizCaseLab Logo"
-                        />
-                        <ul role="list" class="space-y-3">
-                          <li>
-                            <a
-                              href="mailto:support@bizcaselab.com"
-                              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-                            >
-                              support@bizcaselab.com
-                            </a>
-                          </li>
-                          <li class="pt-4">
-                            <!-- Social Media Icons with improved styling -->
-                            <div class="flex space-x-5 justify-center">
-                              <a
-                                href="https://www.x.com/BizCaseLabCo"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="text-gray-400 hover:text-indigo-600 transition-colors"
-                              >
-                                <span class="sr-only">X</span>
-                                <svg
-                                  class="h-6 w-6"
-                                  fill="currentColor"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                                  />
-                                </svg>
-                              </a>
-                              <a
-                                href="https://www.linkedin.com/company/bizcaselab"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="text-gray-400 hover:text-indigo-600 transition-colors"
-                              >
-                                <span class="sr-only">LinkedIn</span>
-                                <svg
-                                  class="h-6 w-6"
-                                  fill="currentColor"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"
-                                  />
-                                </svg>
-                              </a>
-                              <a
-                                href="https://www.youtube.com/@bizcaselabco"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="text-gray-400 hover:text-indigo-600 transition-colors"
-                              >
-                                <span class="sr-only">YouTube</span>
-                                <svg
-                                  class="h-6 w-6"
-                                  fill="currentColor"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    d="M23.5 6.2c-.3-1-1-1.8-2-2.1C19.9 3.6 12 3.6 12 3.6s-7.9 0-9.5.5c-1 .3-1.7 1.1-2 2.1C0 7.9 0 12 0 12s0 4.1.5 5.8c.3 1 1 1.8 2 2.1 1.6.5 9.5.5 9.5.5s7.9 0 9.5-.5c1-.3 1.7-1.1 2-2.1.5-1.7.5-5.8.5-5.8s0-4.1-.5-5.8zM9.6 15.6V8.4l6.4 3.6-6.4 3.6z"
-                                  />
-                                </svg>
-                              </a>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-            
-                      <!-- case studies Links -->
-                      <div class="flex flex-col items-center text-center">
-                        <h3
-                          class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-4"
-                        >
-                          Case Studies
-                        </h3>
-                        <ul role="list" class="space-y-3">
-                          <li>
-                            <a
-                              href="professors.html"
-                              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-                            >
-                              Professors
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="students.html"
-                              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-                            >
-                              Students
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="company.html"
-                              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-                            >
-                              Companies
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                      <!-- Resources Links -->
-                      <div class="flex flex-col items-center text-center">
-                        <h3
-                          class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-4"
-                        >
-                          Resources
-                        </h3>
-                        <ul role="list" class="space-y-3">
-                          <li>
-                            <a
-                              href="demo.html"
-                              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-                            >
-                              How to Use
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="workshop.html"
-                              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-                            >
-                              Workshop & Webinars
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="faq.html"
-                              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-                            >
-                              FAQs
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="blog.html"
-                              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-                            >
-                              Blog
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="news.html"
-                              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-                            >
-                              Newsroom
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                      <!-- Company Links -->
-                      <div class="flex flex-col items-center text-center">
-                        <h3
-                          class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-4"
-                        >
-                          Company
-                        </h3>
-                        <ul role="list" class="space-y-3">
-                          <li>
-                            <a
-                              href="aboutus.html"
-                              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-                            >
-                              About
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="news.html"
-                              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-                            >
-                              Newsroom
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="privacy-policy.html"
-                              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-                            >
-                              Privacy Policy
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="terms-of-use.html"
-                              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-                            >
-                              Terms of Service
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-            
-                    <!-- Copyright section -->
-                    <div class="pt-8 border-t border-gray-200 text-center">
-                      <p class="text-gray-500 text-sm">
-                        © 2025 BizCaseLab, Inc. All Rights Reserved.
-                      </p>
-                    </div>
-                  </div>
-                </footer>
-  </body>
+    <!-- Privacy Policy Hero Section -->
+    <section class="relative bg-white">
+      <div class="absolute inset-0 bg-gradient-to-b from-blue-50 to-white h-2/3"></div>
+      <div class="relative mx-auto max-w-7xl px-6 pt-24 pb-16 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <h1 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Privacy Policy</h1>
+          <p class="mt-6 text-lg leading-8 text-gray-600">Last updated: December 10, 2024</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <div class="bg-gray-50 py-8">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl">
+          <h2 class="text-lg font-semibold mb-4">Table of Contents</h2>
+          <nav class="space-y-1">
+            <a href="#interpretations"
+              class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">1. Interpretations and
+              Definitions</a>
+            <a href="#personal-data"
+              class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">2. Collecting and
+              Using Personal Data</a>
+            <a href="#use-of-data"
+              class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">3. Use of Your
+              Personal Data</a>
+            <a href="#retention" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">4.
+              Retention of Your Personal Data</a>
+            <a href="#transfer" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">5.
+              Transfer of Your Personal Data</a>
+            <a href="#disclosure" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">6.
+              Disclosure of Your Personal Data</a>
+            <a href="#security" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">7.
+              Security of Your Personal Data</a>
+            <a href="#children" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">8.
+              Children's Privacy</a>
+            <a href="#links" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">9.
+              Links to Other Websites</a>
+            <a href="#changes" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">10.
+              Changes to this Privacy Policy</a>
+            <a href="#contact" class="block px-4 py-2 rounded-lg hover:bg-white text-gray-700 hover:text-blue-600">11.
+              Contact Us</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .scroll-mt-20 {
+        scroll-margin-top: 5rem;
+      }
+    </style>
+
+    <!-- Main Content -->
+    <div class="bg-white py-16">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl prose prose-sm prose-indigo">
+          <!-- Introduction -->
+          <div class="mb-12">
+            <p class="text-gray-600 mb-4">This Privacy Policy describes Our policies and procedures on the collection,
+              use and disclosure of Your information when You use the Service and tells You about Your privacy rights
+              and how the law protects You.</p>
+            <p class="text-gray-600 mb-6">We use Your Personal data to provide and improve the Service. By using the
+              Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
+          </div>
+
+          <!-- Interpretations and Definitions -->
+          <ul class="space-y-4 mb-8">
+            <li class="flex gap-x-3">
+              <strong class="text-gray-900">Account</strong>
+              <span>means a unique account created for You to access our Service or parts of our Service.</span>
+            </li>
+            <li class="flex gap-x-3">
+              <strong class="text-gray-900">Company</strong>
+              <span>(referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Business Case
+                Lab.</span>
+            </li>
+            <li class="flex gap-x-3">
+              <strong class="text-gray-900">Country</strong>
+              <span>refers to Canada.</span>
+            </li>
+            <li class="flex gap-x-3">
+              <strong class="text-gray-900">Cookies</strong>
+              <span>are small files that are placed on Your computer, mobile device or any other device by a website,
+                containing the details of Your browsing history on that website among its many uses.</span>
+            </li>
+            <li class="flex gap-x-3">
+              <strong class="text-gray-900">Device</strong>
+              <span>means any device that can access the Service such as a computer, a cell phone or a digital
+                tablet.</span>
+            </li>
+            <li class="flex gap-x-3">
+              <strong class="text-gray-900">Personal Data</strong>
+              <span>is any information that relates to an identified or identifiable individual.</span>
+            </li>
+            <li class="flex gap-x-3">
+              <strong class="text-gray-900">Service</strong>
+              <span>refers to the Website.</span>
+            </li>
+            <li class="flex gap-x-3">
+              <strong class="text-gray-900">Service Provider</strong>
+              <span>means any natural or legal person who processes the data on behalf of the Company. It refers to
+                third-party companies or individuals employed by the Company to facilitate the Service, to provide the
+                Service on behalf of the Company, to perform services related to the Service or to assist the Company in
+                analyzing how the Service is used.</span>
+            </li>
+            <li class="flex gap-x-3">
+              <strong class="text-gray-900">Usage Data</strong>
+              <span>refers to data collected automatically, either generated by the use of the Service or from the
+                Service infrastructure itself (for example, the duration of a page visit).</span>
+            </li>
+            <li class="flex gap-x-3">
+              <strong class="text-gray-900">Website</strong>
+              <span>refers to Bizcaselab, accessible from <a href="https://www.bizcaselab.com" target="_blank"
+                  class="text-blue-600 hover:text-blue-800">https://www.bizcaselab.com</a>.</span>
+            </li>
+            <li class="flex gap-x-3">
+              <strong class="text-gray-900">You</strong>
+              <span>means the individual accessing or using the Service, or the company, or other legal entity on behalf
+                of which such individual is accessing or using the Service, as applicable.</span>
+            </li>
+          </ul>
+
+          <div id="personal-data" class="scroll-mt-20 mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Collecting and Using Your Personal Data</h2>
+
+            <!-- Personal Data Section -->
+            <div class="mb-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Types of Data Collected</h3>
+              <h4 class="text-lg font-medium text-gray-900 mb-3">Personal Data</h4>
+              <p class="mb-4">While using Our Service, We may ask You to provide Us with certain personally identifiable
+                information that can be used to contact or identify You. Personally identifiable information may
+                include, but is not limited to:</p>
+              <ul class="list-disc pl-5 mb-6">
+                <li>Email address</li>
+                <li>First name and last name</li>
+                <li>Usage Data</li>
+              </ul>
+            </div>
+
+            <!-- Usage Data Section -->
+            <div class="mb-8">
+              <h4 class="text-lg font-medium text-gray-900 mb-3">Usage Data</h4>
+              <p class="mb-4">Usage Data is collected automatically when using the Service.</p>
+              <p class="mb-4">Usage Data may include information such as Your Device's Internet Protocol address (e.g.
+                IP address), browser type, browser version, the pages of our Service that You visit, the time and date
+                of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
+              <p class="mb-4">When You access the Service by or through a mobile device, We may collect certain
+                information automatically, including, but not limited to, the type of mobile device You use, Your mobile
+                device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile
+                Internet browser You use, unique device identifiers and other diagnostic data.</p>
+            </div>
+
+            <!-- Cookies Section -->
+            <div class="mb-8">
+              <h4 class="text-lg font-medium text-gray-900 mb-3">Tracking Technologies and Cookies</h4>
+              <p class="mb-4">We use Cookies and similar tracking technologies to track the activity on Our Service and
+                store certain information. Tracking technologies used are beacons, tags, and scripts to collect and
+                track information and to improve and analyze Our Service. The technologies We use may include:</p>
+              <ul class="space-y-4 mb-6">
+                <li class="bg-gray-50 p-4 rounded-lg">
+                  <strong class="text-gray-900">Cookies or Browser Cookies:</strong>
+                  <p class="mt-2">A cookie is a small file placed on Your Device. You can instruct Your browser to
+                    refuse all Cookies or to indicate when a Cookie is being sent. However, if You do not accept
+                    Cookies, You may not be able to use some parts of our Service. Unless you have adjusted Your browser
+                    setting so that it will refuse Cookies, our Service may use Cookies.</p>
+                </li>
+                <li class="bg-gray-50 p-4 rounded-lg">
+                  <strong class="text-gray-900">Web Beacons:</strong>
+                  <p class="mt-2">Certain sections of our Service and our emails may contain small electronic files
+                    known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit
+                    the Company, for example, to count users who have visited those pages or opened an email and for
+                    other related website statistics.</p>
+                </li>
+              </ul>
+
+              <p class="mb-4">Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on Your
+                personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You
+                close Your web browser.</p>
+              <p class="mb-4">We use both Session and Persistent Cookies for the purposes set out below:</p>
+
+              <div class="space-y-4 mb-6">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <strong class="text-gray-900 block mb-2">Necessary / Essential Cookies</strong>
+                  <p class="mb-2"><strong class="text-gray-700">Type:</strong> Session Cookies</p>
+                  <p class="mb-2"><strong class="text-gray-700">Administered by:</strong> Us</p>
+                  <p><strong class="text-gray-700">Purpose:</strong> These Cookies are essential to provide You with
+                    services available through the Website and to enable You to use some of its features.</p>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <strong class="text-gray-900 block mb-2">Cookies Policy / Notice Acceptance Cookies</strong>
+                  <p class="mb-2"><strong class="text-gray-700">Type:</strong> Persistent Cookies</p>
+                  <p class="mb-2"><strong class="text-gray-700">Administered by:</strong> Us</p>
+                  <p><strong class="text-gray-700">Purpose:</strong> These Cookies identify if users have accepted the
+                    use of cookies on the Website.</p>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <strong class="text-gray-900 block mb-2">Functionality Cookies</strong>
+                  <p class="mb-2"><strong class="text-gray-700">Type:</strong> Persistent Cookies</p>
+                  <p class="mb-2"><strong class="text-gray-700">Administered by:</strong> Us</p>
+                  <p><strong class="text-gray-700">Purpose:</strong> These Cookies allow us to remember choices You make
+                    when You use the Website.</p>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <strong class="text-gray-900 block mb-2">Tracking and Performance Cookies</strong>
+                  <p class="mb-2"><strong class="text-gray-700">Type:</strong> Persistent Cookies</p>
+                  <p class="mb-2"><strong class="text-gray-700">Administered by:</strong> Third-Parties</p>
+                  <p><strong class="text-gray-700">Purpose:</strong> These Cookies are used to track information about
+                    traffic to the Website and how users use the Website.</p>
+                </div>
+              </div>
+
+              <p class="text-gray-600">For more information about the cookies we use and your choices regarding cookies,
+                please visit our Cookies Policy or the Cookies section of our Privacy Policy.</p>
+            </div>
+          </div>
+
+          <div id="use-of-data" class="scroll-mt-20 mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Use of Your Personal Data</h2>
+
+            <!-- Primary Usage Purposes -->
+            <p class="mb-4">The Company may use Personal Data for the following purposes:</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex gap-x-3">
+                <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
+                <span>To provide and maintain our Service, including to monitor the usage of our Service.</span>
+              </li>
+              <li class="flex gap-x-3">
+                <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
+                <span>To manage Your Account: to manage Your registration as a user of the Service. The Personal Data
+                  You provide can give You access to different functionalities of the Service that are available to You
+                  as a registered user.</span>
+              </li>
+              <li class="flex gap-x-3">
+                <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
+                <span>For the performance of a contract: the development, compliance and undertaking of the purchase
+                  contract for the products, items or services You have purchased or of any other contract with Us
+                  through the Service.</span>
+              </li>
+              <li class="flex gap-x-3">
+                <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
+                <span>To contact You: To contact You by email, telephone calls, SMS, or other equivalent forms of
+                  electronic communication, such as a mobile application's push notifications regarding updates or
+                  informative communications related to the functionalities, products or contracted services, including
+                  the security updates, when necessary or reasonable for their implementation.</span>
+              </li>
+              <li class="flex gap-x-3">
+                <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
+                <span>To provide You with news, special offers and general information about other goods, services and
+                  events which we offer that are similar to those that you have already purchased or enquired about
+                  unless You have opted not to receive such information.</span>
+              </li>
+              <li class="flex gap-x-3">
+                <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
+                <span>To manage Your requests: To attend and manage Your requests to Us.</span>
+              </li>
+              <li class="flex gap-x-3">
+                <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
+                <span>For other purposes: We may use Your information for other purposes, such as data analysis,
+                  identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate
+                  and improve our Service, products, services, marketing and your experience.</span>
+              </li>
+            </ul>
+
+            <!-- Information Sharing Section -->
+            <p class="mb-4">We may share Your personal information in the following situations:</p>
+            <ul class="space-y-4 mb-8">
+              <li class="bg-gray-50 p-4 rounded-lg">
+                <strong class="text-gray-900 block mb-2">With Service Providers:</strong>
+                <p>We may share Your personal information with Service Providers to monitor and analyze the use of our
+                  Service, for payment processing, to contact You.</p>
+              </li>
+              <li class="bg-gray-50 p-4 rounded-lg">
+                <strong class="text-gray-900 block mb-2">For business transfers:</strong>
+                <p>We may share or transfer Your personal information in connection with, or during negotiations of, any
+                  merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to
+                  another company.</p>
+              </li>
+              <li class="bg-gray-50 p-4 rounded-lg">
+                <strong class="text-gray-900 block mb-2">With Affiliates:</strong>
+                <p>We may share Your information with Our affiliates, in which case we will require those affiliates to
+                  honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint
+                  venture partners or other companies that We control or that are under common control with Us.</p>
+              </li>
+              <li class="bg-gray-50 p-4 rounded-lg">
+                <strong class="text-gray-900 block mb-2">With Your consent:</strong>
+                <p>We may disclose Your personal information for any other purpose with Your consent.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Retention -->
+          <div id="retention" class="scroll-mt-20 mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Retention of Your Personal Data</h2>
+            <p class="mb-4">The Company will retain Your Personal Data only for as long as is necessary for the purposes
+              set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to
+              comply with our legal obligations (for example, if we are required to retain your data to comply with
+              applicable laws), resolve disputes, and enforce our legal agreements and policies.</p>
+            <p class="mb-4">The Company will also retain Usage Data for internal analysis purposes. Usage Data is
+              generally retained for a shorter period of time, except when this data is used to strengthen the security
+              or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer
+              time periods.</p>
+
+            <!-- Continue with retention details... -->
+          </div>
+
+          <!-- Transfer -->
+          <div id="transfer" class="scroll-mt-20 mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Transfer of Your Personal Data</h2>
+            <p class="mb-4">Your information, including Personal Data, is processed at the Company's operating offices
+              and in any other places where the parties involved in the processing are located. It means that this
+              information may be transferred to — and maintained on — computers located outside of Your state, province,
+              country or other governmental jurisdiction where the data protection laws may differ than those from Your
+              jurisdiction.</p>
+            <p class="mb-4">Your consent to this Privacy Policy followed by Your submission of such information
+              represents Your agreement to that transfer.</p>
+            <p class="mb-4">The Company will take all steps reasonably necessary to ensure that Your data is treated
+              securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place
+              to an organization or a country unless there are adequate controls in place including the security of Your
+              data and other personal information.</p>
+          </div>
+
+          <!-- Disclosure -->
+          <div id="disclosure" class="scroll-mt-20 mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Disclosure of Your Personal Data</h2>
+
+            <!-- Business Transactions -->
+            <div class="mb-8 bg-gray-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Business Transactions</h3>
+              <p class="text-gray-600">If the Company is involved in a merger, acquisition or asset sale, Your Personal
+                Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes
+                subject to a different Privacy Policy.</p>
+            </div>
+
+            <!-- Law Enforcement -->
+            <div class="mb-8 bg-gray-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Law enforcement</h3>
+              <p class="text-gray-600">Under certain circumstances, the Company may be required to disclose Your
+                Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a
+                court or a government agency).</p>
+            </div>
+
+            <!-- Other Legal Requirements -->
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Other legal requirements</h3>
+              <p class="text-gray-600 mb-4">The Company may disclose Your Personal Data in the good faith belief that
+                such action is necessary to:</p>
+              <ul class="space-y-3">
+                <li class="flex gap-x-3">
+                  <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
+                  <span>Comply with a legal obligation</span>
+                </li>
+                <li class="flex gap-x-3">
+                  <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
+                  <span>Protect and defend the rights or property of the Company</span>
+                </li>
+                <li class="flex gap-x-3">
+                  <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
+                  <span>Prevent or investigate possible wrongdoing in connection with the Service</span>
+                </li>
+                <li class="flex gap-x-3">
+                  <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
+                  <span>Protect the personal safety of Users of the Service or the public</span>
+                </li>
+                <li class="flex gap-x-3">
+                  <span class="mt-1 h-2 w-2 flex-none rounded-full bg-blue-600"></span>
+                  <span>Protect against legal liability</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Security -->
+          <div id="security" class="scroll-mt-20 mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Security of Your Personal Data</h2>
+            <p class="mb-4">The security of Your Personal Data is important to Us, but remember that no method of
+              transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use
+              commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.
+            </p>
+
+          </div>
+
+          <!-- Detailed Information on the Processing -->
+          <div id="Detailed" class="scroll-mt-20 mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Detailed Information on the Processing of Your Personal
+              Data</h2>
+            <p class="mb-4">The Service Providers We use may have access to Your Personal Data. These third-party
+              vendors collect, store, use, process and transfer information about Your activity on Our Service in
+              accordance with their Privacy Policies.</p>
+
+          </div>
+          <!-- Children's Privacy -->
+          <div id="children" class="scroll-mt-20 mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Children's Privacy</h2>
+            <p class="mb-4">Our Service does not address anyone under the age of 13. We do not knowingly collect
+              personally identifiable information from anyone under the age of 13. If You are a parent or guardian and
+              You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware
+              that We have collected Personal Data from anyone under the age of 13 without verification of parental
+              consent, We take steps to remove that information from Our servers.</p>
+            <p class="mb-4">If We need to rely on consent as a legal basis for processing Your information and Your
+              country requires consent from a parent, We may require Your parent's consent before We collect and use
+              that information.</p>
+
+          </div>
+
+          <!-- Links -->
+          <div id="links" class="scroll-mt-20 mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Links to Other Websites</h2>
+            <p class="mb-4">Our Service may contain links to other websites that are not operated by Us. If You click on
+              a third party link, You will be directed to that third party's site. We strongly advise You to review the
+              Privacy Policy of every site You visit.</p>
+            <p class="mb-4">We have no control over and assume no responsibility for the content, privacy policies or
+              practices of any third party sites or services.</p>
+          </div>
+
+          <!-- Changes -->
+          <div id="changes" class="scroll-mt-20 mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Changes to this Privacy Policy</h2>
+            <p class="mb-4">We may update Our Privacy Policy from time to time. We will notify You of any changes by
+              posting the new Privacy Policy on this page.</p>
+            <p class="mb-4">We will let You know via email and/or a prominent notice on Our Service, prior to the change
+              becoming effective and update the "Last updated" date at the top of this Privacy Policy.</p>
+            <p class="mb-4">You are advised to review this Privacy Policy periodically for any changes. Changes to this
+              Privacy Policy are effective when they are posted on this page.</p>
+          </div>
+
+          <!-- Contact -->
+          <div id="contact" class="scroll-mt-20 mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Contact Us</h2>
+            <p class="mb-4">If you have any questions about this Privacy Policy, You can contact us:</p>
+            <ul class="list-disc pl-5">
+              <li><a href="mailto:support@bizcaselab.com" class="text-blue-600 hover:text-blue-800">Email us at
+                  support@bizcaselab.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-12">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <!-- Links section - 3 columns layout -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <!-- Contact Links - Now first column -->
+          <div class="flex flex-col items-center text-center">
+            <img src="img/logo.svg" width="80" height="80" class="mb-4" alt="BizCaseLab Logo" />
+            <ul role="list" class="space-y-3">
+              <li>
+                <a href="mailto:support@bizcaselab.com"
+                  class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  support@bizcaselab.com
+                </a>
+              </li>
+              <li class="pt-4">
+                <!-- Social Media Icons with improved styling -->
+                <div class="flex space-x-5 justify-center">
+                  <a href="https://www.x.com/BizCaseLabCo" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-400 hover:text-indigo-600 transition-colors">
+                    <span class="sr-only">X</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/company/bizcaselab" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-400 hover:text-indigo-600 transition-colors">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z" />
+                    </svg>
+                  </a>
+                  <a href="https://www.youtube.com/@bizcaselabco" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-400 hover:text-indigo-600 transition-colors">
+                    <span class="sr-only">YouTube</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M23.5 6.2c-.3-1-1-1.8-2-2.1C19.9 3.6 12 3.6 12 3.6s-7.9 0-9.5.5c-1 .3-1.7 1.1-2 2.1C0 7.9 0 12 0 12s0 4.1.5 5.8c.3 1 1 1.8 2 2.1 1.6.5 9.5.5 9.5.5s7.9 0 9.5-.5c1-.3 1.7-1.1 2-2.1.5-1.7.5-5.8.5-5.8s0-4.1-.5-5.8zM9.6 15.6V8.4l6.4 3.6-6.4 3.6z" />
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- case studies Links -->
+          <div class="flex flex-col items-center text-center">
+            <h3 class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-4">
+              Case Studies
+            </h3>
+            <ul role="list" class="space-y-3">
+              <li>
+                <a href="professors.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  Professors
+                </a>
+              </li>
+              <li>
+                <a href="students.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  Students
+                </a>
+              </li>
+              <li>
+                <a href="company.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  Companies
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Resources Links -->
+          <div class="flex flex-col items-center text-center">
+            <h3 class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-4">
+              Resources
+            </h3>
+            <ul role="list" class="space-y-3">
+              <li>
+                <a href="demo.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  How to Use
+                </a>
+              </li>
+              <li>
+                <a href="workshop.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  Workshop & Webinars
+                </a>
+              </li>
+              <li>
+                <a href="faq.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  FAQs
+                </a>
+              </li>
+              <li>
+                <a href="blog.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="news.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  Newsroom
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Company Links -->
+          <div class="flex flex-col items-center text-center">
+            <h3 class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-4">
+              Company
+            </h3>
+            <ul role="list" class="space-y-3">
+              <li>
+                <a href="aboutus.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="news.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  Newsroom
+                </a>
+              </li>
+              <li>
+                <a href="privacy-policy.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="terms-of-use.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  Terms of Service
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright section -->
+        <div class="pt-8 border-t border-gray-200 text-center">
+          <p class="text-gray-500 text-sm">
+            © 2025 BizCaseLab, Inc. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+</body>
+
 </html>
