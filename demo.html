@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,16 @@
   <title>
     How to - BizCaseLab | Interactive Product Tour & Platform Walkthrough
   </title>
-  <meta
-    name="description"
-    content="Experience a guided tour of BizCaseLab's AI case creation platform. See how to use our tools to develop customized business cases, navigate key features, and streamline your case teaching process."
-  />
-  <meta
-    name="keywords"
-    content="BizCaseLab product tour, how to use BizCaseLab, case platform tutorial, AI case study walkthrough, business case creation demo, platform features, case teaching software guide, BizCaseLab tutorial"
-  />
+  <meta name="description"
+    content="Experience a guided tour of BizCaseLab's AI case creation platform. See how to use our tools to develop customized business cases, navigate key features, and streamline your case teaching process." />
+  <meta name="keywords"
+    content="BizCaseLab product tour, how to use BizCaseLab, case platform tutorial, AI case study walkthrough, business case creation demo, platform features, case teaching software guide, BizCaseLab tutorial" />
   <meta name="author" content="BizCaseLab" />
-  <link rel="canonical" href="https://bizcaselab.com/demo" />  
+  <link rel="canonical" href="https://bizcaselab.com/demo" />
 
   <!-- Favicon -->
   <link rel="icon" href="img/favicon.png" />
-  
+
   <link rel="apple-touch-icon" href="img/favicon.png" />
 
   <!-- Google Tag Manager -->
@@ -47,12 +44,9 @@
       y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
     })(window, document, "clarity", "script", "qrrv8fiii5");
   </script>
-  
+
   <!-- Google Analytics (GA4) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-WRDEKVHSPV"
-  ></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRDEKVHSPV"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -61,1881 +55,1373 @@
     gtag("js", new Date());
     gtag("config", "G-WRDEKVHSPV");
   </script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                primary: {
-                  DEFAULT: '#0d6efd',
-                  light: '#8187F2'},// Example primary color - adjust to match design, using indigo-600 from template
-                secondary: '#9CA3AF', // Example secondary color - adjust to match design
-                indigo: {
-                    600: '#0d6efd', // Using template's indigo-600
-                    500: '#8187F2'  // Example hover color
-                },
-                gray: {
-                    950: '#0B1120', // From template gray-950 for text-gray-950
-                    900: '#111827', // Using template's gray-900
-                    600: '#4B5563', // Using template's gray-600
-                    500: '#6B7280', // Using template's gray-500
-                    700: '#374151', // Previous gray-700
-                    100: '#F3F4F6', // Previous gray-100
-                    50: '#F9FAFB',   // Previous gray-50
-                    0: '#FFFFFF'    // Previous white
-                }, 
-                blue: {
-                  950: '#0d6efd', // From template gray-950 for text-gray-950
-                  900: '#111827', // Using template's gray-900
-                  600: '#0d6efd', // Using template's gray-600
-                  500: '#6B7280', // Using template's gray-500
-                  700: '#374151', // Previous gray-700
-                  100: '#F3F4F6', // Previous gray-100
-                  50: '#F9FAFB'   // Previous gray-50
-              }
-              },
-              animation: {
-                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-              },
-              fontFamily: {
-                sans: ['Inter', 'sans-serif'], // Example font - ensure to use the correct font
-              },
-              fontSize: {
-                'sm/6': ['0.875rem', { lineHeight: '1.75rem' }], // Example 'sm/6'
-              },
-              textBalance: {
-                balance: 'balance'
-              },
-              extend: {
-                  spacing: {
-                      '18': '4.5rem', // Add spacing-18 to match pl-16 + icon size
-                  },
-                  boxShadow: {
-                      xs: '0 0px 0px 1px rgba(0, 0, 0, 0.05)', // shadow-xs as in template
-                      '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)' // shadow-2xl from template
-                  },
-                  borderRadius: {
-                      'lg': '0.5rem', // Equivalent to rounded-lg
-                      '2xl': '1.5rem', // Equivalent to rounded-2xl
-                      't-[12cqw]': 'min(12cqw, 12rem)', // Example for rounded-t-[12cqw] - adjust as needed
-                      'l-[2rem]': '2rem', // Example for rounded-l-[2rem]
-                      'r-[2rem]': '2rem', // Example for rounded-r-[2rem]
-                      'b-[2rem]': '2rem', // Example for rounded-b-[2rem]
-                      '[calc(var(--radius-lg)+1px)]': 'calc(0.5rem + 1px)', // Example for rounded-[calc(var(--radius-lg)+1px)]
-                      '[calc(2rem+1px)]': 'calc(2rem + 1px)' // Example for rounded-[calc(2rem+1px)]
-                  },
-                  borderWidth: {
-                      '[3cqw]': 'min(3cqw, 3rem)' // Example for border-[3cqw] - adjust as needed
-                  }
-              }
-
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#0d6efd',
+              light: '#8187F2'
+            },// Example primary color - adjust to match design, using indigo-600 from template
+            secondary: '#9CA3AF', // Example secondary color - adjust to match design
+            indigo: {
+              600: '#0d6efd', // Using template's indigo-600
+              500: '#8187F2'  // Example hover color
+            },
+            gray: {
+              950: '#0B1120', // From template gray-950 for text-gray-950
+              900: '#111827', // Using template's gray-900
+              600: '#4B5563', // Using template's gray-600
+              500: '#6B7280', // Using template's gray-500
+              700: '#374151', // Previous gray-700
+              100: '#F3F4F6', // Previous gray-100
+              50: '#F9FAFB',   // Previous gray-50
+              0: '#FFFFFF'    // Previous white
+            },
+            blue: {
+              950: '#0d6efd', // From template gray-950 for text-gray-950
+              900: '#111827', // Using template's gray-900
+              600: '#0d6efd', // Using template's gray-600
+              500: '#6B7280', // Using template's gray-500
+              700: '#374151', // Previous gray-700
+              100: '#F3F4F6', // Previous gray-100
+              50: '#F9FAFB'   // Previous gray-50
+            }
+          },
+          animation: {
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'], // Example font - ensure to use the correct font
+          },
+          fontSize: {
+            'sm/6': ['0.875rem', { lineHeight: '1.75rem' }], // Example 'sm/6'
+          },
+          textBalance: {
+            balance: 'balance'
+          },
+          extend: {
+            spacing: {
+              '18': '4.5rem', // Add spacing-18 to match pl-16 + icon size
+            },
+            boxShadow: {
+              xs: '0 0px 0px 1px rgba(0, 0, 0, 0.05)', // shadow-xs as in template
+              '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)' // shadow-2xl from template
+            },
+            borderRadius: {
+              'lg': '0.5rem', // Equivalent to rounded-lg
+              '2xl': '1.5rem', // Equivalent to rounded-2xl
+              't-[12cqw]': 'min(12cqw, 12rem)', // Example for rounded-t-[12cqw] - adjust as needed
+              'l-[2rem]': '2rem', // Example for rounded-l-[2rem]
+              'r-[2rem]': '2rem', // Example for rounded-r-[2rem]
+              'b-[2rem]': '2rem', // Example for rounded-b-[2rem]
+              '[calc(var(--radius-lg)+1px)]': 'calc(0.5rem + 1px)', // Example for rounded-[calc(var(--radius-lg)+1px)]
+              '[calc(2rem+1px)]': 'calc(2rem + 1px)' // Example for rounded-[calc(2rem+1px)]
+            },
+            borderWidth: {
+              '[3cqw]': 'min(3cqw, 3rem)' // Example for border-[3cqw] - adjust as needed
             }
           }
+
         }
-        // Add this script section right after the Tailwind config script
+      }
+    }
+    // Add this script section right after the Tailwind config script
 
-        document.addEventListener('DOMContentLoaded', function() {
-          const dropdownButtons = document.querySelectorAll('[aria-haspopup="true"]');
-          const dropdowns = Array.from(dropdownButtons).map(button => button.nextElementSibling);
-          
-          const mobileMenuButton = document.querySelector('[aria-label="Open main menu"]');
-  const mobileMenu = document.querySelector('[role="dialog"]');
-  const mobileMenuBackdrop = mobileMenu.querySelector('.fixed.inset-0');
-  
-  function toggleMobileMenu() {
-    const isOpen = mobileMenu.classList.contains('hidden');
-    mobileMenu.classList.toggle('hidden', !isOpen);
-    document.body.style.overflow = isOpen ? 'hidden' : '';
-  }
+    document.addEventListener('DOMContentLoaded', function () {
+      const dropdownButtons = document.querySelectorAll('[aria-haspopup="true"]');
+      const dropdowns = Array.from(dropdownButtons).map(button => button.nextElementSibling);
 
-  // Toggle mobile menu
-  mobileMenuButton.addEventListener('click', toggleMobileMenu);
+      const mobileMenuButton = document.querySelector('[aria-label="Open main menu"]');
+      const mobileMenu = document.querySelector('[role="dialog"]');
+      const mobileMenuBackdrop = mobileMenu.querySelector('.fixed.inset-0');
 
-  // Close menu with X button
-  const closeButton = mobileMenu.querySelector('button[type="button"]');
-  closeButton.addEventListener('click', toggleMobileMenu);
+      function toggleMobileMenu() {
+        const isOpen = mobileMenu.classList.contains('hidden');
+        mobileMenu.classList.toggle('hidden', !isOpen);
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+      }
 
-  // Close on backdrop click
-  mobileMenuBackdrop.addEventListener('click', toggleMobileMenu);
+      // Toggle mobile menu
+      mobileMenuButton.addEventListener('click', toggleMobileMenu);
 
-  // Mobile dropdown toggles
-  const mobileDropdownButtons = mobileMenu.querySelectorAll('[aria-controls]');
-  mobileDropdownButtons.forEach(button => {
-    const dropdownId = button.getAttribute('aria-controls');
-    const dropdown = document.getElementById(dropdownId);
-    
-    button.addEventListener('click', () => {
-      const isExpanded = button.getAttribute('aria-expanded') === 'true';
-      button.setAttribute('aria-expanded', !isExpanded);
-      dropdown.classList.toggle('hidden');
-    });
-  });  
+      // Close menu with X button
+      const closeButton = mobileMenu.querySelector('button[type="button"]');
+      closeButton.addEventListener('click', toggleMobileMenu);
 
-          // Initially hide all dropdowns
-          dropdowns.forEach(dropdown => {
+      // Close on backdrop click
+      mobileMenuBackdrop.addEventListener('click', toggleMobileMenu);
+
+      // Mobile dropdown toggles
+      const mobileDropdownButtons = mobileMenu.querySelectorAll('[aria-controls]');
+      mobileDropdownButtons.forEach(button => {
+        const dropdownId = button.getAttribute('aria-controls');
+        const dropdown = document.getElementById(dropdownId);
+
+        button.addEventListener('click', () => {
+          const isExpanded = button.getAttribute('aria-expanded') === 'true';
+          button.setAttribute('aria-expanded', !isExpanded);
+          dropdown.classList.toggle('hidden');
+        });
+      });
+
+      // Initially hide all dropdowns
+      dropdowns.forEach(dropdown => {
+        dropdown.style.display = 'none';
+      });
+      dropdownButtons.forEach(button => {
+        button.setAttribute('aria-expanded', 'false');
+      });
+
+      // Handle dropdowns
+      dropdownButtons.forEach((button, index) => {
+        const dropdown = dropdowns[index];
+        const container = button.parentElement;
+        let timeoutId;
+
+        // Handle mouse enter on button/container
+        const showDropdown = () => {
+          clearTimeout(timeoutId);
+          // Hide all other dropdowns
+          dropdowns.forEach((otherDropdown, otherIndex) => {
+            if (otherIndex !== index) {
+              otherDropdown.style.display = 'none';
+              dropdownButtons[otherIndex].setAttribute('aria-expanded', 'false');
+            }
+          });
+          dropdown.style.display = 'block';
+          button.setAttribute('aria-expanded', 'true');
+        };
+
+        // Handle mouse leave
+        const hideDropdown = () => {
+          timeoutId = setTimeout(() => {
             dropdown.style.display = 'none';
-          });
-          dropdownButtons.forEach(button => {
             button.setAttribute('aria-expanded', 'false');
-          });
-        
-          // Handle dropdowns
-          dropdownButtons.forEach((button, index) => {
-            const dropdown = dropdowns[index];
-            const container = button.parentElement;
-            let timeoutId;
-        
-            // Handle mouse enter on button/container
-            const showDropdown = () => {
-              clearTimeout(timeoutId);
-              // Hide all other dropdowns
-              dropdowns.forEach((otherDropdown, otherIndex) => {
-                if (otherIndex !== index) {
-                  otherDropdown.style.display = 'none';
-                  dropdownButtons[otherIndex].setAttribute('aria-expanded', 'false');
-                }
-              });
-              dropdown.style.display = 'block';
-              button.setAttribute('aria-expanded', 'true');
-            };
-        
-            // Handle mouse leave
-            const hideDropdown = () => {
-              timeoutId = setTimeout(() => {
-                dropdown.style.display = 'none';
-                button.setAttribute('aria-expanded', 'false');
-              }, 100); // Small delay to handle gap between button and dropdown
-            };
-        
-            // Add event listeners
-            container.addEventListener('mouseenter', showDropdown);
-            container.addEventListener('mouseleave', hideDropdown);
-            dropdown.addEventListener('mouseenter', () => clearTimeout(timeoutId));
-            dropdown.addEventListener('mouseleave', hideDropdown);
-        
-            // Handle click (for mobile)
-            button.addEventListener('click', (e) => {
-              e.stopPropagation();
-              const isExpanded = button.getAttribute('aria-expanded') === 'true';
-              button.setAttribute('aria-expanded', !isExpanded);
-              dropdown.style.display = isExpanded ? 'none' : 'block';
-            });
-          });
-        
-          // Close dropdowns when clicking outside
-          document.addEventListener('click', () => {
-            dropdownButtons.forEach((button, index) => {
-              button.setAttribute('aria-expanded', 'false');
-              dropdowns[index].style.display = 'none';
-            });
-          });
+          }, 100); // Small delay to handle gap between button and dropdown
+        };
+
+        // Add event listeners
+        container.addEventListener('mouseenter', showDropdown);
+        container.addEventListener('mouseleave', hideDropdown);
+        dropdown.addEventListener('mouseenter', () => clearTimeout(timeoutId));
+        dropdown.addEventListener('mouseleave', hideDropdown);
+
+        // Handle click (for mobile)
+        button.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const isExpanded = button.getAttribute('aria-expanded') === 'true';
+          button.setAttribute('aria-expanded', !isExpanded);
+          dropdown.style.display = isExpanded ? 'none' : 'block';
         });
-      </script>
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          // Get all tab buttons and content panels
-          const tabButtons = document.querySelectorAll('[role="tab"]');
-          const tabContents = document.querySelectorAll('.tab-content');
-          
-          // Add click event listeners to each tab
-          tabButtons.forEach(button => {
-            button.addEventListener('click', function() {
-              const tabId = this.getAttribute('data-tab');
-              
-              // Deactivate all tabs
-              tabButtons.forEach(btn => {
-                btn.setAttribute('aria-selected', 'false');
-                btn.parentElement.parentElement.classList.remove('bg-white', 'lg:bg-white/10');
-                btn.parentElement.parentElement.classList.add('hover:bg-white/10', 'lg:hover:bg-white/5');
-                btn.classList.remove('text-blue-600');
-                btn.classList.add('text-blue-100');
-              });
-              
-              // Activate clicked tab
-              this.setAttribute('aria-selected', 'true');
-              this.parentElement.parentElement.classList.add('bg-white', 'lg:bg-white/10');
-              this.parentElement.parentElement.classList.remove('hover:bg-white/10', 'lg:hover:bg-white/5');
-              this.classList.add('text-blue-600');
-              this.classList.remove('text-blue-100');
-              
-              // Hide all content panels
-              tabContents.forEach(content => {
-                content.classList.add('hidden');
-              });
-              
-              // Show selected content panel
-              document.getElementById(tabId + '-content').classList.remove('hidden');
-            });
-          });
+      });
+
+      // Close dropdowns when clicking outside
+      document.addEventListener('click', () => {
+        dropdownButtons.forEach((button, index) => {
+          button.setAttribute('aria-expanded', 'false');
+          dropdowns[index].style.display = 'none';
         });
-        
-        </script>
-
-        <script>
-          document.addEventListener('DOMContentLoaded', () => {
-            // Create intersection observer to trigger counter when section is visible
-            const observer = new IntersectionObserver((entries) => {
-              entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                  // Start all counters
-                  startCounters();
-                  // Once triggered, disconnect observer
-                  observer.disconnect();
-                }
-              });
-            }, { threshold: 0.1 });
-        
-            // Observe the stats section
-            observer.observe(document.getElementById('statsCounter'));
-        
-            // Function to animate counters
-            function startCounters() {
-              const counters = document.querySelectorAll('.counter');
-              const speed = 1000; // Animation duration in milliseconds
-        
-              counters.forEach(counter => {
-                const target = parseInt(counter.getAttribute('data-target'));
-                const increment = Math.ceil(target / (speed / 16)); // 60fps approx
-                
-                const updateCount = () => {
-                  const count = parseInt(counter.innerText);
-                  if (count < target) {
-                    // Add increment but don't exceed target
-                    counter.innerText = Math.min(count + increment, target);
-                    // Call again if not reached target yet
-                    if (count + increment < target) {
-                      setTimeout(updateCount, 16);
-                    }
-                  }
-                };
-        
-                updateCount();
-              });
-            }
-          });
-        </script>
-
-        <script>
-          document.addEventListener('DOMContentLoaded', function() {
-            // Video content data
-            const videoContent = {
-              professor: {
-                'add-institution': {
-                  videoId: 'ujNo_5tIKu0',
-                  title: 'Create Cases: Building custom case studies',
-                  description: 'Learn how to use our intuitive case builder to create engaging, interactive case studies for your business class. Our platform allows you to customize every aspect of your case study, from the company profile to financial data.'
-                },
-                'share-distribute': {
-                  videoId: '0c6BLf7stdw',
-                  title: 'Share & Distribute: Securely deliver cases to students',
-                  description: 'See how to securely distribute your custom case studies to students with just a few clicks. Set access controls, deadlines, and track who has viewed your materials.'
-                }
-              },
-              student: {
-                'access-cases': {
-                  videoId: 'KaczFFKUcAg',
-                  title: 'Access Cases: Finding and opening your assigned cases',
-                  description: 'Learn how to access case studies assigned by your professor. This video walks you through logging in, finding your case study, and navigating through case materials.'
-                }
-              }
-            };
-            
-            // Set active audience tab
-            const audienceTabs = document.querySelectorAll('.audience-tab');
-            audienceTabs.forEach(tab => {
-              tab.addEventListener('click', function() {
-                // Update tab styles
-                audienceTabs.forEach(t => {
-                  t.classList.remove('bg-white', 'shadow-sm', 'text-blue-700');
-                  t.classList.add('text-gray-700', 'hover:text-gray-900');
-                });
-                this.classList.add('bg-white', 'shadow-sm', 'text-blue-700');
-                this.classList.remove('text-gray-700', 'hover:text-gray-900');
-                
-                // Show/hide corresponding tutorial tabs
-                const audience = this.id.split('-')[0]; // 'professor' or 'student'
-                document.querySelectorAll('.tutorial-tabs').forEach(el => {
-                  el.classList.add('hidden');
-                });
-                document.getElementById(`${audience}-tabs`).classList.remove('hidden');
-                
-                // Update video to first tab of selected audience
-                const firstTab = document.querySelector(`[data-audience="${audience}"]`);
-                updateVideo(firstTab);
-              });
-            });
-            
-            // Handle tutorial tab clicks
-            const tutorialTabs = document.querySelectorAll('.tutorial-tab');
-            tutorialTabs.forEach(tab => {
-              tab.addEventListener('click', function() {
-                // Update active tab within the current audience group
-                const currentAudience = this.dataset.audience;
-                document.querySelectorAll(`.tutorial-tab[data-audience="${currentAudience}"]`).forEach(t => {
-                  t.classList.remove('bg-white', 'shadow-sm', 'border', 'border-gray-100');
-                  t.querySelector('.flex-shrink-0').classList.remove('bg-blue-600');
-                  t.querySelector('.flex-shrink-0').classList.add('bg-gray-300');
-                  t.querySelector('.flex-shrink-0 svg').classList.remove('text-white');
-                  t.querySelector('.flex-shrink-0 svg').classList.add('text-gray-600');
-                  t.querySelector('p.font-medium').classList.remove('text-gray-900');
-                  t.querySelector('p.font-medium').classList.add('text-gray-700');
-                });
-                
-                this.classList.add('bg-white', 'shadow-sm', 'border', 'border-gray-100');
-                this.querySelector('.flex-shrink-0').classList.add('bg-blue-600');
-                this.querySelector('.flex-shrink-0').classList.remove('bg-gray-300');
-                this.querySelector('.flex-shrink-0 svg').classList.add('text-white');
-                this.querySelector('.flex-shrink-0 svg').classList.remove('text-gray-600');
-                this.querySelector('p.font-medium').classList.add('text-gray-900');
-                this.querySelector('p.font-medium').classList.remove('text-gray-700');
-                
-                updateVideo(this);
-              });
-            });
-            
-            // Function to update the YouTube video
-            function updateVideo(tab) {
-              const audience = tab.dataset.audience;
-              const tabId = tab.dataset.tab;
-              const videoData = videoContent[audience][tabId];
-              
-              document.getElementById('tutorial-video').src = `https://www.youtube.com/embed/${videoData.videoId}`;
-              document.getElementById('video-title').textContent = videoData.title;
-              document.getElementById('video-description').textContent = videoData.description;
-            }
-          });
-        </script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body class="bg-white font-sans">
-
-<div class="bg-white">
-  <header class="bg-white">
-    <nav
-      class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8"
-      aria-label="Global"
-    >
-      <div class="flex lg:flex-1">
-        <a href="https://www.bizcaselab.com" class="-m-1.5 p-1.5">
-          <span class="sr-only">bizcaselab</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="100"
-            height="50"
-            zoomAndPan="magnify"
-            viewBox="0 0 375 187"
-            preserveAspectRatio="xMidYMid meet"
-            version="1.0"
-          >
-            <defs><g /></defs>
-            <g fill="#004aad" fill-opacity="1">
-              <g transform="translate(30.767082, 118.297858)">
-                <g>
-                  <path
-                    d="M 78.9375 -102.078125 C 84.082031 -102.078125 88.804688 -101.015625 93.109375 -98.890625 C 97.410156 -96.765625 100.820312 -93.769531 103.34375 -89.90625 C 105.863281 -86.050781 107.125 -81.75 107.125 -77 C 107.125 -64.4375 101.4375 -56.523438 90.0625 -53.265625 L 90.0625 -52.671875 C 103.019531 -49.703125 109.5 -41.195312 109.5 -27.15625 C 109.5 -21.8125 108.1875 -17.085938 105.5625 -12.984375 C 102.945312 -8.878906 99.363281 -5.6875 94.8125 -3.40625 C 90.257812 -1.132812 85.265625 0 79.828125 0 L 10.984375 0 L 10.984375 -102.078125 Z M 43.765625 -62.3125 L 66.328125 -62.3125 C 68.503906 -62.3125 70.304688 -63.078125 71.734375 -64.609375 C 73.171875 -66.148438 73.890625 -68.054688 73.890625 -70.328125 L 73.890625 -71.8125 C 73.890625 -73.988281 73.144531 -75.84375 71.65625 -77.375 C 70.175781 -78.90625 68.398438 -79.671875 66.328125 -79.671875 L 43.765625 -79.671875 Z M 43.765625 -23.734375 L 68.703125 -23.734375 C 70.878906 -23.734375 72.679688 -24.5 74.109375 -26.03125 C 75.546875 -27.570312 76.265625 -29.476562 76.265625 -31.75 L 76.265625 -33.234375 C 76.265625 -35.515625 75.546875 -37.421875 74.109375 -38.953125 C 72.679688 -40.484375 70.878906 -41.25 68.703125 -41.25 L 43.765625 -41.25 Z M 43.765625 -23.734375 "
-                  />
-                </g>
-              </g>
-            </g>
-            <g fill="#004aad" fill-opacity="1">
-              <g transform="translate(146.192083, 118.297858)">
-                <g>
-                  <path
-                    d="M 59.640625 -103.859375 C 74.773438 -103.859375 86.742188 -100.070312 95.546875 -92.5 C 104.359375 -84.9375 108.765625 -74.132812 108.765625 -60.09375 L 77.453125 -60.09375 C 77.453125 -66.03125 75.894531 -70.726562 72.78125 -74.1875 C 69.664062 -77.644531 65.238281 -79.375 59.5 -79.375 C 52.875 -79.375 48 -77.296875 44.875 -73.140625 C 41.757812 -68.992188 40.203125 -63.207031 40.203125 -55.78125 L 40.203125 -46.296875 C 40.203125 -38.972656 41.757812 -33.207031 44.875 -29 C 48 -24.800781 52.773438 -22.703125 59.203125 -22.703125 C 65.535156 -22.703125 70.332031 -24.332031 73.59375 -27.59375 C 76.851562 -30.863281 78.484375 -35.460938 78.484375 -41.390625 L 108.765625 -41.390625 C 108.765625 -27.441406 104.484375 -16.757812 95.921875 -9.34375 C 87.367188 -1.925781 75.273438 1.78125 59.640625 1.78125 C 42.234375 1.78125 29.050781 -2.664062 20.09375 -11.5625 C 11.144531 -20.46875 6.671875 -33.628906 6.671875 -51.046875 C 6.671875 -68.453125 11.144531 -81.601562 20.09375 -90.5 C 29.050781 -99.40625 42.234375 -103.859375 59.640625 -103.859375 Z M 59.640625 -103.859375 "
-                  />
-                </g>
-              </g>
-            </g>
-            <g fill="#004aad" fill-opacity="1">
-              <g transform="translate(261.617084, 118.297858)">
-                <g>
-                  <path
-                    d="M 10.984375 -102.078125 L 43.765625 -102.078125 L 43.765625 -26.109375 L 96.140625 -26.109375 L 96.140625 0 L 10.984375 0 Z M 10.984375 -102.078125 "
-                  />
-                </g>
-              </g>
-            </g>
-          </svg>
-        </a>
-      </div>
-      <div class="flex lg:hidden">
-        <button
-          type="button"
-          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-          aria-label="Open main menu"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="size-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
-        </button>
-      </div>
-      <div class="hidden lg:flex lg:gap-x-12">
-        <div class="relative">
-          <button
-            type="button"
-            class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900"
-            aria-expanded="false"
-            aria-haspopup="true"
-          >
-            Case studies
-            <svg
-              class="size-5 flex-none text-gray-400"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              aria-hidden="true"
-              data-slot="icon"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-
-          <div
-            class="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white ring-1 shadow-lg ring-gray-900/5"
-          >
-            <div class="p-4">
-              <div
-                class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-              >
-                <div
-                  class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                >
-                  <svg
-                    class="size-6 text-gray-600 group-hover:text-indigo-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    data-slot="icon"
-                  >
-                    <!-- Head with hair (removed extra point) -->
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M8 7c0-2 2-4 4-4s4 2 4 4"
-                    />
-                    <circle cx="12" cy="7" r="4" />
-                    <!-- Body/Shoulders -->
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 15s2-3 6-3 6 3 6 3"
-                    />
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 12v8"
-                    />
-                    <!-- Tie -->
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 14l-1.5-1h3l-1.5 1"
-                    />
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M10.5 19L12 14l1.5 5"
-                    />
-                  </svg>
-                </div>
-                <div class="flex-auto">
-                  <a
-                    href="professors.html"
-                    class="block font-bold text-gray-900"
-                  >
-                    Professors
-                    <span
-                      class="absolute inset-0 pointer-events-none"
-                    ></span>
-                  </a>
-                  <p class="mt-1 text-gray-600">
-                    Create and share case studies
-                  </p>
-                </div>
-              </div>
-
-              <div
-                class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-              >
-                <div
-                  class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                >
-                  <svg
-                    class="size-6 text-gray-600 group-hover:text-indigo-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    data-slot="icon"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
-                    />
-                  </svg>
-                </div>
-                <div class="flex-auto">
-                  <a
-                    href="students.html"
-                    class="block font-bold text-gray-900"
-                  >
-                    Students
-                    <span
-                      class="absolute inset-0 pointer-events-none"
-                    ></span>
-                  </a>
-                  <p class="mt-1 text-gray-600">
-                    Access case study and submit answers
-                  </p>
-                </div>
-              </div>
-              <div
-                class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-              >
-                <div
-                  class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                >
-                  <svg
-                    class="size-6 text-gray-600 group-hover:text-indigo-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    data-slot="icon"
-                  >
-                    <!-- Office building/company icon -->
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"
-                    />
-                  </svg>
-                </div>
-                <div class="flex-auto">
-                  <a
-                    href="company.html"
-                    class="block font-bold text-gray-900"
-                  >
-                    Company
-                    <span
-                      class="absolute inset-0 pointer-events-none"
-                    ></span>
-                  </a>
-                  <p class="mt-1 text-gray-600">
-                    Connect with universities (Coming soon)
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50"
-            >
-              <a
-                href="demo.html"
-                class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
-              >
-                <svg
-                  class="size-5 flex-none text-gray-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  data-slot="icon"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M2 10a8 8 0 1 1 16 0 8 8 0 0 1-16 0Zm6.39-2.908a.75.75 0 0 1 .766.027l3.5 2.25a.75.75 0 0 1 0 1.262l-3.5 2.25A.75.75 0 0 1 8 12.25v-4.5a.75.75 0 0 1 .39-.658Z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                Watch demo
-              </a>
-              <a
-                href="mailto:support@bizcaselab.com"
-                class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
-              >
-                <svg
-                  class="size-5 flex-none text-gray-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  data-slot="icon"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M2.106 6.447A2 2 0 0 0 2 7v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-.106-.553l-6-3.5a2 2 0 0 0-1.788 0l-6 3.5Zm1.48.97 5.902 3.445a.5.5 0 0 0 .504 0l5.902-3.445a.5.5 0 0 0 0-.862l-5.902-3.445a.5.5 0 0 0-.504 0L3.586 6.555a.5.5 0 0 0 0 .862Z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                Contact us
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="relative">
-          <button
-            type="button"
-            class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900"
-            aria-expanded="false"
-            aria-haspopup="true"
-          >
-            Resource
-            <svg
-              class="size-5 flex-none text-gray-400"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              aria-hidden="true"
-              data-slot="icon"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-
-          <div
-            class="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white ring-1 shadow-lg ring-gray-900/5"
-          >
-            <div class="p-4">
-              <div
-                class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-              >
-                <div
-                  class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                >
-                  <svg
-                    class="size-6 text-gray-600 group-hover:text-indigo-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    data-slot="icon"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347c-.75.412-1.667-.13-1.667-.986V5.653Z"
-                    />
-                  </svg>
-                </div>
-                <div class="flex-auto">
-                  <a
-                    href="demo.html"
-                    class="block font-semibold text-gray-900"
-                  >
-                    Demo
-                    <span
-                      class="absolute inset-0 pointer-events-none"
-                    ></span>
-                  </a>
-                  <p class="mt-1 text-gray-600">Learn how to use BCL</p>
-                </div>
-              </div>
-
-              <div
-                class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-              >
-                <div
-                  class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                >
-                  <svg
-                    class="size-6 text-gray-600 group-hover:text-indigo-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    data-slot="icon"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
-                    />
-                  </svg>
-                </div>
-                <div class="flex-auto">
-                  <a
-                    href="faq.html"
-                    class="block font-semibold text-gray-900"
-                  >
-                    FAQs
-                    <span
-                      class="absolute inset-0 pointer-events-none"
-                    ></span>
-                  </a>
-                  <p class="mt-1 text-gray-600">
-                    Your questions answered here
-                  </p>
-                </div>
-              </div>
-
-              <div
-                class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-              >
-                <div
-                  class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                >
-                  <svg
-                    class="size-6 text-gray-600 group-hover:text-indigo-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    data-slot="icon"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
-                    />
-                  </svg>
-                </div>
-                <div class="flex-auto">
-                  <a
-                    href="workshop.html"
-                    class="block font-semibold text-gray-900"
-                  >
-                    Workshop calendar
-                    <span
-                      class="absolute inset-0 pointer-events-none"
-                    ></span>
-                  </a>
-                  <p class="mt-1 text-gray-600">
-                    View upcoming training sessions
-                  </p>
-                </div>
-              </div>
-
-              <div
-                class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-              >
-                <div
-                  class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                >
-                  <svg
-                    class="size-6 text-gray-600 group-hover:text-indigo-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    data-slot="icon"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
-                    />
-                  </svg>
-                </div>
-                <div class="flex-auto">
-                  <a
-                    href="blog.html"
-                    class="block font-semibold text-gray-900"
-                  >
-                    Blog
-                    <span
-                      class="absolute inset-0 pointer-events-none"
-                    ></span>
-                  </a>
-                  <p class="mt-1 text-gray-600">
-                    Check our latest insights
-                  </p>
-                </div>
-              </div>
-
-              <div
-                class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-              >
-                <div
-                  class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                >
-                  <svg
-                    class="size-6 text-gray-600 group-hover:text-indigo-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    data-slot="icon"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z"
-                    />
-                  </svg>
-                </div>
-                <div class="flex-auto">
-                  <a
-                    href="news.html"
-                    class="block font-semibold text-gray-900"
-                  >
-                    Newsroom
-                    <span
-                      class="absolute inset-0 pointer-events-none"
-                    ></span>
-                  </a>
-                  <p class="mt-1 text-gray-600">
-                    Check our latest news and updates
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="relative">
-          <button
-            type="button"
-            class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900"
-            aria-expanded="false"
-            aria-haspopup="true"
-          >
-            Company
-            <svg
-              class="size-5 flex-none text-gray-400"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              aria-hidden="true"
-              data-slot="icon"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-
-          <div
-            class="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white ring-1 shadow-lg ring-gray-900/5"
-          >
-            <div class="p-4">
-              <div
-                class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-              >
-                <div
-                  class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                >
-                  <svg
-                    class="size-6 text-gray-600 group-hover:text-indigo-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    data-slot="icon"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
-                    />
-                  </svg>
-                </div>
-                <div class="flex-auto">
-                  <a
-                    href="aboutus.html"
-                    class="block font-semibold text-gray-900"
-                  >
-                    About us
-                    <span
-                      class="absolute inset-0 pointer-events-none"
-                    ></span>
-                  </a>
-                  <p class="mt-1 text-gray-600">About Business Case Lab</p>
-                </div>
-              </div>
-
-              <div
-                class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-              >
-                <div
-                  class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                >
-                  <svg
-                    class="size-6 text-gray-600 group-hover:text-indigo-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    data-slot="icon"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
-                    />
-                  </svg>
-                </div>
-                <div class="flex-auto">
-                  <a
-                    href="privacy-policy.html"
-                    class="block font-semibold text-gray-900"
-                  >
-                    Privacy Policy
-                    <span
-                      class="absolute inset-0 pointer-events-none"
-                    ></span>
-                  </a>
-                  <p class="mt-1 text-gray-600">
-                    Our privacy policy on using users' data
-                  </p>
-                </div>
-              </div>
-
-              <div
-                class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50"
-              >
-                <div
-                  class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                >
-                  <svg
-                    class="size-6 text-gray-600 group-hover:text-indigo-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    data-slot="icon"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
-                    />
-                  </svg>
-                </div>
-                <div class="flex-auto">
-                  <a
-                    href="terms-of-use.html"
-                    class="block font-semibold text-gray-900"
-                  >
-                    Terms of Service
-                    <span
-                      class="absolute inset-0 pointer-events-none"
-                    ></span>
-                  </a>
-                  <p class="mt-1 text-gray-600">
-                    Our terms and conditions for using BCL platform
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- login -->
-
-      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <div class="relative">
-          <button
-            type="button"
-            class="flex items-center gap-x-2 text-sm/6 font-semibold text-gray-900"
-            aria-expanded="false"
-            aria-haspopup="true"
-          >
-            <svg
-              class="size-6 text-blue-600 group-hover:text-blue-800"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-            </svg>
-            Log in
-            <svg
-              class="size-5 flex-none text-gray-400"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              aria-hidden="true"
-              data-slot="icon"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-
-          <div
-            class="absolute right-0 z-10 mt-3 w-48 origin-top-right rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
-          >
-            <div class="p-4">
-              <div
-                class="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm/6 hover:bg-gray-50"
-              >
-                <div
-                  class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                >
-                  <svg
-                    class="size-6 text-gray-600 group-hover:text-indigo-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    data-slot="icon"
-                  >
-                    <!-- Head with hair (removed extra point) -->
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M8 7c0-2 2-4 4-4s4 2 4 4"
-                    />
-                    <circle cx="12" cy="7" r="4" />
-                    <!-- Body/Shoulders -->
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 15s2-3 6-3 6 3 6 3"
-                    />
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 12v8"
-                    />
-                    <!-- Tie -->
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 14l-1.5-1h3l-1.5 1"
-                    />
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M10.5 19L12 14l1.5 5"
-                    />
-                  </svg>
-                </div>
-                <div class="flex-auto">
-                  <a
-                    href="https://instructor.bizcaselab.com/"
-                    class="block font-semibold text-gray-900"
-                  >
-                    Login as Professor
-                    <span
-                      class="absolute inset-0 pointer-events-none"
-                    ></span>
-                  </a>
-                </div>
-              </div>
-
-              <div
-                class="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm/6 hover:bg-gray-50"
-              >
-                <div
-                  class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                >
-                  <svg
-                    class="size-6 text-gray-600 group-hover:text-indigo-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
-                    />
-                  </svg>
-                </div>
-                <div class="flex-auto">
-                  <a
-                    href="https://student.bizcaselab.com/"
-                    class="block font-semibold text-gray-900"
-                  >
-                    Login as Student
-                    <span
-                      class="absolute inset-0 pointer-events-none"
-                    ></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- mobile menu -->
-
-    <div class="lg:hidden hidden" role="dialog" aria-modal="true">
-      <!-- Background backdrop -->
-      <div class="fixed inset-0 z-10"></div>
-      <div
-        class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
-      >
-        <div class="flex items-center justify-between">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">BizCaseLab</span>
-            <img class="h-14 w-auto" src="img/logo.svg" alt="" />
-          </a>
-          <button
-            type="button"
-            class="-m-2.5 rounded-md p-2.5 text-gray-700"
-            aria-label="Close menu"
-          >
-            <span class="sr-only">Close menu</span>
-            <svg
-              class="size-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-        </div>
-        <div class="mt-6 flow-root">
-          <div class="-my-6 divide-y divide-gray-500/10">
-            <div class="space-y-2 py-6">
-              <!-- Product Dropdown -->
-              <div class="-mx-3">
-                <button
-                  type="button"
-                  class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                  aria-controls="disclosure-1"
-                  aria-expanded="false"
-                >
-                  Case Studies
-                  <svg
-                    class="size-5 flex-none"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </button>
-                <div class="mt-2 space-y-2 hidden" id="disclosure-1">
-                  <a
-                    href="professors.html"
-                    class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                    >Professors</a
-                  >
-                  <a
-                    href="students.html"
-                    class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                    >Students</a
-                  >
-                  <a
-                    href="company.html"
-                    class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                    >Companies</a
-                  >
-                </div>
-              </div>
-
-              <!-- Resource Dropdown -->
-              <div class="-mx-3">
-                <button
-                  type="button"
-                  class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                  aria-controls="disclosure-2"
-                  aria-expanded="false"
-                >
-                  Resource
-                  <svg
-                    class="size-5 flex-none"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </button>
-                <div class="mt-2 space-y-2 hidden" id="disclosure-2">
-                  <a
-                    href="demo.html"
-                    class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                    >Demo</a
-                  >
-                  <a
-                    href="faq.html"
-                    class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                    >FAQs</a
-                  >
-                  <a
-                    href="blog.html"
-                    class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                    >Blog</a
-                  >
-                  <a
-                    href="news.html"
-                    class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                    >Newsroom</a
-                  >
-                </div>
-              </div>
-
-              <!-- Company Dropdown -->
-              <div class="-mx-3">
-                <button
-                  type="button"
-                  class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                  aria-controls="disclosure-3"
-                  aria-expanded="false"
-                >
-                  Company
-                  <svg
-                    class="size-5 flex-none"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </button>
-                <div class="mt-2 space-y-2 hidden" id="disclosure-3">
-                  <a
-                    href="aboutus.html"
-                    class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                    >About us</a
-                  >
-                  <a
-                    href="privacy-policy.html"
-                    class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                    >Privacy Policy</a
-                  >
-                  <a
-                    href="terms-of-use.html"
-                    class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                    >Terms of Service</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Login Section -->
-            <div class="py-6 space-y-2">
-              <a
-                href="https://instructor.bizcaselab.com/"
-                class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >Login as Professor</a
-              >
-              <a
-                href="https://student.bizcaselab.com/"
-                class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >Login as Student</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  
-
-
-<!-- Demo Header Section with improved UI -->
-<section class="relative py-24 sm:py-32 overflow-hidden bg-gradient-to-b from-indigo-50 to-white">
-  <!-- Decorative elements -->
-  <div aria-hidden="true" class="absolute top-1/4 left-0 -translate-x-1/3">
-    <div class="h-64 w-64 rounded-full bg-indigo-400/10 blur-3xl"></div>
-  </div>
-  <div aria-hidden="true" class="absolute bottom-1/3 right-0 translate-x-1/3">
-    <div class="h-48 w-48 rounded-full bg-blue-400/10 blur-2xl"></div>
-  </div>
-
-  <!-- Subtle background pattern -->
-  <div class="absolute inset-0 -z-10 opacity-5">
-    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <pattern id="dots-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-          <circle cx="3" cy="3" r="1.5" fill="currentColor" />
-        </pattern>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#dots-pattern)" />
-    </svg>
-  </div>
-  
-  <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-3xl text-center mb-12">
-      <!-- Decorative icon -->
-      <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-indigo-600/10 mb-8">
-        <svg class="h-8 w-8 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
-        </svg>
-      </div>
-      
-      <!-- Main heading with gradient text -->
-      <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-        <span class="block">Platform</span>
-        <span class="mt-1 block bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">
-          Demonstrations
-        </span>
-      </h1>
-      
-    
-    </div>
-    
-  </div>
-  
-  <!-- Wave divider -->
-  <div class="absolute bottom-0 left-0 right-0 h-16 bg-gray-50">
-    <svg class="absolute -top-16 w-full h-16" preserveAspectRatio="none" viewBox="0 0 1440 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 22L60 16.7C120 11.3 240 0.7 360 0.2C480 -0.3 600 9.3 720 16.7C840 24 960 29 1080 27.3C1200 25.7 1320 17.3 1380 13.2L1440 9V54H1380C1320 54 1200 54 1080 54C960 54 840 54 720 54C600 54 480 54 360 54C240 54 120 54 60 54H0V22Z" fill="#f9fafb"/>
-    </svg>
-  </div>
-</section>
-
-
-
-<section
-  id="video-tutorials"
-  aria-label="Product tutorials"
-  class="relative overflow-hidden bg-gray-50 py-24 sm:py-32"
->
-  <!-- Subtle background pattern -->
-  <div class="absolute inset-0 -z-10 opacity-5">
-    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <pattern id="dots-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-          <circle cx="3" cy="3" r="1.5" fill="currentColor" />
-        </pattern>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#dots-pattern)" />
-    </svg>
-  </div>
-  
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="max-w-2xl md:mx-auto md:text-center xl:max-w-none mb-12">
-      <h2 class="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
-      </h2>
-      <p class="mt-4 text-lg text-gray-600">
-        Watch tutorial videos to learn how to use BizCaseLab platform.
-      </p>
-    </div>
-    
-    <!-- Audience Selector Tabs -->
-    <div class="flex justify-center mb-16">
-      <div class="inline-flex rounded-full p-1 bg-gray-100 shadow-sm">
-        <button id="professor-tab" class="audience-tab px-6 py-3 rounded-full text-sm font-medium bg-white shadow-sm text-blue-700 transition-all">
-          For Professors
-        </button>
-        <button id="student-tab" class="audience-tab px-6 py-3 rounded-full text-sm font-medium text-gray-700 hover:text-gray-900 transition-all">
-          For Students
-        </button>
-      </div>
-    </div>
-    
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-8">
-      <!-- Left sidebar with tabs -->
-      <div class="lg:col-span-4 lg:border-r lg:border-gray-200">
-        <div class="space-y-1 pr-4">
-          <!-- Professor Tabs (visible by default) -->
-          <div id="professor-tabs" class="tutorial-tabs">
-            <button 
-              class="tutorial-tab group w-full flex items-center px-4 py-3 rounded-lg bg-white shadow-sm border border-gray-100 mb-2 transition-all"
-              data-audience="professor" 
-              data-video="ujNo_5tIKu0"
-              data-tab="add-institution"
-            >
-              <div class="flex-shrink-0 h-10 w-10 rounded-lg bg-blue-600 flex items-center justify-center mr-4">
-                <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                </svg>
-              </div>
-              <div class="text-left">
-                <p class="font-medium text-gray-900">Add institution</p>
-                <p class="text-sm text-gray-500">Add university or college name</p>
-              </div>
-            </button>
-            
-            <button 
-              class="tutorial-tab w-full flex items-center px-4 py-3 rounded-lg hover:bg-white hover:shadow-sm transition-all"
-              data-audience="professor" 
-              data-video="0c6BLf7stdw"
-              data-tab="share-distribute"
-            >
-              <div class="flex-shrink-0 h-10 w-10 rounded-lg bg-gray-300 flex items-center justify-center mr-4">
-                <svg class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-              <div class="text-left">
-                <p class="font-medium text-gray-700">Add Course</p>
-                <p class="text-sm text-gray-500">How to define course on BCL</p>
-              </div>
-            </button>
-            
-            
-
-          </div>
-          
-          <!-- Student Tabs (hidden initially) -->
-          <div id="student-tabs" class="tutorial-tabs hidden">
-            <button 
-              class="tutorial-tab group w-full flex items-center px-4 py-3 rounded-lg bg-white shadow-sm border border-gray-100 mb-2 transition-all"
-              data-audience="student" 
-              data-video="KaczFFKUcAg"
-              data-tab="access-cases"
-            >
-              <div class="flex-shrink-0 h-10 w-10 rounded-lg bg-blue-600 flex items-center justify-center mr-4">
-                <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-              <div class="text-left">
-                <p class="font-medium text-gray-900">Access Cases</p>
-                <p class="text-sm text-gray-500">How to access assigned case studies</p>
-              </div>
-            </button>
-            
-            
-          </div>
-        </div>
-      </div>
-      
-      <!-- Right video area -->
-      <div class="lg:col-span-8">
-        <div class="relative h-0 pb-[56.25%] rounded-xl overflow-hidden shadow-xl bg-gray-100">
-          <!-- YouTube embed - will be replaced by JavaScript -->
-          <iframe 
-            id="tutorial-video"
-            class="absolute inset-0 w-full h-full" 
-            src="https://www.youtube.com/embed/ujNo_5tIKu0" 
-            title="BCL Tutorial Video" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-          </iframe>
-        </div>
-        
-        <div class="mt-6 text-lg font-medium text-gray-900" id="video-title">Create Cases: Building custom case studies</div>
-        <div class="mt-2 text-base text-gray-600" id="video-description">
-          Learn how to use our intuitive case builder to create engaging, interactive case studies for your business class.
-          Our platform allows you to customize every aspect of your case study, from the company profile to financial data.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Add JavaScript for tab functionality -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-12">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <!-- Links section - 3 columns layout -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-      <!-- Contact Links - Now first column -->
-      <div class="flex flex-col items-center text-center">
-        <img
-          src="img/logo.svg"
-          width="80"
-          height="80"
-          class="mb-4"
-          alt="BizCaseLab Logo"
-        />
-        <ul role="list" class="space-y-3">
-          <li>
-            <a
-              href="mailto:support@bizcaselab.com"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              support@bizcaselab.com
-            </a>
-          </li>
-          <li class="pt-4">
-            <!-- Social Media Icons with improved styling -->
-            <div class="flex space-x-5 justify-center">
-              <a
-                href="https://www.x.com/BizCaseLabCo"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-gray-400 hover:text-indigo-600 transition-colors"
-              >
-                <span class="sr-only">X</span>
-                <svg
-                  class="h-6 w-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://www.linkedin.com/company/bizcaselab"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-gray-400 hover:text-indigo-600 transition-colors"
-              >
-                <span class="sr-only">LinkedIn</span>
-                <svg
-                  class="h-6 w-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://www.youtube.com/@bizcaselabco"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-gray-400 hover:text-indigo-600 transition-colors"
-              >
-                <span class="sr-only">YouTube</span>
-                <svg
-                  class="h-6 w-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M23.5 6.2c-.3-1-1-1.8-2-2.1C19.9 3.6 12 3.6 12 3.6s-7.9 0-9.5.5c-1 .3-1.7 1.1-2 2.1C0 7.9 0 12 0 12s0 4.1.5 5.8c.3 1 1 1.8 2 2.1 1.6.5 9.5.5 9.5.5s7.9 0 9.5-.5c1-.3 1.7-1.1 2-2.1.5-1.7.5-5.8.5-5.8s0-4.1-.5-5.8zM9.6 15.6V8.4l6.4 3.6-6.4 3.6z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <!-- case studies Links -->
-      <div class="flex flex-col items-center text-center">
-        <h3
-          class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-4"
-        >
-          Case Studies
-        </h3>
-        <ul role="list" class="space-y-3">
-          <li>
-            <a
-              href="professors.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              Professors
-            </a>
-          </li>
-          <li>
-            <a
-              href="students.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              Students
-            </a>
-          </li>
-          <li>
-            <a
-              href="company.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              Companies
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Resources Links -->
-      <div class="flex flex-col items-center text-center">
-        <h3
-          class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-4"
-        >
-          Resources
-        </h3>
-        <ul role="list" class="space-y-3">
-          <li>
-            <a
-              href="demo.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              How to Use
-            </a>
-          </li>
-          <li>
-            <a
-              href="workshop.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              Workshop & Webinars
-            </a>
-          </li>
-          <li>
-            <a
-              href="faq.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              FAQs
-            </a>
-          </li>
-          <li>
-            <a
-              href="blog.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              Blog
-            </a>
-          </li>
-          <li>
-            <a
-              href="news.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              Newsroom
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Company Links -->
-      <div class="flex flex-col items-center text-center">
-        <h3
-          class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-4"
-        >
-          Company
-        </h3>
-        <ul role="list" class="space-y-3">
-          <li>
-            <a
-              href="aboutus.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="news.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              Newsroom
-            </a>
-          </li>
-          <li>
-            <a
-              href="privacy-policy.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              Privacy Policy
-            </a>
-          </li>
-          <li>
-            <a
-              href="terms-of-use.html"
-              class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              Terms of Service
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Copyright section -->
-    <div class="pt-8 border-t border-gray-200 text-center">
-      <p class="text-gray-500 text-sm">
-        © 2025 BizCaseLab, Inc. All Rights Reserved.
-      </p>
-    </div>
-  </div>
-</footer>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Function to update video player
-    function updateVideoPlayer(videoId) {
-      const videoContainer = document.getElementById('tutorial-video');
-      if (videoContainer) {
-        videoContainer.src = `https://www.youtube.com/embed/${videoId}`;
-      }
-    }
-
-    // Function to switch between audiences (student vs professor)
-    function switchAudience(audience) {
-      // Show corresponding tabs
-      if (audience === 'student') {
-        document.getElementById('student-tabs').classList.remove('hidden');
-        document.getElementById('professor-tabs').classList.add('hidden');
-        
-        // Update audience tab styling
-        document.getElementById('student-tab').classList.add('bg-white', 'shadow-sm', 'text-blue-700');
-        document.getElementById('student-tab').classList.remove('text-gray-700');
-        document.getElementById('professor-tab').classList.remove('bg-white', 'shadow-sm', 'text-blue-700');
-        document.getElementById('professor-tab').classList.add('text-gray-700');
-      } else {
-        document.getElementById('student-tabs').classList.add('hidden');
-        document.getElementById('professor-tabs').classList.remove('hidden');
-        
-        // Update audience tab styling
-        document.getElementById('professor-tab').classList.add('bg-white', 'shadow-sm', 'text-blue-700');
-        document.getElementById('professor-tab').classList.remove('text-gray-700');
-        document.getElementById('student-tab').classList.remove('bg-white', 'shadow-sm', 'text-blue-700');
-        document.getElementById('student-tab').classList.add('text-gray-700');
-      }
-
-      // Auto-select first tab of the chosen audience
-      const firstTab = document.querySelector(`#${audience}-tabs .tutorial-tab`);
-      if (firstTab) {
-        const videoId = firstTab.getAttribute('data-video');
-        if (videoId) {
-          updateVideoPlayer(videoId);
-          
-          // Update active tab styling
-          document.querySelectorAll('.tutorial-tab').forEach(tab => {
-            tab.classList.remove('bg-white', 'shadow-sm', 'border', 'border-gray-100');
-            tab.classList.add('hover:bg-white', 'hover:shadow-sm');
-          });
-          firstTab.classList.add('bg-white', 'shadow-sm', 'border', 'border-gray-100');
-          firstTab.classList.remove('hover:bg-white', 'hover:shadow-sm');
-          
-          // Update video title and description (if elements exist)
-          const tabTitle = firstTab.querySelector('.text-left p:first-child')?.textContent;
-          const tabDescription = firstTab.querySelector('.text-left p:last-child')?.textContent;
-          
-          if (tabTitle && document.getElementById('video-title')) {
-            document.getElementById('video-title').textContent = tabTitle;
-          }
-          
-          if (tabDescription && document.getElementById('video-description')) {
-            document.getElementById('video-description').textContent = tabDescription;
-          }
-        }
-      }
-    }
-
-    // Check URL hash on page load and switch if needed
-    if (window.location.hash === '#studentTab') {
-      switchAudience('student');
-    } else {
-      // Default to professor
-      switchAudience('professor');
-    }
-
-    // Add click handlers for audience tabs
-    document.getElementById('professor-tab').addEventListener('click', function() {
-      // Update URL hash without scrolling
-      const currentScrollPosition = window.pageYOffset;
-      if (window.location.hash === '#studentTab') {
-        history.pushState("", document.title, window.location.pathname);
-      }
-      window.scrollTo(0, currentScrollPosition);
-      
-      switchAudience('professor');
-    });
-    
-    document.getElementById('student-tab').addEventListener('click', function() {
-      // Update URL hash without scrolling
-      const currentScrollPosition = window.pageYOffset;
-      window.location.hash = 'studentTab';
-      window.scrollTo(0, currentScrollPosition);
-      
-      switchAudience('student');
-    });
-    
-    // Add click handlers for tutorial tabs
-    document.querySelectorAll('.tutorial-tab').forEach(tab => {
-      tab.addEventListener('click', function() {
-        const videoId = this.getAttribute('data-video');
-        updateVideoPlayer(videoId);
-        
-        // Update active tab styling
-        document.querySelectorAll('.tutorial-tab').forEach(t => {
-          t.classList.remove('bg-white', 'shadow-sm', 'border', 'border-gray-100');
-          t.classList.add('hover:bg-white', 'hover:shadow-sm');
-        });
-        this.classList.add('bg-white', 'shadow-sm', 'border', 'border-gray-100');
-        this.classList.remove('hover:bg-white', 'hover:shadow-sm');
-        
-        // Update video title and description (if elements exist)
-        const tabTitle = this.querySelector('.text-left p:first-child')?.textContent;
-        const tabDescription = this.querySelector('.text-left p:last-child')?.textContent;
-        
-        if (tabTitle && document.getElementById('video-title')) {
-          document.getElementById('video-title').textContent = tabTitle;
-        }
-        
-        if (tabDescription && document.getElementById('video-description')) {
-          document.getElementById('video-description').textContent = tabDescription;
-        }
       });
     });
-    
-    // Listen for hash changes
-    window.addEventListener('hashchange', function() {
-      if (window.location.hash === '#studentTab') {
-        switchAudience('student');
-      } else {
-        switchAudience('professor');
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get all tab buttons and content panels
+      const tabButtons = document.querySelectorAll('[role="tab"]');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      // Add click event listeners to each tab
+      tabButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          const tabId = this.getAttribute('data-tab');
+
+          // Deactivate all tabs
+          tabButtons.forEach(btn => {
+            btn.setAttribute('aria-selected', 'false');
+            btn.parentElement.parentElement.classList.remove('bg-white', 'lg:bg-white/10');
+            btn.parentElement.parentElement.classList.add('hover:bg-white/10', 'lg:hover:bg-white/5');
+            btn.classList.remove('text-blue-600');
+            btn.classList.add('text-blue-100');
+          });
+
+          // Activate clicked tab
+          this.setAttribute('aria-selected', 'true');
+          this.parentElement.parentElement.classList.add('bg-white', 'lg:bg-white/10');
+          this.parentElement.parentElement.classList.remove('hover:bg-white/10', 'lg:hover:bg-white/5');
+          this.classList.add('text-blue-600');
+          this.classList.remove('text-blue-100');
+
+          // Hide all content panels
+          tabContents.forEach(content => {
+            content.classList.add('hidden');
+          });
+
+          // Show selected content panel
+          document.getElementById(tabId + '-content').classList.remove('hidden');
+        });
+      });
+    });
+
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Create intersection observer to trigger counter when section is visible
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Start all counters
+            startCounters();
+            // Once triggered, disconnect observer
+            observer.disconnect();
+          }
+        });
+      }, { threshold: 0.1 });
+
+      // Observe the stats section
+      observer.observe(document.getElementById('statsCounter'));
+
+      // Function to animate counters
+      function startCounters() {
+        const counters = document.querySelectorAll('.counter');
+        const speed = 1000; // Animation duration in milliseconds
+
+        counters.forEach(counter => {
+          const target = parseInt(counter.getAttribute('data-target'));
+          const increment = Math.ceil(target / (speed / 16)); // 60fps approx
+
+          const updateCount = () => {
+            const count = parseInt(counter.innerText);
+            if (count < target) {
+              // Add increment but don't exceed target
+              counter.innerText = Math.min(count + increment, target);
+              // Call again if not reached target yet
+              if (count + increment < target) {
+                setTimeout(updateCount, 16);
+              }
+            }
+          };
+
+          updateCount();
+        });
       }
     });
-  });
-</script>
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Video content data
+      const videoContent = {
+        professor: {
+          'add-institution': {
+            videoId: 'ujNo_5tIKu0',
+            title: 'Create Cases: Building custom case studies',
+            description: 'Learn how to use our intuitive case builder to create engaging, interactive case studies for your business class. Our platform allows you to customize every aspect of your case study, from the company profile to financial data.'
+          },
+          'share-distribute': {
+            videoId: '0c6BLf7stdw',
+            title: 'Share & Distribute: Securely deliver cases to students',
+            description: 'See how to securely distribute your custom case studies to students with just a few clicks. Set access controls, deadlines, and track who has viewed your materials.'
+          }
+        },
+        student: {
+          'access-cases': {
+            videoId: 'KaczFFKUcAg',
+            title: 'Access Cases: Finding and opening your assigned cases',
+            description: 'Learn how to access case studies assigned by your professor. This video walks you through logging in, finding your case study, and navigating through case materials.'
+          }
+        }
+      };
+
+      // Set active audience tab
+      const audienceTabs = document.querySelectorAll('.audience-tab');
+      audienceTabs.forEach(tab => {
+        tab.addEventListener('click', function () {
+          // Update tab styles
+          audienceTabs.forEach(t => {
+            t.classList.remove('bg-white', 'shadow-sm', 'text-blue-700');
+            t.classList.add('text-gray-700', 'hover:text-gray-900');
+          });
+          this.classList.add('bg-white', 'shadow-sm', 'text-blue-700');
+          this.classList.remove('text-gray-700', 'hover:text-gray-900');
+
+          // Show/hide corresponding tutorial tabs
+          const audience = this.id.split('-')[0]; // 'professor' or 'student'
+          document.querySelectorAll('.tutorial-tabs').forEach(el => {
+            el.classList.add('hidden');
+          });
+          document.getElementById(`${audience}-tabs`).classList.remove('hidden');
+
+          // Update video to first tab of selected audience
+          const firstTab = document.querySelector(`[data-audience="${audience}"]`);
+          updateVideo(firstTab);
+        });
+      });
+
+      // Handle tutorial tab clicks
+      const tutorialTabs = document.querySelectorAll('.tutorial-tab');
+      tutorialTabs.forEach(tab => {
+        tab.addEventListener('click', function () {
+          // Update active tab within the current audience group
+          const currentAudience = this.dataset.audience;
+          document.querySelectorAll(`.tutorial-tab[data-audience="${currentAudience}"]`).forEach(t => {
+            t.classList.remove('bg-white', 'shadow-sm', 'border', 'border-gray-100');
+            t.querySelector('.flex-shrink-0').classList.remove('bg-blue-600');
+            t.querySelector('.flex-shrink-0').classList.add('bg-gray-300');
+            t.querySelector('.flex-shrink-0 svg').classList.remove('text-white');
+            t.querySelector('.flex-shrink-0 svg').classList.add('text-gray-600');
+            t.querySelector('p.font-medium').classList.remove('text-gray-900');
+            t.querySelector('p.font-medium').classList.add('text-gray-700');
+          });
+
+          this.classList.add('bg-white', 'shadow-sm', 'border', 'border-gray-100');
+          this.querySelector('.flex-shrink-0').classList.add('bg-blue-600');
+          this.querySelector('.flex-shrink-0').classList.remove('bg-gray-300');
+          this.querySelector('.flex-shrink-0 svg').classList.add('text-white');
+          this.querySelector('.flex-shrink-0 svg').classList.remove('text-gray-600');
+          this.querySelector('p.font-medium').classList.add('text-gray-900');
+          this.querySelector('p.font-medium').classList.remove('text-gray-700');
+
+          updateVideo(this);
+        });
+      });
+
+      // Function to update the YouTube video
+      function updateVideo(tab) {
+        const audience = tab.dataset.audience;
+        const tabId = tab.dataset.tab;
+        const videoData = videoContent[audience][tabId];
+
+        document.getElementById('tutorial-video').src = `https://www.youtube.com/embed/${videoData.videoId}`;
+        document.getElementById('video-title').textContent = videoData.title;
+        document.getElementById('video-description').textContent = videoData.description;
+      }
+    });
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-white font-sans">
+
+  <div class="bg-white">
+    <header class="bg-white">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
+        <div class="flex lg:flex-1">
+          <a href="https://www.bizcaselab.com" class="-m-1.5 p-1.5">
+            <span class="sr-only">bizcaselab</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="50"
+              zoomAndPan="magnify" viewBox="0 0 375 187" preserveAspectRatio="xMidYMid meet" version="1.0">
+              <defs>
+                <g />
+              </defs>
+              <g fill="#004aad" fill-opacity="1">
+                <g transform="translate(30.767082, 118.297858)">
+                  <g>
+                    <path
+                      d="M 78.9375 -102.078125 C 84.082031 -102.078125 88.804688 -101.015625 93.109375 -98.890625 C 97.410156 -96.765625 100.820312 -93.769531 103.34375 -89.90625 C 105.863281 -86.050781 107.125 -81.75 107.125 -77 C 107.125 -64.4375 101.4375 -56.523438 90.0625 -53.265625 L 90.0625 -52.671875 C 103.019531 -49.703125 109.5 -41.195312 109.5 -27.15625 C 109.5 -21.8125 108.1875 -17.085938 105.5625 -12.984375 C 102.945312 -8.878906 99.363281 -5.6875 94.8125 -3.40625 C 90.257812 -1.132812 85.265625 0 79.828125 0 L 10.984375 0 L 10.984375 -102.078125 Z M 43.765625 -62.3125 L 66.328125 -62.3125 C 68.503906 -62.3125 70.304688 -63.078125 71.734375 -64.609375 C 73.171875 -66.148438 73.890625 -68.054688 73.890625 -70.328125 L 73.890625 -71.8125 C 73.890625 -73.988281 73.144531 -75.84375 71.65625 -77.375 C 70.175781 -78.90625 68.398438 -79.671875 66.328125 -79.671875 L 43.765625 -79.671875 Z M 43.765625 -23.734375 L 68.703125 -23.734375 C 70.878906 -23.734375 72.679688 -24.5 74.109375 -26.03125 C 75.546875 -27.570312 76.265625 -29.476562 76.265625 -31.75 L 76.265625 -33.234375 C 76.265625 -35.515625 75.546875 -37.421875 74.109375 -38.953125 C 72.679688 -40.484375 70.878906 -41.25 68.703125 -41.25 L 43.765625 -41.25 Z M 43.765625 -23.734375 " />
+                  </g>
+                </g>
+              </g>
+              <g fill="#004aad" fill-opacity="1">
+                <g transform="translate(146.192083, 118.297858)">
+                  <g>
+                    <path
+                      d="M 59.640625 -103.859375 C 74.773438 -103.859375 86.742188 -100.070312 95.546875 -92.5 C 104.359375 -84.9375 108.765625 -74.132812 108.765625 -60.09375 L 77.453125 -60.09375 C 77.453125 -66.03125 75.894531 -70.726562 72.78125 -74.1875 C 69.664062 -77.644531 65.238281 -79.375 59.5 -79.375 C 52.875 -79.375 48 -77.296875 44.875 -73.140625 C 41.757812 -68.992188 40.203125 -63.207031 40.203125 -55.78125 L 40.203125 -46.296875 C 40.203125 -38.972656 41.757812 -33.207031 44.875 -29 C 48 -24.800781 52.773438 -22.703125 59.203125 -22.703125 C 65.535156 -22.703125 70.332031 -24.332031 73.59375 -27.59375 C 76.851562 -30.863281 78.484375 -35.460938 78.484375 -41.390625 L 108.765625 -41.390625 C 108.765625 -27.441406 104.484375 -16.757812 95.921875 -9.34375 C 87.367188 -1.925781 75.273438 1.78125 59.640625 1.78125 C 42.234375 1.78125 29.050781 -2.664062 20.09375 -11.5625 C 11.144531 -20.46875 6.671875 -33.628906 6.671875 -51.046875 C 6.671875 -68.453125 11.144531 -81.601562 20.09375 -90.5 C 29.050781 -99.40625 42.234375 -103.859375 59.640625 -103.859375 Z M 59.640625 -103.859375 " />
+                  </g>
+                </g>
+              </g>
+              <g fill="#004aad" fill-opacity="1">
+                <g transform="translate(261.617084, 118.297858)">
+                  <g>
+                    <path
+                      d="M 10.984375 -102.078125 L 43.765625 -102.078125 L 43.765625 -26.109375 L 96.140625 -26.109375 L 96.140625 0 L 10.984375 0 Z M 10.984375 -102.078125 " />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            aria-label="Open main menu">
+            <span class="sr-only">Open main menu</span>
+            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <div class="relative">
+            <button type="button" class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900"
+              aria-expanded="false" aria-haspopup="true">
+              Case studies
+              <svg class="size-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                data-slot="icon">
+                <path fill-rule="evenodd"
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+
+            <div
+              class="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white ring-1 shadow-lg ring-gray-900/5">
+              <div class="p-4">
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <!-- Head with hair (removed extra point) -->
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 7c0-2 2-4 4-4s4 2 4 4" />
+                      <circle cx="12" cy="7" r="4" />
+                      <!-- Body/Shoulders -->
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 15s2-3 6-3 6 3 6 3" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 12v8" />
+                      <!-- Tie -->
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l-1.5-1h3l-1.5 1" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19L12 14l1.5 5" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="professors.html" class="block font-bold text-gray-900">
+                      Professors
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Create and share case studies
+                    </p>
+                  </div>
+                </div>
+
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="students.html" class="block font-bold text-gray-900">
+                      Students
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Access case study and submit answers
+                    </p>
+                  </div>
+                </div>
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <!-- Office building/company icon -->
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="company.html" class="block font-bold text-gray-900">
+                      Company
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Connect with universities (Coming soon)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                <a href="demo.html"
+                  class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100">
+                  <svg class="size-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                    data-slot="icon">
+                    <path fill-rule="evenodd"
+                      d="M2 10a8 8 0 1 1 16 0 8 8 0 0 1-16 0Zm6.39-2.908a.75.75 0 0 1 .766.027l3.5 2.25a.75.75 0 0 1 0 1.262l-3.5 2.25A.75.75 0 0 1 8 12.25v-4.5a.75.75 0 0 1 .39-.658Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  Watch demo
+                </a>
+                <a href="mailto:support@bizcaselab.com"
+                  class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100">
+                  <svg class="size-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                    data-slot="icon">
+                    <path fill-rule="evenodd"
+                      d="M2.106 6.447A2 2 0 0 0 2 7v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-.106-.553l-6-3.5a2 2 0 0 0-1.788 0l-6 3.5Zm1.48.97 5.902 3.445a.5.5 0 0 0 .504 0l5.902-3.445a.5.5 0 0 0 0-.862l-5.902-3.445a.5.5 0 0 0-.504 0L3.586 6.555a.5.5 0 0 0 0 .862Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  Contact us
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <button type="button" class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900"
+              aria-expanded="false" aria-haspopup="true">
+              Resource
+              <svg class="size-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                data-slot="icon">
+                <path fill-rule="evenodd"
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+
+            <div
+              class="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white ring-1 shadow-lg ring-gray-900/5">
+              <div class="p-4">
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347c-.75.412-1.667-.13-1.667-.986V5.653Z" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="demo.html" class="block font-semibold text-gray-900">
+                      Demo
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">Learn how to use BCL</p>
+                  </div>
+                </div>
+
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="faq.html" class="block font-semibold text-gray-900">
+                      FAQs
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Your questions answered here
+                    </p>
+                  </div>
+                </div>
+
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="workshop.html" class="block font-semibold text-gray-900">
+                      Workshop calendar
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      View upcoming training sessions
+                    </p>
+                  </div>
+                </div>
+
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="blog.html" class="block font-semibold text-gray-900">
+                      Blog
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Check our latest insights
+                    </p>
+                  </div>
+                </div>
+
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="news.html" class="block font-semibold text-gray-900">
+                      Newsroom
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Check our latest news and updates
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <button type="button" class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900"
+              aria-expanded="false" aria-haspopup="true">
+              Company
+              <svg class="size-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                data-slot="icon">
+                <path fill-rule="evenodd"
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+
+            <div
+              class="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white ring-1 shadow-lg ring-gray-900/5">
+              <div class="p-4">
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="aboutus.html" class="block font-semibold text-gray-900">
+                      About us
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">About Business Case Lab</p>
+                  </div>
+                </div>
+
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="privacy-policy.html" class="block font-semibold text-gray-900">
+                      Privacy Policy
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Our privacy policy on using users' data
+                    </p>
+                  </div>
+                </div>
+
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="terms-of-use.html" class="block font-semibold text-gray-900">
+                      Terms of Service
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">
+                      Our terms and conditions for using BCL platform
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- login -->
+
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <div class="relative">
+            <button type="button" class="flex items-center gap-x-2 text-sm/6 font-semibold text-gray-900"
+              aria-expanded="false" aria-haspopup="true">
+              <svg class="size-6 text-blue-600 group-hover:text-blue-800" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              Log in
+              <svg class="size-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                data-slot="icon">
+                <path fill-rule="evenodd"
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+
+            <div
+              class="absolute right-0 z-10 mt-3 w-48 origin-top-right rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <div class="p-4">
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <!-- Head with hair (removed extra point) -->
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 7c0-2 2-4 4-4s4 2 4 4" />
+                      <circle cx="12" cy="7" r="4" />
+                      <!-- Body/Shoulders -->
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 15s2-3 6-3 6 3 6 3" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 12v8" />
+                      <!-- Tie -->
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l-1.5-1h3l-1.5 1" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19L12 14l1.5 5" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="https://instructor.bizcaselab.com/" class="block font-semibold text-gray-900">
+                      Login as Professor
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm/6 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="https://student.bizcaselab.com/" class="block font-semibold text-gray-900">
+                      Login as Student
+                      <span class="absolute inset-0 pointer-events-none"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- mobile menu -->
+
+      <div class="lg:hidden hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop -->
+        <div class="fixed inset-0 z-10"></div>
+        <div
+          class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">BizCaseLab</span>
+              <img class="h-14 w-auto" src="img/logo.svg" alt="" />
+            </a>
+            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" aria-label="Close menu">
+              <span class="sr-only">Close menu</span>
+              <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <!-- Product Dropdown -->
+                <div class="-mx-3">
+                  <button type="button"
+                    class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    aria-controls="disclosure-1" aria-expanded="false">
+                    Case Studies
+                    <svg class="size-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd"
+                        d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <div class="mt-2 space-y-2 hidden" id="disclosure-1">
+                    <a href="professors.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Professors</a>
+                    <a href="students.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Students</a>
+                    <a href="company.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Companies</a>
+                  </div>
+                </div>
+
+                <!-- Resource Dropdown -->
+                <div class="-mx-3">
+                  <button type="button"
+                    class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    aria-controls="disclosure-2" aria-expanded="false">
+                    Resource
+                    <svg class="size-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd"
+                        d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <div class="mt-2 space-y-2 hidden" id="disclosure-2">
+                    <a href="demo.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Demo</a>
+                    <a href="faq.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">FAQs</a>
+                    <a href="blog.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Blog</a>
+                    <a href="news.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Newsroom</a>
+                  </div>
+                </div>
+
+                <!-- Company Dropdown -->
+                <div class="-mx-3">
+                  <button type="button"
+                    class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    aria-controls="disclosure-3" aria-expanded="false">
+                    Company
+                    <svg class="size-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd"
+                        d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <div class="mt-2 space-y-2 hidden" id="disclosure-3">
+                    <a href="aboutus.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">About
+                      us</a>
+                    <a href="privacy-policy.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Privacy
+                      Policy</a>
+                    <a href="terms-of-use.html"
+                      class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Terms
+                      of Service</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Login Section -->
+              <div class="py-6 space-y-2">
+                <a href="https://instructor.bizcaselab.com/"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Login
+                  as Professor</a>
+                <a href="https://student.bizcaselab.com/"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Login
+                  as Student</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+    <!-- Demo Header Section with improved UI -->
+    <section class="relative py-24 sm:py-32 overflow-hidden bg-gradient-to-b from-indigo-50 to-white">
+      <!-- Decorative elements -->
+      <div aria-hidden="true" class="absolute top-1/4 left-0 -translate-x-1/3">
+        <div class="h-64 w-64 rounded-full bg-indigo-400/10 blur-3xl"></div>
+      </div>
+      <div aria-hidden="true" class="absolute bottom-1/3 right-0 translate-x-1/3">
+        <div class="h-48 w-48 rounded-full bg-blue-400/10 blur-2xl"></div>
+      </div>
+
+      <!-- Subtle background pattern -->
+      <div class="absolute inset-0 -z-10 opacity-5">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="dots-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <circle cx="3" cy="3" r="1.5" fill="currentColor" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#dots-pattern)" />
+        </svg>
+      </div>
+
+      <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center mb-12">
+          <!-- Decorative icon -->
+          <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-indigo-600/10 mb-8">
+            <svg class="h-8 w-8 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+            </svg>
+          </div>
+
+          <!-- Main heading with gradient text -->
+          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+            <span class="block">Platform</span>
+            <span class="mt-1 block bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">
+              Demonstrations
+            </span>
+          </h1>
+
+
+        </div>
+
+      </div>
+
+      <!-- Wave divider -->
+      <div class="absolute bottom-0 left-0 right-0 h-16 bg-gray-50">
+        <svg class="absolute -top-16 w-full h-16" preserveAspectRatio="none" viewBox="0 0 1440 54" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0 22L60 16.7C120 11.3 240 0.7 360 0.2C480 -0.3 600 9.3 720 16.7C840 24 960 29 1080 27.3C1200 25.7 1320 17.3 1380 13.2L1440 9V54H1380C1320 54 1200 54 1080 54C960 54 840 54 720 54C600 54 480 54 360 54C240 54 120 54 60 54H0V22Z"
+            fill="#f9fafb" />
+        </svg>
+      </div>
+    </section>
+
+
+
+    <section id="video-tutorials" aria-label="Product tutorials"
+      class="relative overflow-hidden bg-gray-50 py-24 sm:py-32">
+      <!-- Subtle background pattern -->
+      <div class="absolute inset-0 -z-10 opacity-5">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="dots-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <circle cx="3" cy="3" r="1.5" fill="currentColor" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#dots-pattern)" />
+        </svg>
+      </div>
+
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl md:mx-auto md:text-center xl:max-w-none mb-12">
+          <h2 class="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
+          </h2>
+          <p class="mt-4 text-lg text-gray-600">
+            Watch tutorial videos to learn how to use BizCaseLab platform.
+          </p>
+        </div>
+
+        <!-- Audience Selector Tabs -->
+        <div class="flex justify-center mb-16">
+          <div class="inline-flex rounded-full p-1 bg-gray-100 shadow-sm">
+            <button id="professor-tab"
+              class="audience-tab px-6 py-3 rounded-full text-sm font-medium bg-white shadow-sm text-blue-700 transition-all">
+              For Professors
+            </button>
+            <button id="student-tab"
+              class="audience-tab px-6 py-3 rounded-full text-sm font-medium text-gray-700 hover:text-gray-900 transition-all">
+              For Students
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-8">
+          <!-- Left sidebar with tabs -->
+          <div class="lg:col-span-4 lg:border-r lg:border-gray-200">
+            <div class="space-y-1 pr-4">
+              <!-- Professor Tabs (visible by default) -->
+              <div id="professor-tabs" class="tutorial-tabs">
+
+                <button
+                  class="tutorial-tab group w-full flex items-center px-4 py-3 rounded-lg bg-white shadow-sm border border-gray-100 mb-2 transition-all"
+                  data-audience="professor" data-video="jj2-iCe26cQ" data-tab="add-institution">
+                  <div class="flex-shrink-0 h-10 w-10 rounded-lg bg-blue-600 flex items-center justify-center mr-4">
+                    <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                  <div class="text-left">
+                    <p class="font-medium text-gray-900">Introducing BCL</p>
+                    <p class="text-sm text-gray-500">How BCL helps business school professors.</p>
+                  </div>
+                </button>
+
+                <button
+                  class="tutorial-tab group w-full flex items-center px-4 py-3 rounded-lg bg-white shadow-sm border border-gray-100 mb-2 transition-all"
+                  data-audience="professor" data-video="ujNo_5tIKu0" data-tab="add-institution">
+                  <div class="flex-shrink-0 h-10 w-10 rounded-lg bg-blue-600 flex items-center justify-center mr-4">
+                    <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                    </svg>
+                  </div>
+                  <div class="text-left">
+                    <p class="font-medium text-gray-900">Add institution</p>
+                    <p class="text-sm text-gray-500">Add university or college name</p>
+                  </div>
+                </button>
+
+                <button
+                  class="tutorial-tab w-full flex items-center px-4 py-3 rounded-lg hover:bg-white hover:shadow-sm transition-all"
+                  data-audience="professor" data-video="0c6BLf7stdw" data-tab="share-distribute">
+                  <div class="flex-shrink-0 h-10 w-10 rounded-lg bg-gray-300 flex items-center justify-center mr-4">
+                    <svg class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                  </div>
+                  <div class="text-left">
+                    <p class="font-medium text-gray-700">Add Course</p>
+                    <p class="text-sm text-gray-500">How to define course on BCL</p>
+                  </div>
+                </button>
+
+
+
+              </div>
+
+              <!-- Student Tabs (hidden initially) -->
+              <div id="student-tabs" class="tutorial-tabs hidden">
+                <button
+                  class="tutorial-tab group w-full flex items-center px-4 py-3 rounded-lg bg-white shadow-sm border border-gray-100 mb-2 transition-all"
+                  data-audience="student" data-video="KaczFFKUcAg" data-tab="access-cases">
+                  <div class="flex-shrink-0 h-10 w-10 rounded-lg bg-blue-600 flex items-center justify-center mr-4">
+                    <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                  </div>
+                  <div class="text-left">
+                    <p class="font-medium text-gray-900">Access Cases</p>
+                    <p class="text-sm text-gray-500">How to access assigned case studies</p>
+                  </div>
+                </button>
+
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Right video area -->
+          <div class="lg:col-span-8">
+            <div class="relative h-0 pb-[56.25%] rounded-xl overflow-hidden shadow-xl bg-gray-100">
+              <!-- YouTube embed - will be replaced by JavaScript -->
+              <iframe id="tutorial-video" class="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/ujNo_5tIKu0" title="BCL Tutorial Video" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <div class="mt-6 text-lg font-medium text-gray-900" id="video-title">Create Cases: Building custom case
+              studies</div>
+            <div class="mt-2 text-base text-gray-600" id="video-description">
+              Learn how to use our intuitive case builder to create engaging, interactive case studies for your business
+              class.
+              Our platform allows you to customize every aspect of your case study, from the company profile to
+              financial data.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Add JavaScript for tab functionality -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-12">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <!-- Links section - 3 columns layout -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <!-- Contact Links - Now first column -->
+          <div class="flex flex-col items-center text-center">
+            <img src="img/logo.svg" width="80" height="80" class="mb-4" alt="BizCaseLab Logo" />
+            <ul role="list" class="space-y-3">
+              <li>
+                <a href="mailto:support@bizcaselab.com"
+                  class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  support@bizcaselab.com
+                </a>
+              </li>
+              <li class="pt-4">
+                <!-- Social Media Icons with improved styling -->
+                <div class="flex space-x-5 justify-center">
+                  <a href="https://www.x.com/BizCaseLabCo" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-400 hover:text-indigo-600 transition-colors">
+                    <span class="sr-only">X</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/company/bizcaselab" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-400 hover:text-indigo-600 transition-colors">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z" />
+                    </svg>
+                  </a>
+                  <a href="https://www.youtube.com/@bizcaselabco" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-400 hover:text-indigo-600 transition-colors">
+                    <span class="sr-only">YouTube</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M23.5 6.2c-.3-1-1-1.8-2-2.1C19.9 3.6 12 3.6 12 3.6s-7.9 0-9.5.5c-1 .3-1.7 1.1-2 2.1C0 7.9 0 12 0 12s0 4.1.5 5.8c.3 1 1 1.8 2 2.1 1.6.5 9.5.5 9.5.5s7.9 0 9.5-.5c1-.3 1.7-1.1 2-2.1.5-1.7.5-5.8.5-5.8s0-4.1-.5-5.8zM9.6 15.6V8.4l6.4 3.6-6.4 3.6z" />
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- case studies Links -->
+          <div class="flex flex-col items-center text-center">
+            <h3 class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-4">
+              Case Studies
+            </h3>
+            <ul role="list" class="space-y-3">
+              <li>
+                <a href="professors.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  Professors
+                </a>
+              </li>
+              <li>
+                <a href="students.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  Students
+                </a>
+              </li>
+              <li>
+                <a href="company.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  Companies
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Resources Links -->
+          <div class="flex flex-col items-center text-center">
+            <h3 class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-4">
+              Resources
+            </h3>
+            <ul role="list" class="space-y-3">
+              <li>
+                <a href="demo.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  How to Use
+                </a>
+              </li>
+              <li>
+                <a href="workshop.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  Workshop & Webinars
+                </a>
+              </li>
+              <li>
+                <a href="faq.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  FAQs
+                </a>
+              </li>
+              <li>
+                <a href="blog.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="news.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  Newsroom
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Company Links -->
+          <div class="flex flex-col items-center text-center">
+            <h3 class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-4">
+              Company
+            </h3>
+            <ul role="list" class="space-y-3">
+              <li>
+                <a href="aboutus.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="news.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  Newsroom
+                </a>
+              </li>
+              <li>
+                <a href="privacy-policy.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="terms-of-use.html" class="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
+                  Terms of Service
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright section -->
+        <div class="pt-8 border-t border-gray-200 text-center">
+          <p class="text-gray-500 text-sm">
+            © 2025 BizCaseLab, Inc. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Function to update video player
+        function updateVideoPlayer(videoId) {
+          const videoContainer = document.getElementById('tutorial-video');
+          if (videoContainer) {
+            videoContainer.src = `https://www.youtube.com/embed/${videoId}`;
+          }
+        }
+
+        // Function to switch between audiences (student vs professor)
+        function switchAudience(audience) {
+          // Show corresponding tabs
+          if (audience === 'student') {
+            document.getElementById('student-tabs').classList.remove('hidden');
+            document.getElementById('professor-tabs').classList.add('hidden');
+
+            // Update audience tab styling
+            document.getElementById('student-tab').classList.add('bg-white', 'shadow-sm', 'text-blue-700');
+            document.getElementById('student-tab').classList.remove('text-gray-700');
+            document.getElementById('professor-tab').classList.remove('bg-white', 'shadow-sm', 'text-blue-700');
+            document.getElementById('professor-tab').classList.add('text-gray-700');
+          } else {
+            document.getElementById('student-tabs').classList.add('hidden');
+            document.getElementById('professor-tabs').classList.remove('hidden');
+
+            // Update audience tab styling
+            document.getElementById('professor-tab').classList.add('bg-white', 'shadow-sm', 'text-blue-700');
+            document.getElementById('professor-tab').classList.remove('text-gray-700');
+            document.getElementById('student-tab').classList.remove('bg-white', 'shadow-sm', 'text-blue-700');
+            document.getElementById('student-tab').classList.add('text-gray-700');
+          }
+
+          // Auto-select first tab of the chosen audience
+          const firstTab = document.querySelector(`#${audience}-tabs .tutorial-tab`);
+          if (firstTab) {
+            const videoId = firstTab.getAttribute('data-video');
+            if (videoId) {
+              updateVideoPlayer(videoId);
+
+              // Update active tab styling
+              document.querySelectorAll('.tutorial-tab').forEach(tab => {
+                tab.classList.remove('bg-white', 'shadow-sm', 'border', 'border-gray-100');
+                tab.classList.add('hover:bg-white', 'hover:shadow-sm');
+              });
+              firstTab.classList.add('bg-white', 'shadow-sm', 'border', 'border-gray-100');
+              firstTab.classList.remove('hover:bg-white', 'hover:shadow-sm');
+
+              // Update video title and description (if elements exist)
+              const tabTitle = firstTab.querySelector('.text-left p:first-child')?.textContent;
+              const tabDescription = firstTab.querySelector('.text-left p:last-child')?.textContent;
+
+              if (tabTitle && document.getElementById('video-title')) {
+                document.getElementById('video-title').textContent = tabTitle;
+              }
+
+              if (tabDescription && document.getElementById('video-description')) {
+                document.getElementById('video-description').textContent = tabDescription;
+              }
+            }
+          }
+        }
+
+        // Check URL hash on page load and switch if needed
+        if (window.location.hash === '#studentTab') {
+          switchAudience('student');
+        } else {
+          // Default to professor
+          switchAudience('professor');
+        }
+
+        // Add click handlers for audience tabs
+        document.getElementById('professor-tab').addEventListener('click', function () {
+          // Update URL hash without scrolling
+          const currentScrollPosition = window.pageYOffset;
+          if (window.location.hash === '#studentTab') {
+            history.pushState("", document.title, window.location.pathname);
+          }
+          window.scrollTo(0, currentScrollPosition);
+
+          switchAudience('professor');
+        });
+
+        document.getElementById('student-tab').addEventListener('click', function () {
+          // Update URL hash without scrolling
+          const currentScrollPosition = window.pageYOffset;
+          window.location.hash = 'studentTab';
+          window.scrollTo(0, currentScrollPosition);
+
+          switchAudience('student');
+        });
+
+        // Add click handlers for tutorial tabs
+        document.querySelectorAll('.tutorial-tab').forEach(tab => {
+          tab.addEventListener('click', function () {
+            const videoId = this.getAttribute('data-video');
+            updateVideoPlayer(videoId);
+
+            // Update active tab styling
+            document.querySelectorAll('.tutorial-tab').forEach(t => {
+              t.classList.remove('bg-white', 'shadow-sm', 'border', 'border-gray-100');
+              t.classList.add('hover:bg-white', 'hover:shadow-sm');
+            });
+            this.classList.add('bg-white', 'shadow-sm', 'border', 'border-gray-100');
+            this.classList.remove('hover:bg-white', 'hover:shadow-sm');
+
+            // Update video title and description (if elements exist)
+            const tabTitle = this.querySelector('.text-left p:first-child')?.textContent;
+            const tabDescription = this.querySelector('.text-left p:last-child')?.textContent;
+
+            if (tabTitle && document.getElementById('video-title')) {
+              document.getElementById('video-title').textContent = tabTitle;
+            }
+
+            if (tabDescription && document.getElementById('video-description')) {
+              document.getElementById('video-description').textContent = tabDescription;
+            }
+          });
+        });
+
+        // Listen for hash changes
+        window.addEventListener('hashchange', function () {
+          if (window.location.hash === '#studentTab') {
+            switchAudience('student');
+          } else {
+            switchAudience('professor');
+          }
+        });
+      });
+    </script>
 </body>
 
 </html>
