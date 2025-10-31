@@ -325,6 +325,13 @@
         "description": "BizCaseLab is the first AI-based case crafting platform for business education. Create fully customized case studies for any industry, company, or country."
       }
     </script>
+    <script>
+      async function warmupBackend() {
+        await fetch("https://www.backend.bizcaselab.com/actuator/health");
+      }
+      // runs when page loads
+      window.onload = warmupBackend();
+    </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
